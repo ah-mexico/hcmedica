@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.DAO.DAOOrdenes">
+    <Position X="3.25" Y="7.75" Width="30.25" />
+    <TypeIdentifier>
+      <FileName>DAO\DAOOrdenes.vb</FileName>
+      <HashCode>AAIAAAAAAAQAAAAQFAAAABAAAAACBAAAEAIIAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.DAO.DAOPlanManejo">
+    <Position X="3.25" Y="10.75" Width="25.25" />
+    <TypeIdentifier>
+      <FileName>DAO\DAOPlanManejo.vb</FileName>
+      <HashCode>AQQAAAAAAAAAAAAAAAAAEAAAAAACAAAAAAAAAAAAAEA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.DAO.DAOHistoriaBasica">
+    <Position X="3.25" Y="2.5" Width="21.25" />
+    <TypeIdentifier>
+      <FileName>DAO\DAOHistoriaBasica.vb</FileName>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.DAO.DAOGeneral">
+    <Position X="3.25" Y="5.25" Width="8.5" />
+    <TypeIdentifier>
+      <FileName>DAO\DAOGeneral.vb</FileName>
+      <HashCode>AAAAABQIAAAAQEAABAAACAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.DAO.DAOEgresos">
+    <Position X="3.25" Y="14.75" Width="21.25" />
+    <TypeIdentifier>
+      <FileName>DAO\DAOEgresos.vb</FileName>
+      <HashCode>AQAIAAAIIABAAAAABAQgCAAAAAgAAAAAACAAaAAQgAI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.DAONotas">
+    <Position X="3.25" Y="13" Width="9.75" />
+    <TypeIdentifier>
+      <FileName>DAO\DAONotas.vb</FileName>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAACAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.DAO.DAOBasicasLocales">
+    <Position X="3.25" Y="4" Width="10.25" />
+    <TypeIdentifier>
+      <FileName>DAO\DAOBasicasLocales.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.DAOConsultaResultados">
+    <Position X="3.25" Y="1" Width="12.5" />
+    <TypeIdentifier>
+      <FileName>DAO\DAOConsultaResultados.vb</FileName>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

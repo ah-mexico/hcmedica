@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.Reportes.Admision">
+    <Position X="0.75" Y="1" Width="19.75" />
+    <TypeIdentifier>
+      <FileName>Reportes\Clases\Admision.vb</FileName>
+      <HashCode>AAGjCIADsBWKQQECkko1MkAmQMgCABBBAkAQYQooSAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.Reportes.Diagnostico">
+    <Position X="56.25" Y="1" Width="13" />
+    <TypeIdentifier>
+      <FileName>Reportes\Clases\Diagnostico.vb</FileName>
+      <HashCode>AAACAAAAIQAQAACoACAEAAAEAAAAAAAAABAQAECACBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.Reportes.Dieta">
+    <Position X="71.75" Y="1" Width="8.5" />
+    <TypeIdentifier>
+      <FileName>Reportes\Clases\Dieta.vb</FileName>
+      <HashCode>EAEBAAAABQAAAAEAAAIAAAAEAUAAAAASAAIABAAASAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.Reportes.EncabezadoPlanManejo">
+    <Position X="25.25" Y="1" Width="28.75" />
+    <TypeIdentifier>
+      <FileName>Reportes\Clases\EncabezadoPlanManejo.vb</FileName>
+      <HashCode>QCAAAAiAAIRAAAABgGlgAAgIAigEJCgAIIEBgkAQAIQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.Reportes.Evolucion">
+    <Position X="1" Y="15.75" Width="15" />
+    <TypeIdentifier>
+      <FileName>Reportes\Clases\Evolucion.vb</FileName>
+      <HashCode>EAgBAAjAAYAAFAEIACAEAAAAEEAAAGAAIAAAAAAAQBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.Reportes.ExamenFisico">
+    <Position X="1.25" Y="28" Width="15" />
+    <TypeIdentifier>
+      <FileName>Reportes\Clases\ExamenFisico.vb</FileName>
+      <HashCode>ABBQAAAgQADAkAAkAEAywAQEgQAAAAAAAgQAIKIALAE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.Reportes.FormatoHistoriaClinica">
+    <Position X="25.75" Y="12" Width="17.25" />
+    <TypeIdentifier>
+      <FileName>Reportes\Clases\FormatoHistoriaClinica.vb</FileName>
+      <HashCode>BASgA0pAgAA4QCABCLA5FBEgEUFAEB0REBgIhR0EQrg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.Reportes.HCEncabezado">
+    <Position X="26.25" Y="46" Width="17" />
+    <TypeIdentifier>
+      <FileName>Reportes\Clases\HCEncabezado.vb</FileName>
+      <HashCode>FYkDDCCAAHANGkEAAFAVoEKACMgAADUDAQCAAJgggAg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.Reportes.Incapacidad">
+    <Position X="26" Y="41.25" Width="17" />
+    <TypeIdentifier>
+      <FileName>Reportes\Clases\Incapacidad.vb</FileName>
+      <HashCode>AAgAAAAAAAAAAAAAICAAAAAEAACAAAAAgAAAABBAKAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.Reportes.Medicamento">
+    <Position X="25.5" Y="31.5" Width="18" />
+    <TypeIdentifier>
+      <FileName>Reportes\Clases\Medicamento.vb</FileName>
+      <HashCode>AEEjAAUEBQAQAAEEAAAAgAABEwAABAAQCAAAZAAAQAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.Reportes.MotivoConsulta">
+    <Position X="1.5" Y="37.75" Width="15" />
+    <TypeIdentifier>
+      <FileName>Reportes\Clases\MotivoConsulta.vb</FileName>
+      <HashCode>AgAAAAAACAAAQAAAEAAAAAQAAAEAAIAIEAACAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.Reportes.Nota">
+    <Position X="1" Y="22.75" Width="15" />
+    <TypeIdentifier>
+      <FileName>Reportes\Clases\Nota.vb</FileName>
+      <HashCode>EAABAAABAABAAAEEAAAAAAgBAEAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.Reportes.Orden">
+    <Position X="56.5" Y="65.75" Width="27" />
+    <TypeIdentifier>
+      <FileName>Reportes\Clases\Orden.vb</FileName>
+      <HashCode>AMMJEAiAxZBBECkVgGBVIQhMAJoAACABAY+EhgKJCEg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.Reportes.OrdenGeneral">
+    <Position X="56.5" Y="80.25" Width="16" />
+    <TypeIdentifier>
+      <FileName>Reportes\Clases\OrdenGeneral.vb</FileName>
+      <HashCode>AAEBAAAABQAAAAEEAAAAACABAQAAAAAQAAAABAAAQAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.Reportes.Paciente">
+    <Position X="56.5" Y="47.5" Width="27.75" />
+    <TypeIdentifier>
+      <FileName>Reportes\Clases\Paciente.vb</FileName>
+      <HashCode>N0nxRhIBicEEFCwAEFgg4CIQgiTQBigBWRRNkhZEQqI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.Reportes.Procedimiento">
+    <Position X="1.5" Y="42.5" Width="15" />
+    <TypeIdentifier>
+      <FileName>Reportes\Clases\Procedimiento.vb</FileName>
+      <HashCode>AIEAAAEBAwAQAAEFAAIBAAAFEiAAIAwAIBAARABQSHI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.Reportes.RecomendacionEgreso">
+    <Position X="56.25" Y="8" Width="25.25" />
+    <TypeIdentifier>
+      <FileName>Reportes\Clases\RecomendacionEgreso.vb</FileName>
+      <HashCode>UEoSgBiCEIVDAAAQJEBBIAiAgUAIqjAkIcmBhoJgMYg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.Reportes.RemisionPlanManejo">
+    <Position X="56.5" Y="25.5" Width="63.5" />
+    <TypeIdentifier>
+      <FileName>Reportes\Clases\RemisionPlanManejo.vb</FileName>
+      <HashCode>gBi3BvjSJgHtUABhiTQyQs4MgSRKS3rVAOQskppIWD4=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.Reportes.ResumenEvolucion">
+    <Position X="2" Y="64" Width="7.5" />
+    <TypeIdentifier>
+      <FileName>Reportes\Clases\ResumenEvolucion.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAEBQAAABAAAAABAAEAAACgAAAIAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.Reportes.Revision">
+    <Position X="2" Y="68.25" Width="14.25" />
+    <TypeIdentifier>
+      <FileName>Reportes\Clases\Revision.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAJAAAEAAAIAAAABCACAAAACAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.Reportes.Secciones">
+    <Position X="56.25" Y="22.25" Width="15" />
+    <TypeIdentifier>
+      <FileName>Reportes\Clases\Secciones.vb</FileName>
+      <HashCode>AAAAAABAAAAAAAABAAAIAAEAAEBAAAAAABAIAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.Reportes.Triage">
+    <Position X="1.75" Y="51.5" Width="13.75" />
+    <TypeIdentifier>
+      <FileName>Reportes\Clases\Triage.vb</FileName>
+      <HashCode>EUiBAABBEDAIEAEkiAOQAQQEgcFQACARAKUMBqMADIg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

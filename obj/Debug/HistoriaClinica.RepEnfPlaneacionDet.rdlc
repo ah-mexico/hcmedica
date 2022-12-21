@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="DummyDataSource">
+      <rd:DataSourceID>57f2f744-d284-4516-98ec-73f9d8798a78</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <InteractiveHeight>29.7cm</InteractiveHeight>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>21cm</InteractiveWidth>
+  <rd:GridSpacing>0.25cm</rd:GridSpacing>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <RightMargin>2.5cm</RightMargin>
+  <LeftMargin>2.5cm</LeftMargin>
+  <BottomMargin>2.5cm</BottomMargin>
+  <rd:ReportID>9ef42026-8dc8-4eb2-91f4-aa223bc72269</rd:ReportID>
+  <PageWidth>21cm</PageWidth>
+  <DataSets>
+    <DataSet Name="Enfermeria_Sophia_HistoriaClinica_Reportes_Planeacion">
+      <Fields>
+        <Field Name="Descripcion">
+          <DataField>Descripcion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Estado">
+          <DataField>Estado</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="fecha">
+          <DataField>fecha</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Hora">
+          <DataField>Hora</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Medicamento">
+          <DataField>Medicamento</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Medico">
+          <DataField>Medico</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Obs">
+          <DataField>Obs</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DescripcionPlaneado">
+          <DataField>DescripcionPlaneado</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DummyDataSource</DataSourceName>
+        <CommandText />
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>Enfermeria.Sophia.HistoriaClinica.Reportes</rd:DataSetName>
+        <rd:TableName>Planeacion</rd:TableName>
+        <rd:ObjectDataSourceType>Enfermeria.Sophia.HistoriaClinica.Reportes.Planeacion, Enfermeria, Version=1.0.3968.13732, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Width>20cm</Width>
+  <Body>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <ReportItems>
+      <List Name="list1">
+        <ZIndex>1</ZIndex>
+        <Left>0.25cm</Left>
+        <DataSetName>Enfermeria_Sophia_HistoriaClinica_Reportes_Planeacion</DataSetName>
+        <ReportItems>
+          <List Name="list2">
+            <ZIndex>2</ZIndex>
+            <DataSetName>Enfermeria_Sophia_HistoriaClinica_Reportes_Planeacion</DataSetName>
+            <ReportItems>
+              <Textbox Name="textbox3">
+                <rd:DefaultName>textbox3</rd:DefaultName>
+                <Top>0.5cm</Top>
+                <Width>3cm</Width>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+                <ZIndex>6</ZIndex>
+                <CanGrow>true</CanGrow>
+                <Left>16.25cm</Left>
+                <Height>0.5cm</Height>
+                <Value>=First(Fields!Medico.Value, "Enfermeria_Sophia_HistoriaClinica_Reportes_Planeacion")</Value>
+              </Textbox>
+              <Textbox Name="textbox2">
+                <Width>2.5cm</Width>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+                <ZIndex>5</ZIndex>
+                <CanGrow>true</CanGrow>
+                <Left>0.11773cm</Left>
+                <Height>0.5cm</Height>
+                <Value>MEDICAMENTO</Value>
+              </Textbox>
+              <Textbox Name="textbox7">
+                <Top>1.25cm</Top>
+                <Width>16.25cm</Width>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                  <PaddingLeft>4pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+                <ZIndex>4</ZIndex>
+                <CanGrow>true</CanGrow>
+                <Left>3cm</Left>
+                <Value>=Fields!Descripcion.Value</Value>
+              </Textbox>
+              <Textbox Name="textbox8">
+                <Top>1.25cm</Top>
+                <Width>2.5cm</Width>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+                <ZIndex>3</ZIndex>
+                <CanGrow>true</CanGrow>
+                <Left>0.10449cm</Left>
+                <Height>0.50595cm</Height>
+                <Value>ADMINISTRADO</Value>
+              </Textbox>
+              <Textbox Name="DescripcionPlaneado">
+                <rd:DefaultName>DescripcionPlaneado</rd:DefaultName>
+                <Top>0.5cm</Top>
+                <Width>13.12037cm</Width>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                  <PaddingLeft>4pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+                <ZIndex>2</ZIndex>
+                <CanGrow>true</CanGrow>
+                <Left>3cm</Left>
+                <Height>0.75cm</Height>
+                <Value>=Fields!DescripcionPlaneado.Value</Value>
+              </Textbox>
+              <Textbox Name="textbox4">
+                <rd:DefaultName>textbox4</rd:DefaultName>
+                <Width>16.25cm</Width>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                  <PaddingLeft>4pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+                <ZIndex>1</ZIndex>
+                <CanGrow>true</CanGrow>
+                <Left>3cm</Left>
+                <Height>0.5cm</Height>
+                <Value>=Fields!Medicamento.Value</Value>
+              </Textbox>
+              <Textbox Name="textbox6">
+                <Top>0.5cm</Top>
+                <Width>2.5cm</Width>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+                <CanGrow>true</CanGrow>
+                <Left>0.11772cm</Left>
+                <Height>0.5cm</Height>
+                <Value>PLANEADO</Value>
+              </Textbox>
+            </ReportItems>
+            <Top>0.56481cm</Top>
+            <Grouping Name="list2_Details_Group">
+              <GroupExpressions>
+                <GroupExpression>=Fields!Medicamento.Value</GroupExpression>
+              </GroupExpressions>
+            </Grouping>
+          </List>
+          <Textbox Name="textbox12">
+            <Top>0.03836cm</Top>
+            <Width>1.25cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>1</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.15608cm</Left>
+            <Height>0.5cm</Height>
+            <Value>FECHA</Value>
+          </Textbox>
+          <Textbox Name="textbox13">
+            <Top>0.03836cm</Top>
+            <Width>4.00529cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <PaddingLeft>4pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Left>3cm</Left>
+            <Height>0.5cm</Height>
+            <Value>=Fields!fecha.Value</Value>
+          </Textbox>
+        </ReportItems>
+        <Top>1cm</Top>
+        <Width>19.55423cm</Width>
+        <Grouping Name="list1_Details_Group">
+          <GroupExpressions>
+            <GroupExpression>=Fields!fecha.Value</GroupExpression>
+          </GroupExpressions>
+        </Grouping>
+      </List>
+      <Textbox Name="textbox1">
+        <rd:DefaultName>textbox1</rd:DefaultName>
+        <Top>0.25cm</Top>
+        <Style>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.5cm</Height>
+        <Value>PLANEACION Y ADMINISTRACION DE MEDICAMENTOS</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>3.56481cm</Height>
+  </Body>
+  <Language>es-ES</Language>
+  <TopMargin>2.5cm</TopMargin>
+  <PageHeight>29.7cm</PageHeight>
+</Report>

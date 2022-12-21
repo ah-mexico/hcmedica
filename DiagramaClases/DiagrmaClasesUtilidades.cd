@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.Comunes.ObjetoSimple">
+    <Position X="7.75" Y="5" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>Util\Comunes.vb</FileName>
+      <HashCode>AAAAAIAAAAAAIAAAAAAAAAAEAAAAAAAABAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.Comunes.ObjetoAuxiliar">
+    <Position X="7.75" Y="7.5" Width="2.75" />
+    <TypeIdentifier>
+      <FileName>Util\Comunes.vb</FileName>
+      <HashCode>AAAAAAAAAgAAgAAAAAAAEAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.Comunes.FuncionesGenerales">
+    <Position X="4" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <FileName>Util\Comunes.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAKCAAAAAAAAAAAAAEAAAAAVAEAAAAAI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.Comunes.CeldaNumerica">
+    <Position X="1" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Util\Comunes.vb</FileName>
+      <HashCode>EAAgAAAABEAAAAAAIAAgCAQQAAAAAAQACAAAQAAQUAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.Comunes.NumericCell">
+    <Position X="12.25" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <FileName>Util\Comunes.vb</FileName>
+      <HashCode>AACAAAAAAAAABAAAAAAAAAAAAAAAEAAAAAAAAAAAEAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.Comunes.NumericEditingControl" BaseTypeListCollapsed="true">
+    <Position X="7.75" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <FileName>Util\Comunes.vb</FileName>
+      <HashCode>gAAACAIAAIAAAAAAAAQAAoAAAAAAQAIAAUAAAAgIBAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Orientation="Right" Position="0.1" Collapsed="true" />
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.DatosConexion.Conexion" BaseTypeListCollapsed="true">
+    <Position X="1" Y="5" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>Util\Conexion.vb</FileName>
+      <HashCode>CKQAAAAEACAAAAQAABAAAAAAABIAAAAAAQAAAoQAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.UI.Escritrio.MensajeError">
+    <Position X="1" Y="9.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>Util\MensajeError.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.Util.Num2Words">
+    <Position X="7.75" Y="9.75" Width="2.75" />
+    <TypeIdentifier>
+      <FileName>Util\Num2Words.vb</FileName>
+      <HashCode>AAAAAAAAAAAAQAAAAAgAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.Util.VistaHCBasica">
+    <Position X="16" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>Util\VistaHCBasica.vb</FileName>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAABEAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

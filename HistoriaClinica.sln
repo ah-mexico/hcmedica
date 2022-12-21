@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "HistoriaClinica", "HistoriaClinica.vbproj", "{3F4CFA94-253F-465F-8242-EC74F5BD6026}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		DebugLocal|Any CPU = DebugLocal|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F4CFA94-253F-465F-8242-EC74F5BD6026}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F4CFA94-253F-465F-8242-EC74F5BD6026}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F4CFA94-253F-465F-8242-EC74F5BD6026}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3F4CFA94-253F-465F-8242-EC74F5BD6026}.DebugLocal|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F4CFA94-253F-465F-8242-EC74F5BD6026}.DebugLocal|Any CPU.Build.0 = Debug|Any CPU
+		{3F4CFA94-253F-465F-8242-EC74F5BD6026}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F4CFA94-253F-465F-8242-EC74F5BD6026}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(AutomaticVersions) = postSolution
+		UpdateAssemblyVersion = True
+		UpdateAssemblyFileVersion = False
+		UpdateAssemblyInfoVersion = False
+		AssemblyVersionSettings = None.None.Increment.DateStamp
+		UpdatePackageVersion = False
+		AssemblyInfoVersionType = SettingsVersion
+		InheritWinAppVersionFrom = None
+	EndGlobalSection
+EndGlobal

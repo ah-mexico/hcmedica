@@ -1,0 +1,1230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="DummyDataSource">
+      <rd:DataSourceID>1fe3a98c-8d5e-4a33-946f-eae733c42899</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <InteractiveHeight>29.7cm</InteractiveHeight>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>21cm</InteractiveWidth>
+  <rd:GridSpacing>0.25cm</rd:GridSpacing>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <RightMargin>2.5cm</RightMargin>
+  <LeftMargin>0.5cm</LeftMargin>
+  <BottomMargin>0.5cm</BottomMargin>
+  <rd:ReportID>e2eb4e46-ebbc-49bd-b898-b795cb49b998</rd:ReportID>
+  <PageWidth>21cm</PageWidth>
+  <DataSets>
+    <DataSet Name="Enfermeria_Sophia_HistoriaClinica_Reportes_ControlCateterVascular">
+      <Fields>
+        <Field Name="Calibre">
+          <DataField>Calibre</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Cod_Historia">
+          <DataField>Cod_Historia</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Consecutivo">
+          <DataField>Consecutivo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Controlradio">
+          <DataField>Controlradio</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Desc_complicacion">
+          <DataField>Desc_complicacion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Desc_indicacion">
+          <DataField>Desc_indicacion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Desc_sitioinsercion">
+          <DataField>Desc_sitioinsercion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Desc_tecinsercion">
+          <DataField>Desc_tecinsercion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Desc_tipocateter">
+          <DataField>Desc_tipocateter</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Fecha">
+          <DataField>Fecha</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Hora_cateter">
+          <DataField>Hora_cateter</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Lateralidad">
+          <DataField>Lateralidad</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Localizacion">
+          <DataField>Localizacion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Luzcateter">
+          <DataField>Luzcateter</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Min_cateter">
+          <DataField>Min_cateter</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Numpuntuacion">
+          <DataField>Numpuntuacion</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Viainsercion">
+          <DataField>Viainsercion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CosecutivoSeg">
+          <DataField>CosecutivoSeg</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Desc_EstadoInsercion">
+          <DataField>Desc_EstadoInsercion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ElementosUsados">
+          <DataField>ElementosUsados</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Fecha_seguimiento">
+          <DataField>Fecha_seguimiento</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HoraSeguimiento">
+          <DataField>HoraSeguimiento</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="LoginSeguimiento">
+          <DataField>LoginSeguimiento</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MinSeguimiento">
+          <DataField>MinSeguimiento</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ObsSeguimiento">
+          <DataField>ObsSeguimiento</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Login">
+          <DataField>Login</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Desc_CausaRetiro">
+          <DataField>Desc_CausaRetiro</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DuracionH">
+          <DataField>DuracionH</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Fecha_Retiro">
+          <DataField>Fecha_Retiro</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HoraRetiro">
+          <DataField>HoraRetiro</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="LoginRetiro">
+          <DataField>LoginRetiro</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Min_Retiro">
+          <DataField>Min_Retiro</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DummyDataSource</DataSourceName>
+        <CommandText />
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>Enfermeria.Sophia.HistoriaClinica.Reportes</rd:DataSetName>
+        <rd:TableName>ControlCateterVascular</rd:TableName>
+        <rd:ObjectDataSourceType>Enfermeria.Sophia.HistoriaClinica.Reportes.ControlCateterVascular, Enfermeria, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Width>17.78836cm</Width>
+  <Body>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <ReportItems>
+      <Textbox Name="textbox36">
+        <rd:DefaultName>textbox36</rd:DefaultName>
+        <Width>17cm</Width>
+        <Style>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>1</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.25cm</Left>
+        <Height>0.64417cm</Height>
+        <Value>CONTROL DE CATETER VASCULAR</Value>
+      </Textbox>
+      <List Name="list1">
+        <Left>0.03836cm</Left>
+        <DataSetName>Enfermeria_Sophia_HistoriaClinica_Reportes_ControlCateterVascular</DataSetName>
+        <KeepTogether>true</KeepTogether>
+        <ReportItems>
+          <Textbox Name="textbox35">
+            <Top>0.99735cm</Top>
+            <Width>2cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>46</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>1.73545cm</Left>
+            <Height>0.39683cm</Height>
+            <Value>Luces Cateter</Value>
+          </Textbox>
+          <Textbox Name="textbox33">
+            <Top>9.11772cm</Top>
+            <Width>5.5cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>45</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2.39418cm</Left>
+            <Value>=First(Fields!LoginRetiro.Value)</Value>
+          </Textbox>
+          <Textbox Name="textbox34">
+            <Top>9.11772cm</Top>
+            <Width>1.75cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>44</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.14418cm</Left>
+            <Value>Funcionario</Value>
+          </Textbox>
+          <Textbox Name="textbox28">
+            <Top>8.51192cm</Top>
+            <Width>1.75cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>43</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.09127cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!Desc_CausaRetiro.Value)</Value>
+          </Textbox>
+          <Textbox Name="textbox29">
+            <Top>8.51192cm</Top>
+            <Width>1.75cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>42</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2.05026cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!Fecha_Retiro.Value)</Value>
+          </Textbox>
+          <Textbox Name="textbox30">
+            <Top>8.51192cm</Top>
+            <Width>1.75cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <TextAlign>Right</TextAlign>
+              <PaddingLeft>4pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>41</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>3.97089cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=Fields!HoraRetiro.Value</Value>
+          </Textbox>
+          <Textbox Name="textbox31">
+            <Top>8.51192cm</Top>
+            <Width>1.75cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <TextAlign>Right</TextAlign>
+              <PaddingLeft>4pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>40</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>6.02379cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=Fields!Min_Retiro.Value</Value>
+          </Textbox>
+          <Textbox Name="textbox32">
+            <Top>8.51192cm</Top>
+            <Width>1.75cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <TextAlign>Right</TextAlign>
+              <PaddingLeft>4pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>39</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>8.05026cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=Fields!DuracionH.Value</Value>
+          </Textbox>
+          <Textbox Name="textbox22">
+            <Top>7.96165cm</Top>
+            <Width>1.75cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>38</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>3.97089cm</Left>
+            <Height>0.48545cm</Height>
+            <Value>Hora</Value>
+          </Textbox>
+          <Textbox Name="textbox24">
+            <Top>7.96165cm</Top>
+            <Width>1.75cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>37</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>6.02381cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>Minuto</Value>
+          </Textbox>
+          <Textbox Name="textbox25">
+            <Top>7.96165cm</Top>
+            <Width>1.75cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>36</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>8.05026cm</Left>
+            <Height>0.48545cm</Height>
+            <Value>Duración</Value>
+          </Textbox>
+          <Textbox Name="textbox26">
+            <Top>7.96165cm</Top>
+            <Width>1.75cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>35</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>1.99735cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>Fecha</Value>
+          </Textbox>
+          <Textbox Name="textbox27">
+            <Top>7.96165cm</Top>
+            <Width>1.75cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>34</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.09127cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>Causa</Value>
+          </Textbox>
+          <List Name="list2">
+            <ZIndex>33</ZIndex>
+            <Left>0.03836cm</Left>
+            <DataSetName>Enfermeria_Sophia_HistoriaClinica_Reportes_ControlCateterVascular</DataSetName>
+            <ReportItems>
+              <Textbox Name="textbox37">
+                <Top>2.78836cm</Top>
+                <Width>2.69709cm</Width>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+                <ZIndex>16</ZIndex>
+                <CanGrow>true</CanGrow>
+                <Left>0.05952cm</Left>
+                <Height>0.5cm</Height>
+                <Value>Funcionario Seg</Value>
+              </Textbox>
+              <Textbox Name="textbox38">
+                <Top>2.78836cm</Top>
+                <Width>10.2619cm</Width>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+                <ZIndex>15</ZIndex>
+                <CanGrow>true</CanGrow>
+                <Left>3.21826cm</Left>
+                <Height>0.5cm</Height>
+                <Value>=First(Fields!LoginSeguimiento.Value)</Value>
+              </Textbox>
+              <Textbox Name="textbox21">
+                <Top>3.36772cm</Top>
+                <Width>2.69709cm</Width>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+                <ZIndex>14</ZIndex>
+                <CanGrow>true</CanGrow>
+                <Left>0.05292cm</Left>
+                <Value>Elementos Usados</Value>
+              </Textbox>
+              <Textbox Name="textbox23">
+                <Top>3.36772cm</Top>
+                <Width>13.7619cm</Width>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+                <ZIndex>13</ZIndex>
+                <CanGrow>true</CanGrow>
+                <Left>3.2381cm</Left>
+                <Value>=First(Fields!ElementosUsados.Value)</Value>
+              </Textbox>
+              <Textbox Name="textbox18">
+                <Top>2.27646cm</Top>
+                <Width>2.69709cm</Width>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+                <ZIndex>12</ZIndex>
+                <CanGrow>true</CanGrow>
+                <Left>0.05291cm</Left>
+                <Height>0.5cm</Height>
+                <Value>Funcionario</Value>
+              </Textbox>
+              <Textbox Name="textbox20">
+                <Top>2.27646cm</Top>
+                <Width>10.2619cm</Width>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+                <ZIndex>11</ZIndex>
+                <CanGrow>true</CanGrow>
+                <Left>3.2381cm</Left>
+                <Height>0.5cm</Height>
+                <Value>=First(Fields!Login.Value)</Value>
+              </Textbox>
+              <Textbox Name="textbox15">
+                <Top>1.76457cm</Top>
+                <Width>2.69709cm</Width>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+                <ZIndex>10</ZIndex>
+                <CanGrow>true</CanGrow>
+                <Left>0.05291cm</Left>
+                <Height>0.5cm</Height>
+                <Value>Observaciones</Value>
+              </Textbox>
+              <Textbox Name="textbox17">
+                <Top>1.76457cm</Top>
+                <Width>10.2619cm</Width>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+                <ZIndex>9</ZIndex>
+                <CanGrow>true</CanGrow>
+                <Left>3.2381cm</Left>
+                <Height>0.5cm</Height>
+                <Value>=First(Fields!ObsSeguimiento.Value)</Value>
+              </Textbox>
+              <Textbox Name="textbox4">
+                <Top>0.09921cm</Top>
+                <Width>2.13227cm</Width>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                  <FontWeight>700</FontWeight>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+                <ZIndex>8</ZIndex>
+                <CanGrow>true</CanGrow>
+                <Left>0.09127cm</Left>
+                <Height>0.50265cm</Height>
+                <Value>Seguimiento</Value>
+              </Textbox>
+              <Textbox Name="textbox5">
+                <Top>0.61111cm</Top>
+                <Width>1.74603cm</Width>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+                <ZIndex>7</ZIndex>
+                <CanGrow>true</CanGrow>
+                <Left>0.08267cm</Left>
+                <Height>0.5cm</Height>
+                <Value>Estado:</Value>
+              </Textbox>
+              <Textbox Name="textbox6">
+                <Top>1.17064cm</Top>
+                <Width>5.46164cm</Width>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+                <ZIndex>6</ZIndex>
+                <CanGrow>true</CanGrow>
+                <Left>0.06482cm</Left>
+                <Height>0.5cm</Height>
+                <Value>=First(Fields!Desc_EstadoInsercion.Value)</Value>
+              </Textbox>
+              <Textbox Name="textbox7">
+                <Top>0.63228cm</Top>
+                <Width>1cm</Width>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+                <ZIndex>5</ZIndex>
+                <CanGrow>true</CanGrow>
+                <Left>6.5cm</Left>
+                <Height>0.5cm</Height>
+                <Value>Fecha </Value>
+              </Textbox>
+              <Textbox Name="textbox8">
+                <Top>1.17064cm</Top>
+                <Width>1.74603cm</Width>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+                <ZIndex>4</ZIndex>
+                <CanGrow>true</CanGrow>
+                <Left>6.5cm</Left>
+                <Height>0.5cm</Height>
+                <Value>=First(Fields!Fecha_seguimiento.Value)</Value>
+              </Textbox>
+              <Textbox Name="textbox9">
+                <Top>0.63228cm</Top>
+                <Width>1cm</Width>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+                <ZIndex>3</ZIndex>
+                <CanGrow>true</CanGrow>
+                <Left>8.5cm</Left>
+                <Height>0.5cm</Height>
+                <Value>Hora</Value>
+              </Textbox>
+              <Textbox Name="textbox11">
+                <Top>1.17064cm</Top>
+                <Width>1.25cm</Width>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                  <TextAlign>Right</TextAlign>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+                <ZIndex>2</ZIndex>
+                <CanGrow>true</CanGrow>
+                <Left>8.5cm</Left>
+                <Height>0.5cm</Height>
+                <Value>=Fields!HoraSeguimiento.Value</Value>
+              </Textbox>
+              <Textbox Name="textbox12">
+                <Top>0.63228cm</Top>
+                <Width>1.5cm</Width>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+                <ZIndex>1</ZIndex>
+                <CanGrow>true</CanGrow>
+                <Left>10cm</Left>
+                <Height>0.5cm</Height>
+                <Value>Minutos </Value>
+              </Textbox>
+              <Textbox Name="textbox14">
+                <Top>1.17064cm</Top>
+                <Width>1.49603cm</Width>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                  <TextAlign>Right</TextAlign>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+                <CanGrow>true</CanGrow>
+                <Left>10.02645cm</Left>
+                <Height>0.5cm</Height>
+                <Value>=Fields!MinSeguimiento.Value</Value>
+              </Textbox>
+            </ReportItems>
+            <Top>3.52646cm</Top>
+            <Width>17.21164cm</Width>
+            <Grouping Name="list2_Details_Group">
+              <GroupExpressions>
+                <GroupExpression>=Fields!Consecutivo.Value</GroupExpression>
+                <GroupExpression>=Fields!CosecutivoSeg.Value</GroupExpression>
+              </GroupExpressions>
+            </Grouping>
+            <Height>3.87037cm</Height>
+          </List>
+          <Textbox Name="textbox19">
+            <Top>3cm</Top>
+            <Width>5.5cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>32</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2.25cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!Login.Value)</Value>
+          </Textbox>
+          <Textbox Name="textbox13">
+            <Top>3cm</Top>
+            <Width>1.75cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>31</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Height>0.50265cm</Height>
+            <Value>Funcionario</Value>
+          </Textbox>
+          <Textbox Name="textbox3">
+            <Top>2.10052cm</Top>
+            <Width>5.05291cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>30</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>12.19709cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!Desc_complicacion.Value)</Value>
+          </Textbox>
+          <Textbox Name="textbox10">
+            <Top>2.08597cm</Top>
+            <Width>2.5cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>29</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>9.5cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>Complicaciones :</Value>
+          </Textbox>
+          <Textbox Name="textbox2">
+            <Top>2.08596cm</Top>
+            <Width>6.75cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>28</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2.25cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!Desc_indicacion.Value)</Value>
+          </Textbox>
+          <Textbox Name="textbox1">
+            <Top>2.08596cm</Top>
+            <Width>2cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>27</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Height>0.50265cm</Height>
+            <Value>Indicaciones</Value>
+          </Textbox>
+          <Textbox Name="textbox240">
+            <Top>1.52116cm</Top>
+            <Width>1.75cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <PaddingLeft>4pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>26</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>14.11773cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!Controlradio.Value)</Value>
+          </Textbox>
+          <Textbox Name="textbox239">
+            <Top>1.53836cm</Top>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <PaddingLeft>4pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>25</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>15.98544cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!Localizacion.Value)</Value>
+          </Textbox>
+          <Textbox Name="textbox238">
+            <Top>1.52116cm</Top>
+            <Width>1.75cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>4pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>24</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Height>0.50265cm</Height>
+            <Value>=Fields!Calibre.Value</Value>
+          </Textbox>
+          <Textbox Name="textbox237">
+            <Top>1.52117cm</Top>
+            <Width>1.75cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <TextAlign>Right</TextAlign>
+              <PaddingLeft>4pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>23</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>1.93254cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=Fields!Luzcateter.Value</Value>
+          </Textbox>
+          <Textbox Name="textbox236">
+            <Top>1.52116cm</Top>
+            <Width>1.75cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <PaddingLeft>4pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>22</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>3.90608cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!Viainsercion.Value)</Value>
+          </Textbox>
+          <Textbox Name="textbox235">
+            <Top>1.52116cm</Top>
+            <Width>1.75cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <PaddingLeft>4pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>21</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>5.82671cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!Lateralidad.Value)</Value>
+          </Textbox>
+          <Textbox Name="textbox234">
+            <Top>1.52116cm</Top>
+            <Width>1.75cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <PaddingLeft>4pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>20</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>7.7209cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!Desc_sitioinsercion.Value)</Value>
+          </Textbox>
+          <Textbox Name="textbox233">
+            <Top>1.52116cm</Top>
+            <Width>1.75cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <PaddingLeft>4pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>19</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>9.90608cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=First(Fields!Desc_tecinsercion.Value)</Value>
+          </Textbox>
+          <Textbox Name="textbox232">
+            <Top>1.52116cm</Top>
+            <Width>1.75cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>4pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>18</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>12.11772cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=Fields!Numpuntuacion.Value</Value>
+          </Textbox>
+          <Textbox Name="textbox231">
+            <Top>0.99735cm</Top>
+            <Width>1.75cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>17</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>12.16799cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>Punciones</Value>
+          </Textbox>
+          <Textbox Name="textbox230">
+            <Top>1.00925cm</Top>
+            <Width>2.041cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>16</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>13.90345cm</Left>
+            <Height>0.5172cm</Height>
+            <Value>C. radiológico</Value>
+          </Textbox>
+          <Textbox Name="textbox229">
+            <Top>1.01455cm</Top>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>15</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>15.95635cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>Localización</Value>
+          </Textbox>
+          <Textbox Name="textbox228">
+            <Top>0.99735cm</Top>
+            <Width>2cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>14</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>3.75926cm</Left>
+            <Height>0.56481cm</Height>
+            <Value>Via inserción</Value>
+          </Textbox>
+          <Textbox Name="textbox227">
+            <Top>0.99735cm</Top>
+            <Width>1.75cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>13</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>5.77116cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>Lateralidad</Value>
+          </Textbox>
+          <Textbox Name="textbox226">
+            <Top>0.99735cm</Top>
+            <Width>2.17063cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>12</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>7.50662cm</Left>
+            <Height>0.54101cm</Height>
+            <Value>Sitio inserción</Value>
+          </Textbox>
+          <Textbox Name="textbox225">
+            <Top>0.99736cm</Top>
+            <Width>2.5cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>11</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>9.69444cm</Left>
+            <Height>0.56746cm</Height>
+            <Value>Técnica inserción</Value>
+          </Textbox>
+          <Textbox Name="textbox223">
+            <Top>0.99735cm</Top>
+            <Width>1.75cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>10</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Height>0.50265cm</Height>
+            <Value>Calibre</Value>
+          </Textbox>
+          <Textbox Name="textbox222">
+            <Top>0.51057cm</Top>
+            <Width>2.25cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <PaddingLeft>4pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>9</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2.75cm</Left>
+            <Height>0.5cm</Height>
+            <Value>=First(Fields!Desc_tipocateter.Value)</Value>
+          </Textbox>
+          <Textbox Name="textbox221">
+            <Top>0.51057cm</Top>
+            <Width>1cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>8</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>5.38227cm</Left>
+            <Height>0.5cm</Height>
+            <Value>Fecha </Value>
+          </Textbox>
+          <Textbox Name="textbox220">
+            <Top>0.51057cm</Top>
+            <Width>2.25cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <PaddingLeft>4pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>7</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>6.5cm</Left>
+            <Height>0.5cm</Height>
+            <Value>=First(Fields!Fecha.Value)</Value>
+          </Textbox>
+          <Textbox Name="textbox219">
+            <Top>0.51057cm</Top>
+            <Width>1cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>6</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>9cm</Left>
+            <Height>0.5cm</Height>
+            <Value>Hora :</Value>
+          </Textbox>
+          <Textbox Name="textbox218">
+            <Top>0.51057cm</Top>
+            <Width>1.25cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <PaddingLeft>4pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>5</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>10.25cm</Left>
+            <Height>0.5cm</Height>
+            <Value>=First(Fields!Hora_cateter.Value)</Value>
+          </Textbox>
+          <Textbox Name="textbox217">
+            <Top>0.51057cm</Top>
+            <Width>1.5cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>4</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>11.75cm</Left>
+            <Height>0.5cm</Height>
+            <Value>Minutos :</Value>
+          </Textbox>
+          <Textbox Name="textbox212">
+            <Top>0.51057cm</Top>
+            <Width>1.49603cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <TextAlign>Right</TextAlign>
+              <PaddingLeft>4pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>3</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>13.5cm</Left>
+            <Height>0.5cm</Height>
+            <Value>=Fields!Min_cateter.Value</Value>
+          </Textbox>
+          <Textbox Name="textbox211">
+            <rd:DefaultName>textbox211</rd:DefaultName>
+            <Top>0.51057cm</Top>
+            <Width>2.25cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>2</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Height>0.5cm</Height>
+            <Value>Tipo cateter :</Value>
+          </Textbox>
+          <Textbox Name="textbox209">
+            <rd:DefaultName>textbox209</rd:DefaultName>
+            <Top>0.01322cm</Top>
+            <Width>1.75cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>1</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Height>0.50265cm</Height>
+            <Value>Inserción</Value>
+          </Textbox>
+          <Textbox Name="textbox16">
+            <Top>7.46164cm</Top>
+            <Width>1.5cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Left>0.11772cm</Left>
+            <Height>0.5cm</Height>
+            <Value>Retiro</Value>
+          </Textbox>
+        </ReportItems>
+        <Top>0.67063cm</Top>
+        <Grouping Name="list1_Details_Group">
+          <GroupExpressions>
+            <GroupExpression>=Fields!Consecutivo.Value</GroupExpression>
+          </GroupExpressions>
+        </Grouping>
+      </List>
+    </ReportItems>
+    <Height>10.291cm</Height>
+  </Body>
+  <Language>es-ES</Language>
+  <TopMargin>0.5cm</TopMargin>
+  <PageHeight>29.7cm</PageHeight>
+</Report>

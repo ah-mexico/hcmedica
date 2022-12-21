@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.BL.BLBasicasGenerales">
+    <Position X="1" Y="15.25" Width="7.5" />
+    <TypeIdentifier>
+      <FileName>BL\BLBasicasGenerales.vb</FileName>
+      <NewMemberFileName>BL\BLBasicasLocales.vb</NewMemberFileName>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.BL.BLBasicasLocales">
+    <Position X="1" Y="18.75" Width="21.25" />
+    <TypeIdentifier>
+      <FileName>BL\BLBasicasLocales.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.BL.BLEgresos">
+    <Position X="1" Y="1.25" Width="26" />
+    <TypeIdentifier>
+      <FileName>BL\BLEgresos.vb</FileName>
+      <HashCode>AQAIgAAAIUAAQAAQAAYgAAAAAggAAAAAACAAQAAAkAo=</HashCode>
+    </TypeIdentifier>
+    <NestedTypes>
+      <Enum Name="HistoriaClinica.Sophia.HistoriaClinica.BL.BLEgresos.configuracionOpciones" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>BL\BLEgresos.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="HistoriaClinica.Sophia.HistoriaClinica.BL.BLEgresos.OpcionSalida" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>BL\BLEgresos.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="HistoriaClinica.Sophia.HistoriaClinica.BL.BLEgresos.CondicionesObligatorias" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>BL\BLEgresos.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.BL.BLHistoriaBasica">
+    <Position X="1" Y="8" Width="13.75" />
+    <TypeIdentifier>
+      <FileName>BL\BLHistoriaBasica.vb</FileName>
+      <HashCode>IKkwAgiAACAAIBAIBACAAEwAAEQEQAACAhAgIABJggA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.BL.BLNotasAclaratorias">
+    <Position X="1" Y="16.75" Width="9.75" />
+    <TypeIdentifier>
+      <FileName>BL\BLNotasAclaratorias.vb</FileName>
+      <HashCode>AAAAAAAAAAQABAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <NestedTypes>
+      <Struct Name="HistoriaClinica.Sophia.HistoriaClinica.BL.BLNotasAclaratorias.datosNotasAclaratoria" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>BL\BLNotasAclaratorias.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.BL.BLOrdenes">
+    <Position X="30" Y="8.75" Width="24.5" />
+    <TypeIdentifier>
+      <FileName>BL\BLOrdenes.vb</FileName>
+      <HashCode>wAACAACCjAUAABEQNEgCABBAEBQoBAIQGEoIIgBAEAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="HistoriaClinica.Sophia.HistoriaClinica.BL.BLOrdenes.Accion" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>BL\BLOrdenes.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="HistoriaClinica.Sophia.HistoriaClinica.BL.BLOrdenes.tiposProcedim" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>BL\BLOrdenes.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.BL.BLPlanManejo">
+    <Position X="29.75" Y="1" Width="41" />
+    <TypeIdentifier>
+      <FileName>BL\BLPlanManejo.vb</FileName>
+      <HashCode>gQwAIAAAgCEBAAgAAAACEAAAAAAFBQIQQFgBAAIBAEA=</HashCode>
+    </TypeIdentifier>
+    <NestedTypes>
+      <Enum Name="HistoriaClinica.Sophia.HistoriaClinica.BL.BLPlanManejo.Accion" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>BL\BLPlanManejo.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+  </Class>
+</ClassDiagram>

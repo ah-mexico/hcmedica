@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="HistoriaClinica.frmRepOrdenesMedicasXAdmision">
+    <Position X="38.5" Y="1" Width="7.75" />
+    <TypeIdentifier>
+      <FileName>Reportes\frmRepOrdenesMedicasXAdmision.vb</FileName>
+      <HashCode>AAAAEAAAAigAAAAAACCABAACAABAAAIAAAAAAARCAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.frmRepRecomendacionesConsultaHC">
+    <Position X="5.25" Y="7.5" Width="5" />
+    <TypeIdentifier>
+      <FileName>Reportes\frmRepRecomendacionesConsultaHC.vb</FileName>
+      <HashCode>AAAAgAAAACAAAAAAAAGAgAECAQBECAAAAAAAAAQAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.frmRepRemision">
+    <Position X="26.25" Y="15.25" Width="4.5" />
+    <TypeIdentifier>
+      <FileName>Reportes\frmRepRemision.vb</FileName>
+      <HashCode>AAAEAAAAACAAIAAACACAAAACAABEAAAAAEAAAAQAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.frmRepRemisionConsultaHC">
+    <Position X="5.25" Y="1.25" Width="4.5" />
+    <TypeIdentifier>
+      <FileName>Reportes\frmRepRemisionConsultaHC.vb</FileName>
+      <HashCode>AAAEAAAAACAAAAAAAACAQAECAAREAAAAAAAAAAQAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.frmRepSeccionesAdicionales">
+    <Position X="51.25" Y="1" Width="5" />
+    <TypeIdentifier>
+      <FileName>Reportes\frmRepSeccionesAdicionales.vb</FileName>
+      <HashCode>AAAAAAAAACAAAAABAgCIAAACAABEAAAAAAAAAARAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.frmRepTriage">
+    <Position X="25.75" Y="1" Width="5" />
+    <TypeIdentifier>
+      <FileName>Reportes\frmRepTriage.vb</FileName>
+      <HashCode>AAAAAAQAACAIAAAAAASAAAACAAAEAAAAAABAAACAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.frmRepTriageConsultaHC">
+    <Position X="14.75" Y="1.25" Width="5" />
+    <TypeIdentifier>
+      <FileName>Reportes\frmRepTriageConsultaHC.vb</FileName>
+      <HashCode>AAAAAAAAACAIAAAAAASAAAACAABEAAAAAAAAAASAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.frmRepFormulaProcedim">
+    <Position X="61" Y="0.75" Width="5.5" />
+    <TypeIdentifier>
+      <FileName>Reportes\frmRepFormulaProcedim.vb</FileName>
+      <HashCode>AAAAAAAAACBAAAQAQACAAIACAAQEAAAAAAQAAACCAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.frmRepFormuMedica">
+    <Position X="14.75" Y="7.75" Width="5.25" />
+    <TypeIdentifier>
+      <FileName>Reportes\frmRepFormuMedica.vb</FileName>
+      <HashCode>AQAAAAAABCAEAAAAAACEAIACAABEAAAAAAAAAASCAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.frmRepHistoriaClinica">
+    <Position X="51" Y="8" Width="5.5" />
+    <TypeIdentifier>
+      <FileName>Reportes\frmRepHistoriaClinica.vb</FileName>
+      <HashCode>AAAAAEAAACAAAAAAAQDBAAkCAABEAAAAAAAAIATCAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.frmRepOrdenMedica">
+    <Position X="25.75" Y="7.5" Width="5.25" />
+    <TypeIdentifier>
+      <FileName>Reportes\frmRepOrdenMedica.vb</FileName>
+      <HashCode>QAAAEAAARigAAAAAACCABIACAABAAAIAAAAAAARAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.frmRepPlanIncapacidad">
+    <Position X="14.75" Y="15.25" Width="5.25" />
+    <TypeIdentifier>
+      <FileName>Reportes\frmRepPlanIncapacidad.vb</FileName>
+      <HashCode>AAIAAAAAACAAAAAAAACAAAACAABEAAEAAEAAAEQAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.frmRepResumenHistoriaClinica">
+    <Position X="60.75" Y="8" Width="5.75" />
+    <TypeIdentifier>
+      <FileName>Reportes\frmRepResumenHistoriaClinica.vb</FileName>
+      <HashCode>AAAABAAAACAAAoAAAADAAAACAABEAAAAAAAAAATAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.frmRepRecomendacionEgreso">
+    <Position X="5" Y="15" Width="5.25" />
+    <TypeIdentifier>
+      <FileName>Reportes\frmRepRecomendacionEgreso.vb</FileName>
+      <HashCode>gAAAAAAAACAAQAAAAACAgAACAQBECAAAAEAAAAQAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.frmRepEvolucion">
+    <Position X="38.25" Y="8.25" Width="8.25" />
+    <TypeIdentifier>
+      <FileName>Reportes\frmRepEvolucion.vb</FileName>
+      <HashCode>AAAAIAAAACAAAAAAEADAAAACAABAAAAgAAAAAASAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

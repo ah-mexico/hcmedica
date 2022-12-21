@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="DummyDataSource">
+      <rd:DataSourceID>e5664c2c-49a4-4d21-8494-27b5231f18a0</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <InteractiveHeight>29.7cm</InteractiveHeight>
+  <ReportParameters>
+    <ReportParameter Name="Sucursal">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Sucursal</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="NroHistoria">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>NroHistoria</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Fecha">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Fecha</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Hora">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Hora</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="NroAdmision">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>NroAdmision</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Entidad">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Entidad</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Paciente">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Paciente</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Nombre">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Nombre</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Edad">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Edad</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Sexo">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Sexo</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Grupo">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Grupo</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="RH">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>RH</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="FechaImpresion">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>FechaImpresion</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Pais">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Pais</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Secuencia">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Secuancia</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>21cm</InteractiveWidth>
+  <rd:GridSpacing>0.064cm</rd:GridSpacing>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <LeftMargin>0.5cm</LeftMargin>
+  <PageHeader>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+    <ReportItems>
+      <Textbox Name="textbox10">
+        <rd:DefaultName>textbox10</rd:DefaultName>
+        <Top>1.6cm</Top>
+        <Width>9.5cm</Width>
+        <Style>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>25</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>5.45cm</Left>
+        <Height>0.5cm</Height>
+        <Value>REPORTE EVOLUCIÓN CUIDADOS PALIATIVOS</Value>
+      </Textbox>
+      <Textbox Name="textbox8">
+        <Visibility>
+          <Hidden>=iif(Parameters!Pais.Value = "PERU", false, true)</Hidden>
+        </Visibility>
+        <Top>1.1cm</Top>
+        <Width>4.20827cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>24</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>10.7cm</Left>
+        <Height>0.5cm</Height>
+        <Value>NÚMERO HISTORIA CLÍNICA:  </Value>
+      </Textbox>
+      <Textbox Name="textbox7">
+        <Visibility>
+          <Hidden>=iif(Parameters!Pais.Value = "PERU", false, true)</Hidden>
+        </Visibility>
+        <Top>1.1cm</Top>
+        <Width>9.5cm</Width>
+        <Style>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>23</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>1.2cm</Left>
+        <Height>0.5cm</Height>
+        <Value>="HISTORIA CLÍNICA NÚMERO  " &amp; Parameters!NroHistoria.Value</Value>
+      </Textbox>
+      <Textbox Name="textbox6">
+        <Visibility>
+          <Hidden>=iif(Parameters!Pais.Value = "PERU", false, true)</Hidden>
+        </Visibility>
+        <Top>1.1cm</Top>
+        <Width>3.5cm</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>22</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>14.9cm</Left>
+        <Height>0.5cm</Height>
+        <Value>=Parameters!Secuencia.Value</Value>
+      </Textbox>
+      <Textbox Name="textbox12">
+        <Top>3.1cm</Top>
+        <Width>2.38254cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>21</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>8.67909cm</Left>
+        <Height>0.5cm</Height>
+        <Value>=Parameters!Sexo.Value</Value>
+      </Textbox>
+      <Textbox Name="textbox14">
+        <Top>3.1cm</Top>
+        <Width>1.37407cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>20</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>7.18676cm</Left>
+        <Height>0.5cm</Height>
+        <Value>SEXO    :</Value>
+      </Textbox>
+      <Textbox Name="textbox16">
+        <Top>2.6cm</Top>
+        <Width>8.64763cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>19</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>3.14491cm</Left>
+        <Height>0.5cm</Height>
+        <Value>=Parameters!Nombre.Value</Value>
+      </Textbox>
+      <Textbox Name="textbox18">
+        <Top>2.6cm</Top>
+        <Width>1.98254cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>18</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>1.2349cm</Left>
+        <Height>0.5cm</Height>
+        <Value>PACIENTE   :</Value>
+      </Textbox>
+      <Textbox Name="textbox20">
+        <Top>3.1cm</Top>
+        <Width>3.5328cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>17</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>3.14491cm</Left>
+        <Height>0.5cm</Height>
+        <Value>=Parameters!NroAdmision.Value</Value>
+      </Textbox>
+      <Textbox Name="textbox22">
+        <Top>3.1cm</Top>
+        <Width>1.87672cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>16</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>1.2349cm</Left>
+        <Height>0.5cm</Height>
+        <Value>ADMISIÓN  :</Value>
+      </Textbox>
+      <Textbox Name="textbox24">
+        <Top>3.6cm</Top>
+        <Width>1.21799cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <PaddingLeft>4pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>15</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>18.0791cm</Left>
+        <Height>0.5cm</Height>
+        <Value>=Parameters!Hora.Value</Value>
+      </Textbox>
+      <Textbox Name="textbox41">
+        <Top>3.6cm</Top>
+        <Width>1.37671cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>14</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>16.65847cm</Left>
+        <Height>0.5cm</Height>
+        <Value>HORA  :</Value>
+      </Textbox>
+      <Textbox Name="textbox42">
+        <Top>3.1cm</Top>
+        <Width>3.63279cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>13</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>14.6449cm</Left>
+        <Height>0.5cm</Height>
+        <Value>=" " &amp; Parameters!Edad.Value</Value>
+      </Textbox>
+      <Textbox Name="textbox43">
+        <Top>3.1cm</Top>
+        <Width>2.74974cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>12</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>11.7449cm</Left>
+        <Height>0.5cm</Height>
+        <Value>EDAD                    :</Value>
+      </Textbox>
+      <Textbox Name="textbox44">
+        <Top>2.6cm</Top>
+        <Width>3.65925cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>11</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>14.6449cm</Left>
+        <Height>0.5cm</Height>
+        <Value>=Parameters!Paciente.Value</Value>
+      </Textbox>
+      <Textbox Name="textbox45">
+        <Top>2.6cm</Top>
+        <Width>2.80265cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>10</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>11.7449cm</Left>
+        <Height>0.5cm</Height>
+        <Value>IDENTIFICACIÓN :</Value>
+      </Textbox>
+      <Textbox Name="textbox46">
+        <Top>3.6cm</Top>
+        <Width>8.59418cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>9</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>3.14491cm</Left>
+        <Height>0.5cm</Height>
+        <Value>=Parameters!Entidad.Value</Value>
+      </Textbox>
+      <Textbox Name="textbox47">
+        <Top>3.6cm</Top>
+        <Width>1.90317cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>8</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>1.2349cm</Left>
+        <Height>0.5cm</Height>
+        <Value>ENTIDAD     :</Value>
+      </Textbox>
+      <Textbox Name="textbox48">
+        <Top>3.6cm</Top>
+        <Width>1.97196cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>7</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>14.632cm</Left>
+        <Height>0.5cm</Height>
+        <Value>=" " &amp; Parameters!Fecha.Value</Value>
+      </Textbox>
+      <Textbox Name="textbox49">
+        <Top>3.6cm</Top>
+        <Width>2.69683cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>6</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>11.7449cm</Left>
+        <Height>0.5cm</Height>
+        <Value>FECHA                  :</Value>
+      </Textbox>
+      <Line Name="lineEncabezado">
+        <Top>4.288cm</Top>
+        <Width>19.5cm</Width>
+        <Style>
+          <BorderColor>
+            <Default>DarkGray</Default>
+          </BorderColor>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <ZIndex>5</ZIndex>
+        <Left>0.45cm</Left>
+        <Height>0cm</Height>
+      </Line>
+      <Textbox Name="textbox51">
+        <Top>0.6cm</Top>
+        <Width>17.3cm</Width>
+        <Style>
+          <FontWeight>800</FontWeight>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>4</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>1.55cm</Left>
+        <Height>0.5cm</Height>
+        <Value>=Parameters!Sucursal.Value</Value>
+      </Textbox>
+      <Textbox Name="textbox4">
+        <Top>2.1cm</Top>
+        <Width>13.9cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>3</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>3.25cm</Left>
+        <Height>0.5cm</Height>
+        <Value>= "GENERADO:    " &amp; Parameters!FechaImpresion.Value</Value>
+      </Textbox>
+      <Textbox Name="Sucursal_1">
+        <rd:DefaultName>Sucursal_1</rd:DefaultName>
+        <Visibility>
+          <Hidden>=iif(Parameters!Pais.Value = "PERU",  true,false)</Hidden>
+        </Visibility>
+        <Top>1.1cm</Top>
+        <Width>18.8cm</Width>
+        <Style>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>2</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.8cm</Left>
+        <Height>0.5cm</Height>
+        <Value>="HISTORIA CLÍNICA NÚMERO  " &amp; Parameters!NroHistoria.Value</Value>
+      </Textbox>
+      <Textbox Name="textbox3">
+        <Width>1.9cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>1</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>16.44709cm</Left>
+        <Height>0.5cm</Height>
+        <Value>=Globals!PageNumber &amp; "  DE  " &amp; Globals!TotalPages</Value>
+      </Textbox>
+      <Textbox Name="textbox2">
+        <Width>1.5cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Left>14.9cm</Left>
+        <Height>0.5cm</Height>
+        <Value>PAGINA:</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>4.352cm</Height>
+    <PrintOnLastPage>true</PrintOnLastPage>
+  </PageHeader>
+  <BottomMargin>0.5cm</BottomMargin>
+  <rd:ReportID>40a10a1e-d0cf-4a79-b0ef-58260b8beb55</rd:ReportID>
+  <PageWidth>21.5cm</PageWidth>
+  <DataSets>
+    <DataSet Name="HistoriaClinica_Sophia_HistoriaClinica_Reportes_CuidadosPaliativos">
+      <Fields>
+        <Field Name="ano_adm">
+          <DataField>ano_adm</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="cod_pre_sgs">
+          <DataField>cod_pre_sgs</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="cod_sucur">
+          <DataField>cod_sucur</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Fecha">
+          <DataField>Fecha</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="id_Parametrica">
+          <DataField>id_Parametrica</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="id_Pregunta">
+          <DataField>id_Pregunta</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="IdRespuesta">
+          <DataField>IdRespuesta</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IdSeccion">
+          <DataField>IdSeccion</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="login">
+          <DataField>login</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="num_adm">
+          <DataField>num_adm</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Num_doc">
+          <DataField>Num_doc</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="oEncabezado">
+          <DataField>oEncabezado</DataField>
+          <rd:TypeName>HistoriaClinica.Sophia.HistoriaClinica.Reportes.HCEncabezado</rd:TypeName>
+        </Field>
+        <Field Name="Pregunta">
+          <DataField>Pregunta</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Pregunta_Campo">
+          <DataField>Pregunta_Campo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Respuesta">
+          <DataField>Respuesta</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Tabla_Movimiento">
+          <DataField>Tabla_Movimiento</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Texto">
+          <DataField>Texto</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="tip_admision">
+          <DataField>tip_admision</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="tip_doc">
+          <DataField>tip_doc</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="p2013">
+          <DataField>p2013</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Seccion">
+          <DataField>Seccion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DummyDataSource</DataSourceName>
+        <CommandText />
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>HistoriaClinica.Sophia.HistoriaClinica.Reportes</rd:DataSetName>
+        <rd:TableName>CuidadosPaliativos</rd:TableName>
+        <rd:ObjectDataSourceType>HistoriaClinica.Sophia.HistoriaClinica.Reportes.CuidadosPaliativos, HistoriaClinica, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Code />
+  <Width>20.4cm</Width>
+  <Body>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <ReportItems>
+      <List Name="listFecha">
+        <Left>1.528cm</Left>
+        <DataSetName>HistoriaClinica_Sophia_HistoriaClinica_Reportes_CuidadosPaliativos</DataSetName>
+        <ReportItems>
+          <Textbox Name="textbox5">
+            <Style>
+              <FontWeight>800</FontWeight>
+              <TextAlign>Right</TextAlign>
+            </Style>
+            <ZIndex>1</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.576cm</Left>
+            <Height>0.5cm</Height>
+            <Value>="Información Registrada por: " + Fields!login.Value + " el día " + Fields!Fecha.Value</Value>
+          </Textbox>
+          <List Name="listSeccion">
+            <DataSetName>HistoriaClinica_Sophia_HistoriaClinica_Reportes_CuidadosPaliativos</DataSetName>
+            <ReportItems>
+              <List Name="listPregunta">
+                <ZIndex>1</ZIndex>
+                <ReportItems>
+                  <Line Name="linePregunta">
+                    <RepeatWith>listRespuesta</RepeatWith>
+                    <Top>0.768cm</Top>
+                    <Width>16.704cm</Width>
+                    <Style>
+                      <BorderColor>
+                        <Default>DarkGray</Default>
+                      </BorderColor>
+                      <BorderStyle>
+                        <Default>Solid</Default>
+                      </BorderStyle>
+                    </Style>
+                    <ZIndex>2</ZIndex>
+                    <Left>0.512cm</Left>
+                  </Line>
+                  <List Name="listRespuesta">
+                    <ZIndex>1</ZIndex>
+                    <Left>8.576cm</Left>
+                    <ReportItems>
+                      <Textbox Name="Respuesta">
+                        <rd:DefaultName>Respuesta</rd:DefaultName>
+                        <Style>
+                          <FontSize>8pt</FontSize>
+                          <PaddingLeft>1pt</PaddingLeft>
+                          <PaddingRight>1pt</PaddingRight>
+                          <PaddingTop>1pt</PaddingTop>
+                          <PaddingBottom>1pt</PaddingBottom>
+                        </Style>
+                        <CanGrow>true</CanGrow>
+                        <Value>=Fields!Respuesta.Value</Value>
+                      </Textbox>
+                    </ReportItems>
+                    <Height>0.63492cm</Height>
+                  </List>
+                  <Textbox Name="Pregunta">
+                    <rd:DefaultName>Pregunta</rd:DefaultName>
+                    <Width>8.076cm</Width>
+                    <Style>
+                      <FontSize>8pt</FontSize>
+                      <PaddingLeft>1pt</PaddingLeft>
+                      <PaddingRight>1pt</PaddingRight>
+                      <PaddingTop>1pt</PaddingTop>
+                      <PaddingBottom>1pt</PaddingBottom>
+                    </Style>
+                    <CanGrow>true</CanGrow>
+                    <Left>0.5cm</Left>
+                    <Height>0.63492cm</Height>
+                    <Value>=Fields!Pregunta.Value</Value>
+                  </Textbox>
+                </ReportItems>
+                <Top>0.5cm</Top>
+                <Width>17.28cm</Width>
+                <Grouping Name="listRespuesta_Details_Group">
+                  <GroupExpressions>
+                    <GroupExpression>=Fields!id_Pregunta.Value</GroupExpression>
+                  </GroupExpressions>
+                </Grouping>
+              </List>
+              <Textbox Name="textbox1">
+                <Style>
+                  <FontWeight>800</FontWeight>
+                  <PaddingLeft>1pt</PaddingLeft>
+                  <PaddingRight>1pt</PaddingRight>
+                  <PaddingTop>1pt</PaddingTop>
+                  <PaddingBottom>1pt</PaddingBottom>
+                </Style>
+                <CanGrow>true</CanGrow>
+                <Height>0.5cm</Height>
+                <Value>=Fields!Seccion.Value</Value>
+              </Textbox>
+            </ReportItems>
+            <Top>0.5cm</Top>
+            <Width>17.3cm</Width>
+            <Grouping Name="listSeccion_Details_Group">
+              <GroupExpressions>
+                <GroupExpression>=Fields!IdSeccion.Value</GroupExpression>
+              </GroupExpressions>
+            </Grouping>
+          </List>
+        </ReportItems>
+        <Width>17.344cm</Width>
+        <Grouping Name="listFecha_Details_Group">
+          <GroupExpressions>
+            <GroupExpression>=Fields!Fecha.Value</GroupExpression>
+          </GroupExpressions>
+          <PageBreakAtEnd>true</PageBreakAtEnd>
+        </Grouping>
+      </List>
+    </ReportItems>
+    <Height>1.768cm</Height>
+  </Body>
+  <Language>en-US</Language>
+  <TopMargin>0.5cm</TopMargin>
+  <PageHeight>28cm</PageHeight>
+</Report>

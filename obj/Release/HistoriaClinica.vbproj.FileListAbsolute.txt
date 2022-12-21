@@ -1,0 +1,910 @@
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\bin\HistoriaClinica.exe.config
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\Interop.SHDocVw.dll
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.vbproj.ResolveComReference.cache
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.exe
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.xml
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\ResolveAssemblyReference.cache
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.ctlDatosPaciente.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.CtlEgresos.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.HCBasica.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.ctlPlanProcExternos.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.Sophia.HistoriaClinica.Buscador.frmBuscador.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.frmConsultaHC.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.frmHistoriaPrincipal.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.ListaEspera.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.Resources.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.frmReimpresionAdm.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.frmRepEvolucion.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.frmRepFormulaProcedim.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.frmRepFormuMedica.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.frmRepTriage.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.frmc_evolucion.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.frmc_JustificaExcepcionProc.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.Sophia.HistoriaClinica.Buscador.frmBuscadorEquiva.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.ctlDescripcionQuirurgica.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.ctlEvolucion.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.ctlOrdenesMedicas.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.CtlPlanFormuExterna.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.ctlPlanIncapacidad.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.ctlPlanRemision.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.ctlRecomEgreso.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.frmCancelaOrden.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.frmConsultaBeeblos.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.frmConsultaHCEnfermeriaAlejo.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.frmConsultaParaclinico.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.frmConsultaPorNombre.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.frmCorreccionEF_tmp.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.frmc_ConsultaMedico.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.frmc_ConsultaMedicoQx.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.frmc_JustificaExcepcion.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.frmc_TraeAlarmas.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.frmDispMedicamentos.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.frmNotasHC.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.frmOpcionesSalidaHC.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.frmReferencias.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.frmRepLiquidos.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.Frm_PantallaLiquidos.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.ListaEsperaError.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.frmRepDescripcionQX.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.frmRepExcepcion.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.FrmRepFomulaProcedimtPDF.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.frmRepHistoriaClinica.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.frmRepHistoriaClinicaEnfermeria.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.frmRepOrdenesMedicasXAdmision.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.frmRepOrdenMedica.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.frmRepParaclinico.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.frmRepPlanIncapacidad.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.frmRepRecomendacionEgreso.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.frmRepRecomendacionesConsultaHC.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.frmRepRemision.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.frmRepRemisionConsultaHC.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.frmRepResumenHistoriaClinica.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.frmRepSeccionesAdicionales.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\HistoriaClinica.frmRepTriageConsultaHC.resources
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\GenerateResource-ResGen.read.1.tlog
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\GenerateResource-ResGen.read.4.tlog
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\GenerateResource-ResGen.write.1.tlog
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\RdlCompile.cache
+D:\Proyectos\Chia\HCMedicayEnfermeria\HCMedica\branches\V2.1Proyectos\Aplicacion\src\obj\Release\RdlCompile.compiled
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\bin\HistoriaClinica.exe.config
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\Interop.SHDocVw.dll
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.vbproj.ResolveComReference.cache
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.exe
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.xml
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.XmlSerializers.dll
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\bin\ctlEvolucion.resx
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\bin\ctlEvolucion.Designer.vb
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\bin\ctlEvolucion.vb
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\bin\HistoriaClinica.exe
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\bin\HistoriaClinica.XmlSerializers.dll
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\bin\HistoriaClinica.xml
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\bin\Microsoft.ReportViewer.Common.dll
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\bin\Microsoft.ReportViewer.WinForms.dll
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\bin\System.Windows.Forms.DataVisualization.dll
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\bin\ADODB.dll
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\bin\Interop.SHDocVw.dll
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.ctlDatosPaciente.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.CtlEgresos.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.HCBasica.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.ctlPlanProcExternos.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.Sophia.HistoriaClinica.Buscador.frmBuscador.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmConsultaHC.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.ListaEspera.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.Resources.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmReimpresionAdm.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmRepEvolucion.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmRepFormulaProcedim.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmRepFormuMedica.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmRepTriage.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.ctlAspectosEmocionales.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.ctlComplejidadDerivacion.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.ctlCPAspectosSociales.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.ctlCPEnfermeria.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.ctlCPHerida.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.ctlCriterioIngreso.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.ctlCuidadoPaliativo.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.ctlEgresoCP.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.ctlHerramientaEvaluacion.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.ctlIngresoaPrograma.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.ctlInsercionCateter.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.ctlRetiroCateter.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.CtlReunionFamiliar.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.ctlSeguimientoCateter.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmConsultaBeeblos2.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmConsultaHCLaboratorio.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmCriteriosIngresoPaliativo.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmc_evolucion.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmc_Interconsulta.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmc_JustificaExcepcionProc.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.Sophia.HistoriaClinica.Buscador.frmBuscadorEquiva.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.ctlDescripcionQuirurgica.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.ctlEvolucion.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.ctlOrdenesMedicas.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.CtlPlanFormuExterna.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.ctlPlanIncapacidad.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.ctlPlanRemision.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.ctlRecomEgreso.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmCancelaOrden.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmConsultaBeeblos.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmConsultaHCEnfermeriaAlejo.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmConsultaParaclinico.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmConsultaPorNombre.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmCorreccionEF_tmp.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmc_ConsultaMedico.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmc_ConsultaMedicoQx.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmc_JustificaExcepcion.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmc_RecomFarmaco.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmc_TraeAlarmas.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmDispMedicamentos.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmHistoriaPrincipal.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmNotasHC.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmOpcionesSalidaHC.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmReferencias.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmRepLiquidos.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.Frm_PantallaLiquidos.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frm_SISPRO.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.Graficas_Escalas.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.ListaEsperaError.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmRepCondolencias.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmRepCuidadosPaliativos.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmRepOrdenPatologia.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmOrdenPatologia.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmRepDescripcionQX.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmRepExcepcion.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.FrmRepFomulaProcedimtPDF.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmRepHistoriaClinica.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmRepHistoriaClinicaEnfermeria.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmRepOrdenesMedicasXAdmision.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmRepOrdenMedica.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmRepParaclinico.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmRepPlanIncapacidad.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmRepRecomendacionEgreso.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmRepRecomendacionesConsultaHC.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmRepRemision.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmRepRemisionConsultaHC.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmRepResumenHistoriaClinica.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmRepSeccionesAdicionales.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmRepSegDolor.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.frmRepTriageConsultaHC.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.RptPruebaHC.resources
+C:\Users\cdquiroga\Documents\Visual Studio 2015\HCL2005\HC2015\src\obj\Release\HistoriaClinica.vbproj.GenerateResource.Cache
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\HistoriaClinica.exe.config
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\Interop.SHDocVw.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.vbproj.ResolveComReference.cache
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.exe
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.xml
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.XmlSerializers.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\ctlEvolucion.resx
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\ctlEvolucion.Designer.vb
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\ctlEvolucion.vb
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\HistoriaClinica.exe
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\HistoriaClinica.XmlSerializers.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\HistoriaClinica.xml
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\Microsoft.ReportViewer.Common.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\Microsoft.ReportViewer.DataVisualization.DLL
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\Microsoft.ReportViewer.WebForms.DLL
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\Microsoft.ReportViewer.WinForms.DLL
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\Microsoft.SqlServer.Types.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\de\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\es\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\it\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\de\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\es\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\fr\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\it\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\ja\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\ko\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\pt\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\ru\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\Interop.SHDocVw.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.ctlDatosPaciente.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.CtlEgresos.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.HCBasica.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.ctlPlanProcExternos.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.Sophia.HistoriaClinica.Buscador.frmBuscador.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmConsultaHC.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.ListaEspera.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.Resources.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.Form1.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmReimpresionAdm.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmRepEvolucion.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmRepFormulaProcedim.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmRepFormuMedica.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmRepTriage.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.ctlAspectosEmocionales.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.ctlComplejidadDerivacion.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.ctlCPAspectosSociales.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.ctlCPEnfermeria.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.ctlCPHerida.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.ctlCriterioIngreso.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.ctlCuidadoPaliativo.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.ctlEgresoCP.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.ctlHerramientaEvaluacion.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.ctlIngresoaPrograma.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.ctlInsercionCateter.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.ctlRetiroCateter.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.CtlReunionFamiliar.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.ctlSeguimientoCateter.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmConsultaBeeblos2.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmConsultaHCLaboratorio.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmCriteriosIngresoPaliativo.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmc_evolucion.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmc_Interconsulta.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmc_JustificaExcepcionProc.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.Sophia.HistoriaClinica.Buscador.frmBuscadorEquiva.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.ctlDescripcionQuirurgica.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.ctlEvolucion.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.ctlOrdenesMedicas.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.CtlPlanFormuExterna.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.ctlPlanIncapacidad.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.ctlPlanRemision.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.ctlRecomEgreso.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmCancelaOrden.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmConsultaBeeblos.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmConsultaHCEnfermeriaAlejo.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmConsultaParaclinico.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmConsultaPorNombre.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmCorreccionEF_tmp.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmc_ConsultaMedico.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmc_ConsultaMedicoQx.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmc_JustificaExcepcion.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmc_RecomFarmaco.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmc_TraeAlarmas.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmDispMedicamentos.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmHistoriaPrincipal.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmNotasHC.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmOpcionesSalidaHC.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmReferencias.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmRepLiquidos.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.Frm_PantallaLiquidos.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frm_SISPRO.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.Graficas_Escalas.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.ListaEsperaError.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmRepCondolencias.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmRepCuidadosPaliativos.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmRepOrdenPatologia.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmOrdenPatologia.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmRepDescripcionQX.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmRepExcepcion.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.FrmRepFomulaProcedimtPDF.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmRepHistoriaClinica.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmRepHistoriaClinicaEnfermeria.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmRepOrdenesMedicasXAdmision.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmRepOrdenMedica.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmRepParaclinico.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmRepPlanIncapacidad.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmRepRecomendacionEgreso.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmRepRecomendacionesConsultaHC.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmRepRemision.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmRepRemisionConsultaHC.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmRepResumenHistoriaClinica.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmRepSeccionesAdicionales.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmRepSegDolor.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.frmRepTriageConsultaHC.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.RptPruebaHC.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.vbproj.GenerateResource.Cache
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\RdlCompile.cache
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\RdlCompile.compiled
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\HistoriaClinica.exe.manifest
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\bin\HistoriaClinica.application
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.exe.manifest
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.application
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\src\obj\Release\HistoriaClinica.vbprojResolveAssemblyReference.cache
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\HistoriaClinica.exe.config
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\Interop.SHDocVw.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.vbproj.ResolveComReference.cache
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.exe
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.xml
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.XmlSerializers.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\ctlEvolucion.resx
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\ctlEvolucion.Designer.vb
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\ctlEvolucion.vb
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\HistoriaClinica.exe.manifest
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\HistoriaClinica.application
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\HistoriaClinica.exe
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\HistoriaClinica.XmlSerializers.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\HistoriaClinica.xml
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\Microsoft.ReportViewer.Common.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\Microsoft.ReportViewer.DataVisualization.DLL
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\Microsoft.ReportViewer.WebForms.DLL
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\Microsoft.ReportViewer.WinForms.DLL
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\Microsoft.SqlServer.Types.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\de\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\es\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\it\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\de\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\es\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\fr\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\it\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\ja\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\ko\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\pt\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\ru\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\Interop.SHDocVw.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.ctlDatosPaciente.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.CtlEgresos.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.HCBasica.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.ctlPlanProcExternos.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.Sophia.HistoriaClinica.Buscador.frmBuscador.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmConsultaHC.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.ListaEspera.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.Resources.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.Form1.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmReimpresionAdm.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmRepEvolucion.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmRepFormulaProcedim.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmRepFormuMedica.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmRepTriage.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.ctlAspectosEmocionales.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.ctlComplejidadDerivacion.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.ctlCPAspectosSociales.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.ctlCPEnfermeria.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.ctlCPHerida.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.ctlCriterioIngreso.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.ctlCuidadoPaliativo.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.ctlEgresoCP.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.ctlHerramientaEvaluacion.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.ctlIngresoaPrograma.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.ctlInsercionCateter.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.ctlRetiroCateter.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.CtlReunionFamiliar.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.ctlSeguimientoCateter.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmConsultaBeeblos2.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmConsultaHCLaboratorio.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmCriteriosIngresoPaliativo.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmc_evolucion.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmc_Interconsulta.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmc_JustificaExcepcionProc.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.Sophia.HistoriaClinica.Buscador.frmBuscadorEquiva.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.ctlDescripcionQuirurgica.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.ctlEvolucion.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.ctlOrdenesMedicas.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.CtlPlanFormuExterna.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.ctlPlanIncapacidad.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.ctlPlanRemision.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.ctlRecomEgreso.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmCancelaOrden.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmConsultaBeeblos.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmConsultaHCEnfermeriaAlejo.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmConsultaParaclinico.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmConsultaPorNombre.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmCorreccionEF_tmp.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmc_ConsultaMedico.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmc_ConsultaMedicoQx.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmc_JustificaExcepcion.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmc_RecomFarmaco.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmc_TraeAlarmas.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmDispMedicamentos.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmHistoriaPrincipal.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmNotasHC.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmOpcionesSalidaHC.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmReferencias.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmRepLiquidos.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.Frm_PantallaLiquidos.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frm_SISPRO.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.Graficas_Escalas.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.ListaEsperaError.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmRepCondolencias.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmRepCuidadosPaliativos.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmRepOrdenPatologia.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmOrdenPatologia.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmRepDescripcionQX.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmRepExcepcion.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.FrmRepFomulaProcedimtPDF.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmRepHistoriaClinica.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmRepHistoriaClinicaEnfermeria.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmRepOrdenesMedicasXAdmision.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmRepOrdenMedica.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmRepParaclinico.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmRepPlanIncapacidad.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmRepRecomendacionEgreso.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmRepRecomendacionesConsultaHC.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmRepRemision.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmRepRemisionConsultaHC.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmRepResumenHistoriaClinica.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmRepSeccionesAdicionales.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmRepSegDolor.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmRepTriageConsultaHC.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.vbproj.GenerateResource.Cache
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\RdlCompile.cache
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\RdlCompile.compiled
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.exe.manifest
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.application
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.RptHC.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.ctlGestionCateteres.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmAgregarSeguimiento.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmOperacionesCateter.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\Microsoft.ReportViewer.Design.DLL
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\Microsoft.ReportViewer.WebDesign.DLL
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\EnvDTE.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\EnvDTE80.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\stdole.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\Microsoft.VisualStudio.VSHelp.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\Microsoft.VisualStudio.ComponentModelHost.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\Microsoft.VisualStudio.TemplateWizardInterface.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\VSLangProj.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\VSLangProj80.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\Microsoft.VisualStudio.GraphModel.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\Microsoft.MSXML.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\VSLangProj2.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\Microsoft.VisualStudio.TemplateWizardInterface.xml
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\de\Microsoft.ReportViewer.Design.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\es\Microsoft.ReportViewer.Design.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\it\Microsoft.ReportViewer.Design.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\de\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\es\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\it\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\bin\es\Microsoft.VisualStudio.GraphModel.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmConsultaResultadosLab.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.frmVisualizarPdf.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Dev\src\obj\Release\HistoriaClinica.vbprojResolveAssemblyReference.cache
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\HistoriaClinica.exe.config
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\Interop.SHDocVw.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.vbproj.ResolveComReference.cache
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.exe
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.xml
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.XmlSerializers.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.vbprojResolveAssemblyReference.cache
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.ctlDatosPaciente.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.CtlEgresos.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.ctlGestionCateteres.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.HCBasica.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.ctlPlanProcExternos.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmAgregarSeguimiento.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.Sophia.HistoriaClinica.Buscador.frmBuscador.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmConsultaHC.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmConsultaResultadosLab.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmOperacionesCateter.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmVisualizarPdf.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.ListaEspera.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.Resources.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.Form1.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmReimpresionAdm.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmRepEvolucion.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmRepFormulaProcedim.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmRepFormuMedica.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmRepTriage.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.ctlAspectosEmocionales.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.ctlComplejidadDerivacion.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.ctlCPAspectosSociales.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.ctlCPEnfermeria.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.ctlCPHerida.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.ctlCriterioIngreso.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.ctlCuidadoPaliativo.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.ctlEgresoCP.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.ctlHerramientaEvaluacion.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.ctlIngresoaPrograma.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.ctlInsercionCateter.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.ctlRetiroCateter.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.CtlReunionFamiliar.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.ctlSeguimientoCateter.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmConsultaBeeblos2.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmConsultaHCLaboratorio.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmCriteriosIngresoPaliativo.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmc_evolucion.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmc_Interconsulta.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmc_JustificaExcepcionProc.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.Sophia.HistoriaClinica.Buscador.frmBuscadorEquiva.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.ctlDescripcionQuirurgica.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.ctlEvolucion.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.ctlOrdenesMedicas.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.CtlPlanFormuExterna.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.ctlPlanIncapacidad.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.ctlPlanRemision.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.ctlRecomEgreso.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmCancelaOrden.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmConsultaBeeblos.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmConsultaHCEnfermeriaAlejo.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmConsultaParaclinico.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmConsultaPorNombre.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmCorreccionEF_tmp.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmc_ConsultaMedico.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmc_ConsultaMedicoQx.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmc_JustificaExcepcion.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmc_RecomFarmaco.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmc_TraeAlarmas.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmDispMedicamentos.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmHistoriaPrincipal.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmNotasHC.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmOpcionesSalidaHC.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmReferencias.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmRepLiquidos.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.Frm_PantallaLiquidos.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frm_SISPRO.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.Graficas_Escalas.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.ListaEsperaError.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmRepCondolencias.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmRepCuidadosPaliativos.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmRepOrdenPatologia.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmOrdenPatologia.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmRepDescripcionQX.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmRepExcepcion.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.FrmRepFomulaProcedimtPDF.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmRepHistoriaClinica.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmRepHistoriaClinicaEnfermeria.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmRepOrdenesMedicasXAdmision.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmRepOrdenMedica.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmRepParaclinico.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmRepPlanIncapacidad.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmRepRecomendacionEgreso.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmRepRecomendacionesConsultaHC.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmRepRemision.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmRepRemisionConsultaHC.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmRepResumenHistoriaClinica.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmRepSeccionesAdicionales.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmRepSegDolor.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.frmRepTriageConsultaHC.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.RptHC.resources
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.vbproj.GenerateResource.Cache
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\RdlCompile.cache
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\RdlCompile.compiled
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\ctlEvolucion.resx
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\ctlEvolucion.Designer.vb
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\ctlEvolucion.vb
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\HistoriaClinica.exe.manifest
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\HistoriaClinica.application
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\HistoriaClinica.exe
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\HistoriaClinica.XmlSerializers.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\HistoriaClinica.xml
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\Microsoft.ReportViewer.Common.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\Microsoft.ReportViewer.DataVisualization.DLL
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\Microsoft.ReportViewer.Design.DLL
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\Microsoft.ReportViewer.WebDesign.DLL
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\Microsoft.ReportViewer.WebForms.DLL
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\Microsoft.ReportViewer.WinForms.DLL
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\Microsoft.SqlServer.Types.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\EnvDTE.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\EnvDTE80.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\stdole.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\Microsoft.VisualStudio.VSHelp.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\Microsoft.VisualStudio.ComponentModelHost.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\Microsoft.VisualStudio.TemplateWizardInterface.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\VSLangProj.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\VSLangProj80.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\Microsoft.VisualStudio.GraphModel.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\Microsoft.MSXML.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\VSLangProj2.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\Microsoft.VisualStudio.TemplateWizardInterface.xml
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\de\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\es\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\it\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\de\Microsoft.ReportViewer.Design.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\es\Microsoft.ReportViewer.Design.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\it\Microsoft.ReportViewer.Design.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\de\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\es\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\it\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\de\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\es\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\fr\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\it\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\ja\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\ko\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\pt\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\ru\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\es\Microsoft.VisualStudio.GraphModel.resources.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\bin\Interop.SHDocVw.dll
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.exe.manifest
+D:\Desarrollo\Repositorio\SFW-HCMed2015\HC2015\Main\src\obj\Release\HistoriaClinica.application
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\ctlEvolucion.resx
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\ctlEvolucion.Designer.vb
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\ctlEvolucion.vb
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\HistoriaClinica.exe.config
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\HistoriaClinica.exe.manifest
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\HistoriaClinica.application
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\HistoriaClinica.exe
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\HistoriaClinica.XmlSerializers.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\HistoriaClinica.xml
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\Microsoft.ReportViewer.Common.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\Microsoft.ReportViewer.DataVisualization.DLL
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\Microsoft.ReportViewer.Design.DLL
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\Microsoft.ReportViewer.WebDesign.DLL
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\Microsoft.ReportViewer.WebForms.DLL
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\Microsoft.ReportViewer.WinForms.DLL
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\Microsoft.SqlServer.Types.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\Newtonsoft.Json.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\EnvDTE.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\Microsoft.VisualStudio.Shell.Interop.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\EnvDTE80.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\stdole.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\Microsoft.VisualStudio.OLE.Interop.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\Microsoft.MSXML.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\Newtonsoft.Json.xml
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\de\Microsoft.ReportViewer.Common.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\es\Microsoft.ReportViewer.Common.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\it\Microsoft.ReportViewer.Common.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\de\Microsoft.ReportViewer.Design.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\es\Microsoft.ReportViewer.Design.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\it\Microsoft.ReportViewer.Design.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\de\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\es\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\it\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\de\Microsoft.ReportViewer.WebForms.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\es\Microsoft.ReportViewer.WebForms.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\fr\Microsoft.ReportViewer.WebForms.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\it\Microsoft.ReportViewer.WebForms.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\ja\Microsoft.ReportViewer.WebForms.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\ko\Microsoft.ReportViewer.WebForms.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\pt\Microsoft.ReportViewer.WebForms.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\ru\Microsoft.ReportViewer.WebForms.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\bin\Interop.SHDocVw.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.vbprojAssemblyReference.cache
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\Interop.SHDocVw.dll
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.vbproj.ResolveComReference.cache
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.ctlConcilMedicamentos.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.ctlDatosPaciente.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.ctlDiagnosticos.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.CtlEgresos.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.ctlEscalasVarias.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.ctlGestionCateteres.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.HCBasica.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.ctlParticularidadesProc.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.ctlPlanProcExternos.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmAgregarSeguimiento.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.Sophia.HistoriaClinica.Buscador.frmBuscador.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmConsultaHC.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.FrmConsultaHCAvicena.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmConsultaResultadosLab.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmc_LiquidosCantidades.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmOperacionesCateter.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmVisualizarPdf.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frm_360Layout.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frm_ConsultaLiquidos.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frm_DetCantidadLiquido.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.Frm_EscalasVarias.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.Frm_IdenticadoresRiesgo.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.Frm_IdenticadoresRiesgoHistorico.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frm_Justificacion.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.ListaEspera.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.Resources.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.Form1.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmReimpresionAdm.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmRepEvolucion.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmRepFormulaProcedim.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmRepFormuMedica.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmRepTriage.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.RptHC_Enf_Med.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.ctlAspectosEmocionales.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.ctlComplejidadDerivacion.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.ctlCPAspectosSociales.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.ctlCPEnfermeria.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.ctlCPHerida.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.ctlCriterioIngreso.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.ctlCuidadoPaliativo.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.ctlEgresoCP.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.ctlHerramientaEvaluacion.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.ctlIngresoaPrograma.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.ctlInsercionCateter.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.ctlRetiroCateter.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.CtlReunionFamiliar.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.ctlSeguimientoCateter.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmConsultaBeeblos2.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmConsultaHCLaboratorio.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmCriteriosIngresoPaliativo.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmc_evolucion.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmc_Interconsulta.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmc_JustificaExcepcionProc.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.Sophia.HistoriaClinica.Buscador.frmBuscadorEquiva.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.ctlDescripcionQuirurgica.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.ctlEvolucion.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.ctlOrdenesMedicas.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.CtlPlanFormuExterna.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.ctlPlanIncapacidad.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.ctlPlanRemision.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.ctlRecomEgreso.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmCancelaOrden.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmConsultaBeeblos.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmConsultaHCEnfermeriaAlejo.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmConsultaParaclinico.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmConsultaPorNombre.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmCorreccionEF_tmp.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmc_ConsultaMedico.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmc_ConsultaMedicoQx.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmc_JustificaExcepcion.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmc_RecomFarmaco.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmc_TraeAlarmas.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmDispMedicamentos.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmHistoriaPrincipal.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmNotasHC.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmOpcionesSalidaHC.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmReferencias.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmRepLiquidos.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.Frm_PantallaLiquidos.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frm_SISPRO.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.Graficas_Escalas.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.ListaEsperaError.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmRepCondolencias.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmRepCuidadosPaliativos.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmRepOrdenPatologia.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmOrdenPatologia.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmRepDescripcionQX.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmRepExcepcion.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.FrmRepFomulaProcedimtPDF.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmRepHistoriaClinica.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmRepHistoriaClinicaEnfermeria.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmRepOrdenesMedicasXAdmision.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmRepOrdenMedica.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmRepParaclinico.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmRepPlanIncapacidad.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmRepRecomendacionEgreso.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmRepRecomendacionesConsultaHC.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmRepRemision.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmRepRemisionConsultaHC.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmRepResumenHistoriaClinica.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmRepSeccionesAdicionales.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmRepSegDolor.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.frmRepTriageConsultaHC.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.RptHC.resources
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.vbproj.GenerateResource.cache
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.vbproj.CoreCompileInputs.cache
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.exe.manifest
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.application
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.vbproj.CopyComplete
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.exe
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.xml
+D:\TeamDevOps\Indra-IncapacidadesRemisiones\obj\Release\HistoriaClinica.XmlSerializers.dll

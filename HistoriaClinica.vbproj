@@ -1,0 +1,2089 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3F4CFA94-253F-465F-8242-EC74F5BD6026}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>HistoriaClinica</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>HistoriaClinica</RootNamespace>
+    <StartupObject>HistoriaClinica.My.MyApplication</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>WindowsForms</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <ShouldCreateLogs>True</ShouldCreateLogs>
+    <AdvancedSettingsExpanded>False</AdvancedSettingsExpanded>
+    <UpdateAssemblyVersion>True</UpdateAssemblyVersion>
+    <UpdateAssemblyFileVersion>False</UpdateAssemblyFileVersion>
+    <UpdateAssemblyInfoVersion>False</UpdateAssemblyInfoVersion>
+    <AssemblyVersionSettings>None.None.Increment.DateStamp</AssemblyVersionSettings>
+    <UpdatePackageVersion>False</UpdatePackageVersion>
+    <AssemblyInfoVersionType>SettingsVersion</AssemblyInfoVersionType>
+    <InheritWinAppVersionFrom>None</InheritWinAppVersionFrom>
+    <PublishUrl>\\192.168.117.109\compartido\sophia\HC\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>\\192.168.117.109\compartido\sophia\HC\</UpdateUrl>
+    <SupportUrl>http://sophiapreprod:81/capacitacionsophia</SupportUrl>
+    <ProductName>Historia Clínica Médica</ProductName>
+    <SuiteName>Sophia</SuiteName>
+    <MinimumRequiredVersion>5.0.5.0</MinimumRequiredVersion>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>6.4.1.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>HistoriaClinica.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>HistoriaClinica.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032,42353,42354,42355</NoWarn>
+    <DebugType>none</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>961AE4B2622097AA2E7983049A77C1FDC434F1B1</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="Interop.BeeObjectsAPI, Version=26.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Interop.gpm_crypto, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Archivos de programa\Organizacion Sanitas\Sophia\Interop.gpm_crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.MSXML2">
+      <HintPath>..\dll\dll\Interop.MSXML2.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="itextsharp, Version=4.0.4.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportViewer.2015.12.0.2.2403\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportViewer.2015.12.0.2.2403\lib\net40\Microsoft.ReportViewer.DataVisualization.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportViewer.2015.12.0.2.2403\lib\net40\Microsoft.ReportViewer.Design.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportViewer.2015.12.0.2.2403\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebDesign, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportViewer.2015.12.0.2.2403\lib\net40\Microsoft.ReportViewer.WebDesign.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportViewer.2015.12.0.2.2403\lib\net40\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportViewer.2015.12.0.2.2403\lib\net40\Microsoft.ReportViewer.WinForms.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportViewer.2015.12.0.2.2403\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.VisualBasic.PowerPacks.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RestSharp, Version=104.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="BL\BLBasicasGenerales.vb" />
+    <Compile Include="BL\BLConciliacionMedicamentos.vb" />
+    <Compile Include="BL\BLFactoresRiesgo.vb" />
+    <Compile Include="BL\BLParticularidadesProc.vb" />
+    <Compile Include="BL\BLRptHC_Enf_Med.vb" />
+    <Compile Include="BL\BLSignosVitales.vb" />
+    <Compile Include="BL\BLEscalas.vb" />
+    <Compile Include="BL\BLDiagnostico.vb" />
+    <Compile Include="BL\BLEvolucion.vb" />
+    <Compile Include="BL\BLFechas.vb" />
+    <Compile Include="BL\BLHistoriaBasica.vb" />
+    <Compile Include="BL\BLMonitoreoHemoLuis.vb" />
+    <Compile Include="BL\BLNotasAclaratorias.vb" />
+    <Compile Include="BL\BLNotasEnfermeria.vb" />
+    <Compile Include="BL\BLOrdenes.vb" />
+    <Compile Include="BL\BLPlaneacion.vb" />
+    <Compile Include="BL\BLPlanManejo.vb" />
+    <Compile Include="BL\BLPlasmaferesisLuis.vb" />
+    <Compile Include="BL\BLReunionFamiliar.vb" />
+    <Compile Include="BL\BLValoracioneIngreso.vb" />
+    <Compile Include="ctlAspectosEmocionales.Designer.vb">
+      <DependentUpon>ctlAspectosEmocionales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctlAspectosEmocionales.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctlComplejidadDerivacion.Designer.vb">
+      <DependentUpon>ctlComplejidadDerivacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctlComplejidadDerivacion.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctlConcilMedicamentos.Designer.vb">
+      <DependentUpon>ctlConcilMedicamentos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctlConcilMedicamentos.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctlCPAspectosSociales.Designer.vb">
+      <DependentUpon>ctlCPAspectosSociales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctlCPAspectosSociales.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctlCPEnfermeria.designer.vb">
+      <DependentUpon>ctlCPEnfermeria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctlCPEnfermeria.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctlCPHerida.designer.vb">
+      <DependentUpon>ctlCPHerida.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctlCPHerida.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctlCriterioIngreso.Designer.vb">
+      <DependentUpon>ctlCriterioIngreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctlCriterioIngreso.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctlCuidadoPaliativo.Designer.vb">
+      <DependentUpon>ctlCuidadoPaliativo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctlCuidadoPaliativo.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctlDiagnosticos.Designer.vb">
+      <DependentUpon>ctlDiagnosticos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctlDiagnosticos.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctlEgresoCP.Designer.vb">
+      <DependentUpon>ctlEgresoCP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctlEgresoCP.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctlEscalasVarias.Designer.vb">
+      <DependentUpon>ctlEscalasVarias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctlEscalasVarias.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctlGestionCateteres.Designer.vb">
+      <DependentUpon>ctlGestionCateteres.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctlGestionCateteres.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctlHerramientaEvaluacion.Designer.vb">
+      <DependentUpon>ctlHerramientaEvaluacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctlHerramientaEvaluacion.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctlIngresoaPrograma.Designer.vb">
+      <DependentUpon>ctlIngresoaPrograma.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctlIngresoaPrograma.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctlInsercionCateter.designer.vb">
+      <DependentUpon>ctlInsercionCateter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctlInsercionCateter.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctlParticularidadesProc.designer.vb">
+      <DependentUpon>ctlParticularidadesProc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctlParticularidadesProc.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctlRetiroCateter.designer.vb">
+      <DependentUpon>ctlRetiroCateter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctlRetiroCateter.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CtlReunionFamiliar.Designer.vb">
+      <DependentUpon>CtlReunionFamiliar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CtlReunionFamiliar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctlSeguimientoCateter.designer.vb">
+      <DependentUpon>ctlSeguimientoCateter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctlSeguimientoCateter.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DAO\DAOAspectosEmocionales.vb" />
+    <Compile Include="DAO\DAOComplejidadDerivacion.vb" />
+    <Compile Include="DAO\DAOConciliacionMedicamentos.vb" />
+    <Compile Include="DAO\DAOConsultaHcAvicenaSrvRest.vb" />
+    <Compile Include="DAO\DAOCuidadosPaliativos.vb" />
+    <Compile Include="DAO\DAOEgresoCP.vb" />
+    <Compile Include="DAO\DAOEnfermeriaCP.vb" />
+    <Compile Include="DAO\DAOEscalas.vb" />
+    <Compile Include="DAO\DAOEvolucion.vb" />
+    <Compile Include="DAO\DAOFactoresRiesgo.vb" />
+    <Compile Include="DAO\DAOFechas.vb" />
+    <Compile Include="DAO\DAOHerramientaEvaluacion.vb" />
+    <Compile Include="DAO\DAOIngresoaPrograma.vb" />
+    <Compile Include="DAO\DAOPlaneacion.vb" />
+    <Compile Include="DAO\DAOReunionFamiliar.vb" />
+    <Compile Include="DAO\DAOTraerInfoPaciente.vb" />
+    <Compile Include="DAO\DAORptHC_Enf_Med.vb" />
+    <Compile Include="dtsEquipoMedico.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dtsEquipoMedico.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Entidades\Pyxis\admision.vb" />
+    <Compile Include="Entidades\Pyxis\medicamentos.vb" />
+    <Compile Include="Entidades\Pyxis\prescribe.vb" />
+    <Compile Include="Entidades\Pyxis\RequestPyxis.vb" />
+    <Compile Include="Entidades\Pyxis\ubicacion.vb" />
+    <Compile Include="EstadoAplicacion\clsAspectosEmocionales.vb" />
+    <Compile Include="EstadoAplicacion\clsAspectosSociales.vb" />
+    <Compile Include="EstadoAplicacion\clsComposicionFamiliar.vb" />
+    <Compile Include="EstadoAplicacion\clsCriterioIngreso.vb" />
+    <Compile Include="EstadoAplicacion\clsEgresoCP.vb" />
+    <Compile Include="EstadoAplicacion\clsIngresoaPrograma.vb" />
+    <Compile Include="EstadoAplicacion\clsPreguntaCP.vb" />
+    <Compile Include="EstadoAplicacion\clsValoraciondeIngreso.vb" />
+    <Compile Include="EstadoAplicacion\ComplejidadDerivacion.vb" />
+    <Compile Include="EstadoAplicacion\MedicamentosConciliados.vb" />
+    <Compile Include="EstadoAplicacion\MedicamentosConciliadosOtros.vb" />
+    <Compile Include="EstadoAplicacion\MedicamentosConciliadosSusp.vb" />
+    <Compile Include="EstadoAplicacion\ProcedimientoOM.vb" />
+    <Compile Include="EstadoAplicacion\Diagnostico.vb" />
+    <Compile Include="EstadoAplicacion\Enfermeria.vb" />
+    <Compile Include="EstadoAplicacion\HerramientaEvaluacion.vb" />
+    <Compile Include="EstadoAplicacion\RegistroCateter.vb" />
+    <Compile Include="EstadoAplicacion\RegistroHerida.vb" />
+    <Compile Include="EstadoAplicacion\SignoVital.vb" />
+    <Compile Include="EstadoAplicacion\ValoracioneIngreso.vb" />
+    <Compile Include="frmAgregarSeguimiento.Designer.vb">
+      <DependentUpon>frmAgregarSeguimiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgregarSeguimiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaBeeblos2.Designer.vb">
+      <DependentUpon>frmConsultaBeeblos2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaBeeblos2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultaHCAvicena.Designer.vb">
+      <DependentUpon>FrmConsultaHCAvicena.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultaHCAvicena.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaHCLaboratorio.Designer.vb">
+      <DependentUpon>frmConsultaHCLaboratorio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaHCLaboratorio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaResultados.Designer.vb">
+      <DependentUpon>frmConsultaResultados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaResultados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaResultadosLab.Designer.vb">
+      <DependentUpon>frmConsultaResultadosLab.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaResultadosLab.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCriteriosIngresoPaliativo.Designer.vb">
+      <DependentUpon>frmCriteriosIngresoPaliativo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCriteriosIngresoPaliativo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmc_evolucion.Designer.vb">
+      <DependentUpon>frmc_evolucion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmc_evolucion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmc_Interconsulta.Designer.vb">
+      <DependentUpon>frmc_Interconsulta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmc_Interconsulta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmc_JustificaExcepcionProc.Designer.vb">
+      <DependentUpon>frmc_JustificaExcepcionProc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmc_JustificaExcepcionProc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBuscadorEquiva.Designer.vb">
+      <DependentUpon>frmBuscadorEquiva.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscadorEquiva.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ctlDescripcionQuirurgica.Designer.vb">
+      <DependentUpon>ctlDescripcionQuirurgica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctlDescripcionQuirurgica.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DAO\DAODescripcionQXAccesoADatos.vb" />
+    <Compile Include="DAO\DAODescripcionQXManejoDeDatos.vb" />
+    <Compile Include="DAO\DAOMonitoreoHemoLuis.vb" />
+    <Compile Include="DAO\DAONotasEnfermeria.vb" />
+    <Compile Include="DAO\DaoParaclinico.vb" />
+    <Compile Include="DAO\DAOPlasmaferesisLuis.vb" />
+    <Compile Include="DAO\GPMData.vb" />
+    <Compile Include="EstadoAplicacion\DescripcionQuirurgica.vb" />
+    <Compile Include="frmCancelaOrden.Designer.vb">
+      <DependentUpon>frmCancelaOrden.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCancelaOrden.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaBeeblos.Designer.vb">
+      <DependentUpon>frmConsultaBeeblos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaBeeblos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaHCEnfermeriaAlejo.Designer.vb">
+      <DependentUpon>frmConsultaHCEnfermeriaAlejo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaHCEnfermeriaAlejo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaParaclinico.Designer.vb">
+      <DependentUpon>frmConsultaParaclinico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaParaclinico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmc_ConsultaMedico.Designer.vb">
+      <DependentUpon>frmc_ConsultaMedico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmc_ConsultaMedico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmc_ConsultaMedicoQx.Designer.vb">
+      <DependentUpon>frmc_ConsultaMedicoQx.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmc_ConsultaMedicoQx.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmc_JustificaExcepcion.Designer.vb">
+      <DependentUpon>frmc_JustificaExcepcion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmc_JustificaExcepcion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmc_LiquidosCantidades.Designer.vb">
+      <DependentUpon>frmc_LiquidosCantidades.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmc_LiquidosCantidades.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmc_RecomFarmaco.Designer.vb">
+      <DependentUpon>frmc_RecomFarmaco.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmc_RecomFarmaco.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmc_TraeAlarmas.Designer.vb">
+      <DependentUpon>frmc_TraeAlarmas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmc_TraeAlarmas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDispMedicamentos.Designer.vb">
+      <DependentUpon>frmDispMedicamentos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDispMedicamentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHistoriaPrincipal.designer.vb">
+      <DependentUpon>frmHistoriaPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmHistoriaPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOperacionesCateter.Designer.vb">
+      <DependentUpon>frmOperacionesCateter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOperacionesCateter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRepLiquidos.designer.vb">
+      <DependentUpon>frmRepLiquidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmRepLiquidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVisualizarPdf.Designer.vb">
+      <DependentUpon>frmVisualizarPdf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmVisualizarPdf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_360Layout.Designer.vb">
+      <DependentUpon>frm_360Layout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_360Layout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ConsultaLiquidos.Designer.vb">
+      <DependentUpon>frm_ConsultaLiquidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ConsultaLiquidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DetCantidadLiquido.Designer.vb">
+      <DependentUpon>frm_DetCantidadLiquido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DetCantidadLiquido.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_EscalasVarias.Designer.vb">
+      <DependentUpon>Frm_EscalasVarias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_EscalasVarias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_IdenticadoresRiesgo.Designer.vb">
+      <DependentUpon>Frm_IdenticadoresRiesgo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_IdenticadoresRiesgo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_IdenticadoresRiesgoHistorico.Designer.vb">
+      <DependentUpon>Frm_IdenticadoresRiesgoHistorico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_IdenticadoresRiesgoHistorico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Justificacion.Designer.vb">
+      <DependentUpon>frm_Justificacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Justificacion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PantallaLiquidos.designer.vb">
+      <DependentUpon>frm_PantallaLiquidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PantallaLiquidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_SISPRO.Designer.vb">
+      <DependentUpon>frm_SISPRO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_SISPRO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graficas_Escalas.Designer.vb">
+      <DependentUpon>Graficas_Escalas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Graficas_Escalas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Clases\Aislamiento.vb" />
+    <Compile Include="Reportes\Clases\Alarma.vb" />
+    <Compile Include="Reportes\Clases\Balances.vb" />
+    <Compile Include="Reportes\Clases\Balances1.vb" />
+    <Compile Include="Reportes\Clases\ControlCateterVascular.vb" />
+    <Compile Include="Reportes\Clases\EscalaLesionDePiel.vb" />
+    <Compile Include="Reportes\Clases\EscalaRiesgo1.vb" />
+    <Compile Include="Reportes\Clases\EscalaRiesgoCaidaPed.vb" />
+    <Compile Include="Reportes\Clases\EscalaRiesgoL.vb" />
+    <Compile Include="Reportes\Clases\EscalaSarnat.vb" />
+    <Compile Include="Reportes\Clases\EscalaTiss28.vb" />
+    <Compile Include="Reportes\Clases\EscalaValorDolorNeonatos.vb" />
+    <Compile Include="Reportes\Clases\IdentificadoresRiesgo.vb" />
+    <Compile Include="Reportes\Clases\Liquidos1.vb" />
+    <Compile Include="Reportes\Clases\LiquidosElim.vb" />
+    <Compile Include="Reportes\Clases\Vacunacion.vb" />
+    <Compile Include="Reportes\Clases\Traumatologico.vb" />
+    <Compile Include="Reportes\Clases\Transfusional.vb" />
+    <Compile Include="Reportes\Clases\CuidadosPaliativos.vb" />
+    <Compile Include="Reportes\Clases\EvolucionInterconsulta.vb" />
+    <Compile Include="Reportes\Clases\OrdenPatologia.vb" />
+    <Compile Include="Reportes\Clases\DescripcionQx.vb" />
+    <Compile Include="Reportes\Clases\EnfSignos_Vitales.vb" />
+    <Compile Include="Reportes\Clases\Excepciones.vb" />
+    <Compile Include="Reportes\Clases\ExcepcionesDiag.vb" />
+    <Compile Include="Reportes\Clases\ExcepcionesEvo.vb" />
+    <Compile Include="Reportes\Clases\ExcepcionesMot.vb" />
+    <Compile Include="Reportes\Clases\Excepciones_Prod.vb" />
+    <Compile Include="Reportes\Clases\FormatoHistoriaClinicaEnfermeria.vb" />
+    <Compile Include="Reportes\Clases\EscalaCam.vb" />
+    <Compile Include="Reportes\Clases\EscalaRass.vb" />
+    <Compile Include="Reportes\Clases\EscalaRiesgo.vb" />
+    <Compile Include="Reportes\Clases\HCEnfEncabezado.vb" />
+    <Compile Include="Reportes\Clases\Hemodialisis.vb" />
+    <Compile Include="Reportes\Clases\HojaNeurologicaAlejo.vb" />
+    <Compile Include="Reportes\Clases\Liquidos.vb" />
+    <Compile Include="Reportes\Clases\MedicamentoControl.vb" />
+    <Compile Include="Reportes\Clases\MonitoreoHojaToxemica.vb" />
+    <Compile Include="Reportes\Clases\NotasEvolucionAlejo.vb" />
+    <Compile Include="Reportes\Clases\NotasParametrosAlejo.vb" />
+    <Compile Include="Reportes\Clases\Planeacion.vb" />
+    <Compile Include="Reportes\Clases\PlaneacionCuidado.vb" />
+    <Compile Include="Reportes\Clases\PlaneacionGeneral.vb" />
+    <Compile Include="Reportes\Clases\ProcedimientoNoPractica.vb" />
+    <Compile Include="Reportes\Clases\ProcedimientoNoSede.vb" />
+    <Compile Include="Reportes\Clases\RiesgoNutricional.vb" />
+    <Compile Include="Reportes\Clases\SubseccionNeo.vb" />
+    <Compile Include="Reportes\Clases\SubseccionSDAlejo.vb" />
+    <Compile Include="Reportes\DAO\CondolenciasDAO.vb" />
+    <Compile Include="Reportes\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmRepCondolencias.Designer.vb">
+      <DependentUpon>FrmRepCondolencias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FrmRepCondolencias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmRepCuidadosPaliativos.Designer.vb">
+      <DependentUpon>frmRepCuidadosPaliativos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmRepCuidadosPaliativos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmRepOrdenPatologia.Designer.vb">
+      <DependentUpon>frmRepOrdenPatologia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmRepOrdenPatologia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmOrdenPatologia.designer.vb">
+      <DependentUpon>frmOrdenPatologia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmOrdenPatologia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmRepSegDolor.Designer.vb">
+      <DependentUpon>frmRepSegDolor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmRepSegDolor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\data\DetailFormulaProcedData.vb" />
+    <Compile Include="Reportes\data\DiagnFrmlProcedimData.vb" />
+    <Compile Include="Reportes\data\FormulaProcedimData.vb" />
+    <Compile Include="EstadoAplicacion\Evolucion.vb" />
+    <Compile Include="EstadoAplicacion\OrdenMedica.vb" />
+    <Compile Include="EstadoAplicacion\PlanFormuExterna.vb" />
+    <Compile Include="EstadoAplicacion\PlanIncapacidad.vb" />
+    <Compile Include="EstadoAplicacion\PlanProcExternos.vb" />
+    <Compile Include="EstadoAplicacion\PlanRemision.vb" />
+    <Compile Include="EstadoAplicacion\RecomEgreso.vb" />
+    <Compile Include="frmConsultaPorNombre.Designer.vb">
+      <DependentUpon>frmConsultaPorNombre.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaPorNombre.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCorreccionEF_tmp.Designer.vb">
+      <DependentUpon>frmCorreccionEF_tmp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCorreccionEF_tmp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOpcionesSalidaHC.Designer.vb">
+      <DependentUpon>frmOpcionesSalidaHC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmOpcionesSalidaHC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReferencias.Designer.vb">
+      <DependentUpon>frmReferencias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmReferencias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaEsperaError.designer.vb">
+      <DependentUpon>ListaEsperaError.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaEsperaError.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="mail\MailData.vb" />
+    <Compile Include="mail\MailSender.vb" />
+    <Compile Include="Reportes\Clases\DesarrolloPsicoMotor.vb" />
+    <Compile Include="Reportes\Clases\Farmacologico.vb" />
+    <Compile Include="Reportes\Clases\FormatoHistoriaClinica.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Reportes\Clases\GPMDataReport.vb" />
+    <Compile Include="Reportes\Clases\Incapacidad.vb" />
+    <Compile Include="Reportes\Clases\Perinatales.vb" />
+    <Compile Include="Reportes\Clases\RecomendacionEgreso.vb" />
+    <Compile Include="Reportes\Clases\RemisionPlanManejo.vb" />
+    <Compile Include="Reportes\Clases\Secciones.vb" />
+    <Compile Include="Reportes\DAO\FormulaProcedimDAO.vb" />
+    <Compile Include="Reportes\frmRepDescripcionQX.Designer.vb">
+      <DependentUpon>frmRepDescripcionQX.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmRepDescripcionQX.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmRepExcepcion.Designer.vb">
+      <DependentUpon>frmRepExcepcion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmRepExcepcion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\FrmRepFomulaProcedimtPDF.Designer.vb">
+      <DependentUpon>FrmRepFomulaProcedimtPDF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\FrmRepFomulaProcedimtPDF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmRepHistoriaClinica.Designer.vb">
+      <DependentUpon>frmRepHistoriaClinica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmRepHistoriaClinica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmRepHistoriaClinicaEnfermeriaAlejo.Designer.vb">
+      <DependentUpon>frmRepHistoriaClinicaEnfermeriaAlejo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmRepHistoriaClinicaEnfermeriaAlejo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmRepOrdenesMedicasXAdmision.Designer.vb">
+      <DependentUpon>frmRepOrdenesMedicasXAdmision.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmRepOrdenesMedicasXAdmision.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmRepOrdenMedica.Designer.vb">
+      <DependentUpon>frmRepOrdenMedica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmRepOrdenMedica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmRepParaclinico.Designer.vb">
+      <DependentUpon>frmRepParaclinico.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmRepParaclinico.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmRepRecomendacionEgreso.Designer.vb">
+      <DependentUpon>frmRepRecomendacionEgreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmRepRecomendacionEgreso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmRepRecomendacionesConsultaHC.Designer.vb">
+      <DependentUpon>frmRepRecomendacionesConsultaHC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmRepRecomendacionesConsultaHC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmRepRemision.Designer.vb">
+      <DependentUpon>frmRepRemision.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmRepRemision.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmRepRemisionConsultaHC.Designer.vb">
+      <DependentUpon>frmRepRemisionConsultaHC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmRepRemisionConsultaHC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmRepSeccionesAdicionales.Designer.vb">
+      <DependentUpon>frmRepSeccionesAdicionales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmRepSeccionesAdicionales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmRepTriageConsultaHC.Designer.vb">
+      <DependentUpon>frmRepTriageConsultaHC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmRepTriageConsultaHC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\RptHC.Designer.vb">
+      <DependentUpon>RptHC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\RptHC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\RptHC_Enf_Med.Designer.vb">
+      <DependentUpon>RptHC_Enf_Med.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\RptHC_Enf_Med.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Util\Conexion.vb" />
+    <Compile Include="Controles\ComboBusqueda.designer.vb">
+      <DependentUpon>ComboBusqueda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\ComboBusqueda.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ctlEvolucion.Designer.vb">
+      <DependentUpon>ctlEvolucion.vb</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="ctlEvolucion.vb">
+      <SubType>UserControl</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="ctlOrdenesMedicas.Designer.vb">
+      <DependentUpon>ctlOrdenesMedicas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctlOrdenesMedicas.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctlPlanFormuExterna.Designer.vb">
+      <DependentUpon>ctlPlanFormuExterna.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctlPlanFormuExterna.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctlPlanIncapacidad.Designer.vb">
+      <DependentUpon>ctlPlanIncapacidad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctlPlanIncapacidad.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctlPlanProcExternos.Designer.vb">
+      <DependentUpon>ctlPlanProcExternos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctlPlanProcExternos.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctlPlanRemision.Designer.vb">
+      <DependentUpon>ctlPlanRemision.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctlPlanRemision.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctlRecomEgreso.Designer.vb">
+      <DependentUpon>ctlRecomEgreso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ctlRecomEgreso.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DAO\DAOConsultaResultados.vb" />
+    <Compile Include="DAO\DAOGeneral.vb" />
+    <Compile Include="DAO\DAOHistoriaBasica.vb" />
+    <Compile Include="DAO\DAONotas.vb" />
+    <Compile Include="DAO\DAOOrdenes.vb" />
+    <Compile Include="DAO\DAOPlanManejo.vb" />
+    <Compile Include="frmNotasHC.Designer.vb">
+      <DependentUpon>frmNotasHC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmNotasHC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EstadoAplicacion\Generales.vb" />
+    <Compile Include="frmBuscador.Designer.vb">
+      <DependentUpon>frmBuscador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBuscador.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultaHC.Designer.vb">
+      <DependentUpon>frmConsultaHC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultaHC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EstadoAplicacion\DatosHistoriaBasica.vb" />
+    <Compile Include="EstadoAplicacion\Paciente.vb" />
+    <Compile Include="Reportes\Clases\Alergico.vb" />
+    <Compile Include="Reportes\Clases\Antecedente.vb" />
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BL\BLBasicasLocales.vb" />
+    <Compile Include="BL\BLEgresos.vb" />
+    <Compile Include="EstadoAplicacion\Egreso.vb" />
+    <Compile Include="Util\Comunes.vb" />
+    <Compile Include="Controles\TextBoxConFormato.designer.vb">
+      <DependentUpon>TextBoxConFormato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\TextBoxConFormato.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ctlDatosPaciente.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CtlEgresos.Designer.vb">
+      <DependentUpon>CtlEgresos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CtlEgresos.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctlHCBasica.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DAO\DAOBasicasLocales.vb" />
+    <Compile Include="DAO\DAOEgresos.vb" />
+    <Compile Include="Reportes\Clases\Diagnostico.vb" />
+    <Compile Include="Reportes\Clases\Dieta.vb" />
+    <Compile Include="Reportes\Clases\EncabezadoPlanManejo.vb" />
+    <Compile Include="Reportes\Clases\ExamenFisico.vb" />
+    <Compile Include="Reportes\Clases\Familiares.vb" />
+    <Compile Include="Reportes\Clases\Ginecologico.vb" />
+    <Compile Include="Reportes\Clases\Inmunologico.vb" />
+    <Compile Include="ListaEspera.Designer.vb">
+      <DependentUpon>ListaEspera.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ListaEspera.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Clases\MotivoConsulta.vb" />
+    <Compile Include="Reportes\Clases\Nota.vb" />
+    <Compile Include="Reportes\Clases\OrdenGeneral.vb" />
+    <Compile Include="Reportes\Clases\Patologico.vb" />
+    <Compile Include="Reportes\Clases\Quirurgico.vb" />
+    <Compile Include="Reportes\Clases\Admision.vb" />
+    <Compile Include="Reportes\Clases\Evolucion.vb" />
+    <Compile Include="Reportes\Clases\HCEncabezado.vb" />
+    <Compile Include="Reportes\Clases\Medicamento.vb" />
+    <Compile Include="Reportes\Clases\Procedimiento.vb" />
+    <Compile Include="Reportes\Clases\ResumenEvolucion.vb" />
+    <Compile Include="Reportes\Clases\Revision.vb" />
+    <Compile Include="Reportes\frmRepPlanIncapacidad.Designer.vb">
+      <DependentUpon>frmRepPlanIncapacidad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmRepPlanIncapacidad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmRepEvolucion.Designer.vb">
+      <DependentUpon>frmRepEvolucion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmRepEvolucion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmRepFormulaProcedim.Designer.vb">
+      <DependentUpon>frmRepFormulaProcedim.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmRepFormulaProcedim.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Clases\Paciente.vb" />
+    <Compile Include="Reportes\Clases\Triage.vb" />
+    <Compile Include="Reportes\frmReimpresionAdm.Designer.vb">
+      <DependentUpon>frmReimpresionAdm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmReimpresionAdm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmRepFormuMedica.Designer.vb">
+      <DependentUpon>frmRepFormuMedica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmRepFormuMedica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmRepResumenHistoriaClinica.Designer.vb">
+      <DependentUpon>frmRepResumenHistoriaClinica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmRepResumenHistoriaClinica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmRepTriage.Designer.vb">
+      <DependentUpon>frmRepTriage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmRepTriage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\Clases\Orden.vb" />
+    <Compile Include="Reportes\Clases\Toxico.vb" />
+    <Compile Include="Util\MensajeError.vb" />
+    <Compile Include="Util\Num2Words.vb" />
+    <Compile Include="Util\VistaHCBasica.vb" />
+    <Compile Include="Web References\wsCuidadoPaliativo\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\wsResultadosLaboratorio\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ctlConcilMedicamentos.resx">
+      <DependentUpon>ctlConcilMedicamentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctlDatosPaciente.resx">
+      <DependentUpon>ctlDatosPaciente.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctlDiagnosticos.resx">
+      <DependentUpon>ctlDiagnosticos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CtlEgresos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CtlEgresos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctlEscalasVarias.resx">
+      <DependentUpon>ctlEscalasVarias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctlGestionCateteres.resx">
+      <DependentUpon>ctlGestionCateteres.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctlHCBasica.resx">
+      <DependentUpon>ctlHCBasica.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctlParticularidadesProc.resx">
+      <DependentUpon>ctlParticularidadesProc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctlPlanProcExternos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ctlPlanProcExternos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgregarSeguimiento.resx">
+      <DependentUpon>frmAgregarSeguimiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscador.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmBuscador.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaHC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmConsultaHC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultaHCAvicena.resx">
+      <DependentUpon>FrmConsultaHCAvicena.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaResultadosLab.resx">
+      <DependentUpon>frmConsultaResultadosLab.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmc_LiquidosCantidades.resx">
+      <DependentUpon>frmc_LiquidosCantidades.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOperacionesCateter.resx">
+      <DependentUpon>frmOperacionesCateter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVisualizarPdf.resx">
+      <DependentUpon>frmVisualizarPdf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_360Layout.resx">
+      <DependentUpon>frm_360Layout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ConsultaLiquidos.resx">
+      <DependentUpon>frm_ConsultaLiquidos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DetCantidadLiquido.resx">
+      <DependentUpon>frm_DetCantidadLiquido.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_EscalasVarias.resx">
+      <DependentUpon>Frm_EscalasVarias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_IdenticadoresRiesgo.resx">
+      <DependentUpon>Frm_IdenticadoresRiesgo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_IdenticadoresRiesgoHistorico.resx">
+      <DependentUpon>Frm_IdenticadoresRiesgoHistorico.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Justificacion.resx">
+      <DependentUpon>frm_Justificacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaEspera.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ListaEspera.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Disenadores\RepAntVacunacion.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepEnfBalance.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepEnfBalanceInfo.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepEnfEscalaRiesgo.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepEnfEscalaRiesgo1.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepEnfEscalaUlcerasLP2.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepEnfLiquidosAdminDet1.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepEnfPlaneacion.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepEnfPlaneacionDetOtros.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepEnfPlaneacionOtros.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepEscalaLesionPiel2.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepEscalaRiesgo1.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepEscalaRiesgoCaidaPed.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepEscalaSarnat.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepEscalaTiss28.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepEscalaValorDolorNeonatos.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepExamenFisico.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepFormulaMedicaControl.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepHistoriaClinica.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\1RepOrdenesMedicasctr.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepIdentificadorRiesgo.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepOrdenAislamiento.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepOrdenesMedicas2.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepOrdenesMedicasctr.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepOrdenMedicaMedControlctr.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\srpIdentificadorRiesgo.rdlc" />
+    <EmbeddedResource Include="Reportes\Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmReimpresionAdm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmReimpresionAdm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmRepEvolucion.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmRepEvolucion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmRepFormulaProcedim.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmRepFormulaProcedim.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmRepFormuMedica.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmRepFormuMedica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmRepTriage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmRepTriage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\RptHC_Enf_Med.resx">
+      <DependentUpon>RptHC_Enf_Med.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="HistoriaClinica_ClaveTemporal.pfx" />
+    <None Include="HistoriaClinica_TemporaryKey.pfx" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Controles.PlanIncapacidad.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.Admision.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.Alergico.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.Antecedente.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.EncabezadoPlanManejo.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.Familiares.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.Ginecologico.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.Inmunologico1.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.MotivoConsulta.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.Nota.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.Orden.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.Paciente.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.Patologico.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.Procedimiento.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.ResumenEvolucion.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.Toxico.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.Triage.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.Vacunacion.datasource" />
+    <None Include="packages.config" />
+    <None Include="Reportes\CartaCondolenciasCampos.pdf" />
+    <None Include="Resources\oficial.jpg" />
+    <None Include="Web References\wsResultadosLaboratorio\Consulta.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\wsResultadosLaboratorio\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <None Include="Web References\wsResultadosLaboratorio\RutaPDF.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\wsResultadosLaboratorio\WebServiceConsultaAvicena.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\wsResultadosLaboratorio\WebServiceConsultaAvicena.disco" />
+    <None Include="Resources\resultadosLaboratorio1.png" />
+    <None Include="Resources\resultadosLaboratorio.png" />
+    <None Include="Resources\777.bmp" />
+    <None Include="Imagenes\bot_consultar.gif" />
+    <Content Include="favicon.ico" />
+    <None Include="Imagenes\360layout.png" />
+    <Content Include="Imagenes\bot_Resultados_Lab.png" />
+    <Content Include="Imagenes\FR2aerosol.png" />
+    <Content Include="Imagenes\FR2contacto.png" />
+    <Content Include="Imagenes\FR2gotas.png" />
+    <Content Include="Imagenes\FR2paliativos.png" />
+    <Content Include="Imagenes\FR2protector.png" />
+    <Content Include="Imagenes\FR2resistencia.png" />
+    <Content Include="Imagenes\FR2vector.png" />
+    <None Include="Imagenes\Iconos-360\Icono360v1.png" />
+    <None Include="Imagenes\Iconos-360\Icono360v2.png" />
+    <None Include="Imagenes\Iconos-360\IconoAdmisiones.png" />
+    <None Include="Imagenes\Iconos-360\IconoDiagnostico.png" />
+    <None Include="Imagenes\Iconos-360\IconoMedicina.png" />
+    <None Include="Imagenes\Iconos-360\IconoProcedimientos.png" />
+    <Content Include="Imagenes\imag_DolorNeonatos.jpg" />
+    <Content Include="Imagenes\imag_Sarnat.jpg" />
+    <Content Include="Imagenes\riesgoCaida.png" />
+    <Content Include="Imagenes\riesgoFuga.png" />
+    <Content Include="Resources\bot_nuevo.gif" />
+    <None Include="Resources\bot_pedidosLaboratorior.png" />
+    <None Include="Resources\bot_resultadosLaboratorior.png" />
+    <None Include="Resources\bot_pedidosLaboratorior1.png" />
+    <None Include="Resources\bot_resultadosLaboratorior1.png" />
+    <None Include="Resources\bot_resultadosLaboratoriors.png" />
+    <Content Include="Resources\Busca.ico" />
+    <Content Include="Resources\conciliacion de medicamentos.png" />
+    <Content Include="Resources\CuidadosPaliativos.jpg" />
+    <Content Include="Resources\CuidadosPaliativos1.jpg" />
+    <Content Include="Resources\CuidadosPaliativos2.jpg" />
+    <Content Include="Resources\CuidadosPaliativos3.jpg" />
+    <None Include="Resources\header_resultadosLaboratorio.jpg" />
+    <Content Include="Resources\Icono360v1.png" />
+    <Content Include="Resources\Icono360v2.png" />
+    <Content Include="Resources\IconoAdmisiones.png" />
+    <Content Include="Resources\IconoDiagnostico.png" />
+    <Content Include="Resources\IconoMedicina.png" />
+    <Content Include="Resources\IconoProcedimientos.png" />
+    <Content Include="Resources\imag_23-aspectosEmocionales.jpg" />
+    <Content Include="Resources\imag_23-aspectosEmocionales1.jpg" />
+    <Content Include="Resources\imag_23-aspectosSociales.jpg" />
+    <Content Include="Resources\imag_23-herramientasEval.jpg" />
+    <Content Include="Resources\imag_23-herramientasEval1.jpg" />
+    <Content Include="Resources\imag_23-herramientasEval2.jpg" />
+    <Content Include="Resources\imag_23-herramientasEval3.jpg" />
+    <Content Include="Resources\imag_23-herramientasEval4.jpg" />
+    <Content Include="Resources\imag_23-IngresoSeguimientoProg.jpg" />
+    <Content Include="Resources\imag_23-manInfodePaciente.jpg" />
+    <Content Include="Resources\imag_23-valoracionIngreso.jpg" />
+    <None Include="Resources\Laboratorio.png" />
+    <Content Include="Resources\imag_DolorNeonatos.jpg" />
+    <Content Include="Resources\imag_Sarnat.jpg" />
+    <Content Include="Resources\Lupa.JPG" />
+    <Content Include="Resources\Programa.jpg" />
+    <Content Include="Resources\Programa1.jpg" />
+    <None Include="DiagramaClases\DiagramaClasesDAO.cd" />
+    <None Include="DiagramaClases\DiagramaClasesEstadoAplicacion.cd" />
+    <None Include="DiagramaClases\DiagramaClasesFormularios.cd">
+      <SubType>
+      </SubType>
+    </None>
+    <None Include="dtsEquipoMedico.xsc">
+      <DependentUpon>dtsEquipoMedico.xsd</DependentUpon>
+    </None>
+    <None Include="dtsEquipoMedico.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dtsEquipoMedico.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dtsEquipoMedico.xss">
+      <DependentUpon>dtsEquipoMedico.xsd</DependentUpon>
+    </None>
+    <None Include="Imagenes\fondo_evolucion.jpg" />
+    <None Include="Imagenes\fondo_egreso.jpg" />
+    <None Include="Imagenes\fondo_espera.jpg" />
+    <None Include="Imagenes\fondo_ordenes.jpg" />
+    <None Include="Imagenes\fondo_historia.jpg" />
+    <None Include="Imagenes\fondo_manejo.jpg" />
+    <None Include="Imagenes\bot_abrir_historia.gif" />
+    <None Include="Imagenes\bot_listar.gif" />
+    <None Include="Imagenes\bot_agregar.gif" />
+    <None Include="Imagenes\tit_lista.gif" />
+    <None Include="Imagenes\subtit_lista.jpg" />
+    <None Include="Imagenes\fondo.jpg" />
+    <None Include="Imagenes\logo_clinica.gif" />
+    <None Include="Imagenes\logo_clinica.jpg" />
+    <None Include="Imagenes\bckg_top.jpg" />
+    <None Include="Imagenes\imag_01.jpg" />
+    <None Include="Imagenes\imag_02.jpg" />
+    <None Include="Imagenes\imag_03.jpg" />
+    <None Include="Imagenes\imag_04.jpg" />
+    <None Include="Imagenes\imag_05.jpg" />
+    <None Include="Imagenes\imag_06.jpg" />
+    <None Include="Imagenes\imag_07.jpg" />
+    <None Include="Imagenes\imag_08.jpg" />
+    <None Include="Imagenes\imag_09.jpg" />
+    <None Include="Imagenes\imag_10.jpg" />
+    <None Include="Imagenes\imag_11.jpg" />
+    <None Include="Imagenes\imag_12.jpg" />
+    <None Include="Imagenes\imag_13.jpg" />
+    <None Include="Imagenes\imag_16.jpg" />
+    <None Include="Imagenes\imag_15.jpg" />
+    <None Include="Imagenes\imag_14.jpg" />
+    <None Include="Imagenes\bot_5.jpg" />
+    <None Include="Imagenes\bot_4.jpg" />
+    <None Include="Imagenes\bot_3.jpg" />
+    <None Include="Imagenes\bot_2.jpg" />
+    <None Include="Imagenes\bot_1.jpg" />
+    <None Include="Imagenes\act_13.jpg" />
+    <None Include="Imagenes\bot_13.jpg" />
+    <None Include="Imagenes\act_10.jpg" />
+    <None Include="Imagenes\bot_10.jpg" />
+    <None Include="Imagenes\bot_9.jpg" />
+    <None Include="Imagenes\act_9.jpg" />
+    <None Include="Imagenes\act_6.jpg" />
+    <None Include="Imagenes\bot_6.jpg" />
+    <None Include="Imagenes\act_5.jpg" />
+    <None Include="Imagenes\act_4.jpg" />
+    <None Include="Imagenes\act_3.jpg" />
+    <None Include="Imagenes\act_2.jpg" />
+    <None Include="Imagenes\act_1.jpg" />
+    <None Include="Imagenes\tit_evolucion.gif" />
+    <None Include="Imagenes\tit_recomendaciones.gif" />
+    <None Include="Imagenes\tit_remision.gif" />
+    <None Include="Imagenes\tit_incapacidad.gif" />
+    <None Include="Imagenes\tit_motivo.gif" />
+    <None Include="Imagenes\tit_procedimientos.gif" />
+    <None Include="Imagenes\tit_formulacion.gif" />
+    <None Include="Imagenes\tit_datos.gif" />
+    <None Include="Imagenes\bot_guardar.gif" />
+    <None Include="Imagenes\imag_17.jpg" />
+    <None Include="Imagenes\imag_23.jpg" />
+    <None Include="Imagenes\imag_22.jpg" />
+    <None Include="Imagenes\imag_21.jpg" />
+    <None Include="Imagenes\imag_20.jpg" />
+    <None Include="Imagenes\imag_19.jpg" />
+    <None Include="Imagenes\imag_18.jpg" />
+    <None Include="Imagenes\tit_historia_basica.gif" />
+    <None Include="Imagenes\tit_ordenes_medicas.gif" />
+    <None Include="Imagenes\header_consultaHC.jpg" />
+    <None Include="Imagenes\header_notas_aclaratorias.jpg" />
+    <None Include="Imagenes\bot_buscar.gif" />
+    <None Include="Imagenes\bot_grabar.gif" />
+    <None Include="Imagenes\bot_salir.gif" />
+    <None Include="Imagenes\bot_buscar_individual.gif" />
+    <None Include="Imagenes\bot_traer_historia.gif" />
+    <None Include="Imagenes\bot_imprimir.gif" />
+    <None Include="Imagenes\bot_cancelar.gif" />
+    <None Include="Imagenes\act_ManejoExt.jpg" />
+    <None Include="Imagenes\AspectosEmocionales.png" />
+    <None Include="Imagenes\AspectosSociales.png" />
+    <Content Include="Imagenes\Aislamientos.png" />
+    <Content Include="Imagenes\AntTransfusional.jpg" />
+    <Content Include="Imagenes\AntTraumatologico.jpg" />
+    <Content Include="Imagenes\AspectosEmocionalesOpen.png" />
+    <Content Include="Imagenes\AspectosSocialesOpen.png" />
+    <Content Include="Imagenes\Barra.gif" />
+    <Content Include="Imagenes\Barra.jpg" />
+    <None Include="Imagenes\bot_observacion.gif" />
+    <None Include="Imagenes\bot_pendiente.gif" />
+    <None Include="Imagenes\bot_cerrar_historia.gif" />
+    <None Include="Imagenes\header_opciones.jpg" />
+    <None Include="Imagenes\Expand_h.jpg" />
+    <None Include="Imagenes\Collapse.jpg" />
+    <None Include="Imagenes\Collapse_h.jpg" />
+    <None Include="Imagenes\Expand.jpg" />
+    <None Include="Imagenes\folder_desktop.ico" />
+    <None Include="Imagenes\bot_ManejoExt.jpg" />
+    <None Include="Imagenes\bot_guardar_apagado.gif" />
+    <None Include="Imagenes\bot_guardar_mostrar.gif" />
+    <None Include="Imagenes\flecha_combo.gif" />
+    <None Include="Imagenes\header_contrarreferencia.jpg" />
+    <None Include="Imagenes\header_contrarreferencia2.jpg" />
+    <None Include="Imagenes\bot_abrir.gif" />
+    <None Include="Imagenes\header_buscador.jpg" />
+    <None Include="Imagenes\bot_x.gif" />
+    <None Include="Imagenes\bot_nuevo.gif" />
+    <None Include="Imagenes\bot_traer_cronicos.gif" />
+    <None Include="Imagenes\DescansoMedicoPorIincapacidad2.jpg" />
+    <None Include="Imagenes\DescansoMedicoPorIincapacidad1.jpg" />
+    <None Include="Imagenes\CuidadosPaliativos.jpg" />
+    <None Include="Imagenes\EnfermeriaPaliativos.png" />
+    <None Include="Imagenes\HerramientasEval.png" />
+    <None Include="Imagenes\ComplejidadDer.png" />
+    <None Include="Imagenes\EgresoPrograma.png" />
+    <None Include="Imagenes\bot_ayuda.jpg" />
+    <Content Include="Imagenes\bot_cancelar2.GIF" />
+    <Content Include="Imagenes\bot_confirmar.png" />
+    <Content Include="Imagenes\bot_cuidadoPaliativo.gif" />
+    <Content Include="Imagenes\bot_dispensacion.jpg" />
+    <Content Include="Imagenes\bot_eliminar.GIF" />
+    <Content Include="Imagenes\bot_guardarMostrar.gif" />
+    <None Include="Imagenes\bot_reimprimir.gif" />
+    <None Include="Imagenes\bot_proponer.gif" />
+    <Content Include="Imagenes\ComplejidadDerOpen.png" />
+    <Content Include="Imagenes\Dietas.png" />
+    <Content Include="Imagenes\EgresoProgramaOpen.png" />
+    <Content Include="Imagenes\EnfermedadActual.jpg" />
+    <Content Include="Imagenes\EnfermeriaPaliativosOpen.png" />
+    <Content Include="Imagenes\Escalas.jpg" />
+    <Content Include="Imagenes\Flecha.jpg" />
+    <Content Include="Imagenes\header_Dispensación.jpg" />
+    <Content Include="Imagenes\HerramientasEvalOpen.png" />
+    <Content Include="Imagenes\Ibuscar.gif" />
+    <None Include="Imagenes\imag_25.jpg" />
+    <None Include="Imagenes\submenu10.jpg" />
+    <None Include="Imagenes\submenu09.jpg" />
+    <None Include="Imagenes\submenu08.jpg" />
+    <None Include="Imagenes\submenu07.jpg" />
+    <None Include="Imagenes\submenu06.jpg" />
+    <None Include="Imagenes\submenu05.jpg" />
+    <None Include="Imagenes\submenu04.jpg" />
+    <None Include="Imagenes\submenu03.jpg" />
+    <None Include="Imagenes\submenu02.jpg" />
+    <None Include="Imagenes\submenu01.jpg" />
+    <None Include="Imagenes\imag_24.jpg" />
+    <None Include="Imagenes\tit_egreso.gif" />
+    <None Include="Imagenes\imag_27.jpg" />
+    <None Include="Imagenes\imag_26.jpg" />
+    <None Include="Imagenes\imag_03_1.jpg" />
+    <None Include="Imagenes\iSalir.jpg" />
+    <None Include="Imagenes\iReclasificarr.jpg" />
+    <None Include="Imagenes\iGuardar.jpg" />
+    <None Include="Imagenes\iSiguiente.jpg" />
+    <None Include="Imagenes\imag_23-valoracionIngreso.jpg" />
+    <None Include="Imagenes\imag_criteriosingreso.jpg" />
+    <None Include="Imagenes\imag_Enfemeria.jpg" />
+    <None Include="Imagenes\imag_ReunionFamiliar.jpg" />
+    <None Include="Imagenes\imag_23-herramientasEval.jpg" />
+    <None Include="Imagenes\imag_23-aspectosEmocionales.jpg" />
+    <None Include="Imagenes\imag_23-aspectosSociales.jpg" />
+    <None Include="Imagenes\imag_23-complejidadDeriva.jpg" />
+    <None Include="Imagenes\imag_23-egresoPrograma.jpg" />
+    <None Include="Imagenes\imag_23-IngresoSeguimientoProg.jpg" />
+    <None Include="Imagenes\imag_23-manInfodePaciente.jpg" />
+    <None Include="Imagenes\imag_23-AspectosEmocionales.png" />
+    <None Include="Imagenes\imag_23-reunionFamiliar.png" />
+    <None Include="Imagenes\imag_23-valoracionIngreso.png" />
+    <None Include="Imagenes\imag_23-aspectosSociales.png" />
+    <None Include="Imagenes\imag_23complejidadDer.png" />
+    <None Include="Imagenes\imag_23criteriosIngreso.png" />
+    <None Include="Imagenes\imag_23-DiagnosticosRegistrados.png" />
+    <None Include="Imagenes\imag_23-herramientasEval.png" />
+    <None Include="Imagenes\imag_23-manInfoFamilia.png" />
+    <None Include="Imagenes\imag_23egresoPrograma.png" />
+    <Content Include="Imagenes\iconoPaliativo.png" />
+    <None Include="Imagenes\imag_23-enfermeriaPaliativos.png" />
+    <None Include="Imagenes\imag_23-ingresoProgPaliativos.png" />
+    <Content Include="Imagenes\imagcam_icu.jpg" />
+    <Content Include="Imagenes\imagenes.jpg" />
+    <Content Include="Imagenes\imagrass.jpg" />
+    <Content Include="Imagenes\imagriesgo.jpg" />
+    <Content Include="Imagenes\imag_03_Hoja_toxemica.JPG" />
+    <Content Include="Imagenes\imag_23-ingresoSeg.png" />
+    <None Include="Imagenes\imag_23-valoracionInicial.png" />
+    <None Include="Imagenes\IngresoSeg.png" />
+    <Content Include="Imagenes\imag_23-manInfoFamilia.jpg" />
+    <Content Include="Imagenes\imag_23-manInfoPaciente.jpg" />
+    <Content Include="Imagenes\imag_23-reunionFamiliar.jpg" />
+    <Content Include="Imagenes\imag_23Diagnos.jpg" />
+    <Content Include="Imagenes\imag_23DiagnosNoOncologico.jpg" />
+    <Content Include="Imagenes\imag_23DiagnosOncologico.jpg" />
+    <Content Include="Imagenes\imag_23egresoPrograma.jpg" />
+    <Content Include="Imagenes\imag_descQx.jpg" />
+    <Content Include="Imagenes\Indicaciones Médicas.png" />
+    <Content Include="Imagenes\IndicacionesMedicas.png" />
+    <Content Include="Imagenes\IngresoSegOpen.png" />
+    <Content Include="Imagenes\LblCuidados.JPG" />
+    <Content Include="Imagenes\LblDietas.JPG" />
+    <Content Include="Imagenes\LblMedica.JPG" />
+    <Content Include="Imagenes\LblOrdenes.JPG" />
+    <Content Include="Imagenes\LblProc.JPG" />
+    <Content Include="Imagenes\linea.jpg" />
+    <None Include="Imagenes\pixeles2.jpg" />
+    <Content Include="Imagenes\logo.jpg" />
+    <Content Include="Imagenes\logo_clinica1.jpg" />
+    <Content Include="Imagenes\Lupa.JPG" />
+    <Content Include="Imagenes\Medicamentos y Líquidos Endovenosos.png" />
+    <Content Include="Imagenes\NuevaSophia\Antecedentes Alérgicos.png" />
+    <Content Include="Imagenes\NuevaSophia\Antecedentes Familiares.png" />
+    <Content Include="Imagenes\NuevaSophia\Antecedentes Farmacológicos.png" />
+    <Content Include="Imagenes\NuevaSophia\Antecedentes Gineco-Obstétricos.png" />
+    <Content Include="Imagenes\NuevaSophia\Antecedentes Patológicos.png" />
+    <Content Include="Imagenes\NuevaSophia\Antecedentes Perinatales.png" />
+    <Content Include="Imagenes\NuevaSophia\Antecedentes Quirúrgicos.png" />
+    <Content Include="Imagenes\NuevaSophia\Antecedentes Transfusionales.png" />
+    <Content Include="Imagenes\NuevaSophia\Antecedentes Traumatológicos.png" />
+    <Content Include="Imagenes\NuevaSophia\Antecedentes Tóxicos.png" />
+    <Content Include="Imagenes\NuevaSophia\Datos Personales.png" />
+    <Content Include="Imagenes\NuevaSophia\DatosPaciente.png" />
+    <Content Include="Imagenes\NuevaSophia\Enfermedad Actual.png" />
+    <Content Include="Imagenes\NuevaSophia\Examen Físico.png" />
+    <Content Include="Imagenes\NuevaSophia\Impresión Diagnóstica.png" />
+    <Content Include="Imagenes\NuevaSophia\Motivo Consulta.png" />
+    <Content Include="Imagenes\NuevaSophia\Revisión por Sistemas.png" />
+    <Content Include="Imagenes\NuevaSophia\Vacunas.png" />
+    <Content Include="Imagenes\osi.gif" />
+    <Content Include="Imagenes\paraclinicos.jpg" />
+    <None Include="Imagenes\Peru1.JPG" />
+    <None Include="Imagenes\Programa.jpg" />
+    <Content Include="Imagenes\Procedimientos.png" />
+    <Content Include="Imagenes\reimprimir.gif" />
+    <None Include="Imagenes\submenu11.jpg" />
+    <None Include="Imagenes\submenu12.jpg" />
+    <None Include="Imagenes\submenu14.jpg" />
+    <None Include="Imagenes\Reposo.jpg" />
+    <None Include="Imagenes\ReunionFamiliar.png" />
+    <Content Include="Imagenes\ReunionFamiliarOpen.png" />
+    <Content Include="Imagenes\sanitasmodificado.JPG" />
+    <None Include="Imagenes\Sub_Menu_DescansoMedicoPorIincapacidad.jpg" />
+    <None Include="Imagenes\Sub_Menu_reposo.jpg" />
+    <None Include="Imagenes\submenu20.jpg" />
+    <None Include="Imagenes\ValoracionInicial.png" />
+    <Content Include="Imagenes\TitCuidados.JPG" />
+    <Content Include="Imagenes\TituloAlarma.JPG" />
+    <Content Include="Imagenes\Tit_Alarma.jpg" />
+    <Content Include="Imagenes\ValoracionIngreso.png" />
+    <Content Include="Imagenes\ValoracionIngresoOpen.png" />
+    <Content Include="Imagenes\ValoracionInicialOpen.png" />
+    <Content Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </Content>
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.DescripcionQx.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.Diagnostico.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.Evolucion.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.EvolucionInterconsulta.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.ExamenFisico.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.Excepciones.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.ExcepcionesProd.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.HCEncabezado.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.OrdenPatologia.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.ProcedimientoNoPractica.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.Quirurgico.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.Revision.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.RiesgoNuticional.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.RiesgoNuticional1.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.RiesgoNutricional.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.SubseccionSD.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.Transfusional.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.Traumatologico.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Resources\bot_abrir.gif" />
+    <Content Include="Resources\IBuscar.gif" />
+    <None Include="Resources\submenu14.jpg" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.Data.DetailFormulaProcedData.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.Data.FormulaProcedimData.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.DesarrolloPsicoMotor.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.Farmacologico.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.Incapacidad.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.Medicamento.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.MedicamentoControl.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.Perinatales.datasource" />
+    <None Include="DiagramaClases\DiagramaClasesNegocio.cd" />
+    <None Include="DiagramaClases\DiagramaClasesReportes.cd" />
+    <None Include="DiagramaClases\DiagramaClasesReportesLogica.cd" />
+    <None Include="DiagramaClases\DiagramaClasesReportesModelo.cd" />
+    <None Include="Resources\Image1.bmp" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Comunes.ObjetoAuxiliar.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Comunes.ObjetoSimple.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Controles.PlanRemision.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.Dieta.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.OrdenGeneral.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.RecomendacionEgreso.datasource" />
+    <None Include="My Project\DataSources\HistoriaClinica.Sophia.HistoriaClinica.Reportes.RemisionPlanManejo.datasource" />
+    <None Include="Resources\Icon1.ico" />
+    <None Include="DiagramaClases\DiagramaClasesUtilidades.cd" />
+    <None Include="Web References\wsCuidadoPaliativo\CuidadosPaleativosServiceImpService.wsdl" />
+    <None Include="Web References\wsCuidadoPaliativo\GrupoFechaType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\wsCuidadoPaliativo\GrupoFechaType1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\wsCuidadoPaliativo\PreguntaType1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\wsCuidadoPaliativo\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <EmbeddedResource Include="ctlAspectosEmocionales.resx">
+      <DependentUpon>ctlAspectosEmocionales.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctlComplejidadDerivacion.resx">
+      <DependentUpon>ctlComplejidadDerivacion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctlCPAspectosSociales.resx">
+      <DependentUpon>ctlCPAspectosSociales.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctlCPEnfermeria.resx">
+      <DependentUpon>ctlCPEnfermeria.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctlCPHerida.resx">
+      <DependentUpon>ctlCPHerida.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctlCriterioIngreso.resx">
+      <DependentUpon>ctlCriterioIngreso.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctlCuidadoPaliativo.resx">
+      <DependentUpon>ctlCuidadoPaliativo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctlEgresoCP.resx">
+      <DependentUpon>ctlEgresoCP.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctlHerramientaEvaluacion.resx">
+      <DependentUpon>ctlHerramientaEvaluacion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctlIngresoaPrograma.resx">
+      <DependentUpon>ctlIngresoaPrograma.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctlInsercionCateter.resx">
+      <DependentUpon>ctlInsercionCateter.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctlRetiroCateter.resx">
+      <DependentUpon>ctlRetiroCateter.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CtlReunionFamiliar.resx">
+      <DependentUpon>CtlReunionFamiliar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctlSeguimientoCateter.resx">
+      <DependentUpon>ctlSeguimientoCateter.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaBeeblos2.resx">
+      <DependentUpon>frmConsultaBeeblos2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaHCLaboratorio.resx">
+      <DependentUpon>frmConsultaHCLaboratorio.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCriteriosIngresoPaliativo.resx">
+      <DependentUpon>frmCriteriosIngresoPaliativo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmc_evolucion.resx">
+      <DependentUpon>frmc_evolucion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmc_Interconsulta.resx">
+      <DependentUpon>frmc_Interconsulta.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmc_JustificaExcepcionProc.resx">
+      <DependentUpon>frmc_JustificaExcepcionProc.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBuscadorEquiva.resx">
+      <DependentUpon>frmBuscadorEquiva.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctlDescripcionQuirurgica.resx">
+      <DependentUpon>ctlDescripcionQuirurgica.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctlEvolucion.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ctlEvolucion.vb</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctlOrdenesMedicas.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ctlOrdenesMedicas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctlPlanFormuExterna.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ctlPlanFormuExterna.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctlPlanIncapacidad.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ctlPlanIncapacidad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctlPlanRemision.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ctlPlanRemision.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctlRecomEgreso.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ctlRecomEgreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCancelaOrden.resx">
+      <DependentUpon>frmCancelaOrden.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaBeeblos.resx">
+      <DependentUpon>frmConsultaBeeblos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaHCEnfermeriaAlejo.resx">
+      <DependentUpon>frmConsultaHCEnfermeriaAlejo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaParaclinico.resx">
+      <DependentUpon>frmConsultaParaclinico.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultaPorNombre.resx">
+      <DependentUpon>frmConsultaPorNombre.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCorreccionEF_tmp.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCorreccionEF_tmp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmc_ConsultaMedico.resx">
+      <DependentUpon>frmc_ConsultaMedico.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmc_ConsultaMedicoQx.resx">
+      <DependentUpon>frmc_ConsultaMedicoQx.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmc_JustificaExcepcion.resx">
+      <DependentUpon>frmc_JustificaExcepcion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmc_RecomFarmaco.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmc_RecomFarmaco.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmc_TraeAlarmas.resx">
+      <DependentUpon>frmc_TraeAlarmas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDispMedicamentos.resx">
+      <DependentUpon>frmDispMedicamentos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHistoriaPrincipal.resx">
+      <DependentUpon>frmHistoriaPrincipal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNotasHC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmNotasHC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOpcionesSalidaHC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmOpcionesSalidaHC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReferencias.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmReferencias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRepLiquidos.resx">
+      <DependentUpon>frmRepLiquidos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PantallaLiquidos.resx">
+      <DependentUpon>frm_PantallaLiquidos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_SISPRO.resx">
+      <DependentUpon>frm_SISPRO.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graficas_Escalas.resx">
+      <DependentUpon>Graficas_Escalas.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaEsperaError.resx">
+      <DependentUpon>ListaEsperaError.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Disenadores\RepAntTransfusional.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepAntTraumatologico.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepCondolencias.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepCuidadosPaliativos.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepEnfSignosVitales.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepEvolucionINTERCONSULTA.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepEvolucionNI.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepEvolucionNOINTERCONSULTA.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepInterconsultaHC.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepOrdenPatologia.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepOrdenProcedimNoSede.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepRiesgoNutricional.rdlc" />
+    <EmbeddedResource Include="Reportes\FrmRepCondolencias.resx">
+      <DependentUpon>FrmRepCondolencias.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmRepCuidadosPaliativos.resx">
+      <DependentUpon>frmRepCuidadosPaliativos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmRepOrdenPatologia.resx">
+      <DependentUpon>frmRepOrdenPatologia.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Disenadores\RepDetExcepcionesAux.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepOrdenProcedim.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepOrdenProcedimNo.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepRecomendacionEgresoPeru.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepFormulaProcedimPeru.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepFormulaMedicaPeru.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepIncapacidadVen.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepIncapacidadPeru.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepOrdenesMedicas.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepEnfSubseccionSD.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepFormulaMedicaVenezuela.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\ReimpresionAdm.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepAlarma.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepAlergias.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepAntFamiliares.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepAntFarmacologicos.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepAntGinecologicos.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepAntInmumologicos.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepAntOtros.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepAntPatologicos.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepAntQuirurgicos.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepAntToxicos.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepContraReferencia.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepControlCateterVascular.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepControlCateterVascular1.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepDesarrolloPsicomotor.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepDescripcionQx.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepDetDescripcionQx.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Disenadores\RepDetExcepciones.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepDiagnosticos.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepDiagnosticosEgreso.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepEgresos.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepEncabezadoResumen.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepEnfBalanceDet.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepEnfLiquidos.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepEnfLiquidosAdminDet.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepEnfPlaneacionCuidado.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepEnfPlaneacionDet.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepEnfPlaneacionGeneral.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepEscalaCam.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepEscalaRass.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepEscalaRiesgo.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepEvolucion.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepEvolucionHC.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepEvolucionResumen.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepExcepcion.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepFormulaMedica.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepFormulaProcedim.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepFormulaProcedimAutoriza.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepFormulaProcedimPDF.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepHCMedicamentos.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepHemodialisis.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepHerida.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepHistoriaClinicaAlejo.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepHojaNeurologica.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepIncapacidad.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepMedicoIngreso.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepMonitoreoHemoLuis.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepMonitoreoHToxemica.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepMotivoConsulta.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepNotas.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepNotasEvolucion.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepNotasParametricas.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepOrdenDietas.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepOrdenesGenerales.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepOrdenesMedicasPeru.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepOrdenesMedicasXAdmision.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepOrdenMedicaMedControl.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepOrdenMedicaMedicamentos.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepOrdenMedicamentos.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepOrdenMedicaProcedimientos.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepPerinatales.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepPlasmaferesis.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepProcedimientos.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepProcedimQuirurResumen.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepRecienNacido.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepRecomendacionEgreso.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepRemision.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepResumenDiagnosEgreso.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepResumenDiagnosIngreso.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepResumenHistoriaClinica.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepRevision.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepRevisionEA.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepSeccionesAdicionalesHC.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepSignosVitales.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepSubseccionNeo.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepSubseccionSD.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepTriage.rdlc" />
+    <EmbeddedResource Include="Reportes\Disenadores\RepValoracion.rdlc" />
+    <EmbeddedResource Include="Reportes\frmOrdenPatologia.resx">
+      <DependentUpon>frmOrdenPatologia.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmRepDescripcionQX.resx">
+      <DependentUpon>frmRepDescripcionQX.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmRepExcepcion.resx">
+      <DependentUpon>frmRepExcepcion.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\FrmRepFomulaProcedimtPDF.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmRepFomulaProcedimtPDF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmRepHistoriaClinica.resx">
+      <DependentUpon>frmRepHistoriaClinica.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmRepHistoriaClinicaEnfermeriaAlejo.resx">
+      <DependentUpon>frmRepHistoriaClinicaEnfermeriaAlejo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmRepOrdenesMedicasXAdmision.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmRepOrdenesMedicasXAdmision.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmRepOrdenMedica.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmRepOrdenMedica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmRepParaclinico.resx">
+      <DependentUpon>frmRepParaclinico.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmRepPlanIncapacidad.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmRepPlanIncapacidad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmRepRecomendacionEgreso.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmRepRecomendacionEgreso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmRepRecomendacionesConsultaHC.resx">
+      <DependentUpon>frmRepRecomendacionesConsultaHC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmRepRemision.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmRepRemision.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmRepRemisionConsultaHC.resx">
+      <DependentUpon>frmRepRemisionConsultaHC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmRepResumenHistoriaClinica.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmRepResumenHistoriaClinica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmRepSeccionesAdicionales.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmRepSeccionesAdicionales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmRepSegDolor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmRepSegDolor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmRepTriageConsultaHC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmRepTriageConsultaHC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\RptHC.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RptHC.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="SHDocVw">
+      <Guid>{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://172.22.150.36:8003/WebServiceConsultaAvicena.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\wsResultadosLaboratorio\</RelPath>
+      <UpdateFromURL>http://172.22.150.36:8003/WebServiceConsultaAvicena.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>HistoriaClinica_wsResultadosLaboratorio_WebService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://192.168.139.152:8880/CuidadosPaleativosWS/CuidadosPaleativosService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\wsCuidadoPaliativo\</RelPath>
+      <UpdateFromURL>http://192.168.139.152:8880/CuidadosPaleativosWS/CuidadosPaleativosService%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>MySettings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>HistoriaClinica_wsCuidadoPaliativo1_CuidadosPaleativosServiceImpService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Reportes\Disenadores\Clases\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

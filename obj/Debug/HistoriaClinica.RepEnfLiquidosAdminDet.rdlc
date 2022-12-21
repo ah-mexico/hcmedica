@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="DummyDataSource">
+      <rd:DataSourceID>c660f813-a71f-4e79-845f-b80d8ccea7fc</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <InteractiveHeight>29.7cm</InteractiveHeight>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>21cm</InteractiveWidth>
+  <rd:GridSpacing>0.25cm</rd:GridSpacing>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <LeftMargin>0.5cm</LeftMargin>
+  <BottomMargin>0.5cm</BottomMargin>
+  <rd:ReportID>9ef42026-8dc8-4eb2-91f4-aa223bc72269</rd:ReportID>
+  <PageWidth>21cm</PageWidth>
+  <DataSets>
+    <DataSet Name="Enfermeria_Sophia_HistoriaClinica_Reportes_Liquidos">
+      <Fields>
+        <Field Name="CantidadAdmin">
+          <DataField>CantidadAdmin</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="CantidadAdminTotal">
+          <DataField>CantidadAdminTotal</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="CantidadElim">
+          <DataField>CantidadElim</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="CodLiquidoAdministrado">
+          <DataField>CodLiquidoAdministrado</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CodLiquidoEliminado">
+          <DataField>CodLiquidoEliminado</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DescripcionAdmin">
+          <DataField>DescripcionAdmin</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DescripcionElim">
+          <DataField>DescripcionElim</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Fecha">
+          <DataField>Fecha</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FechaElim">
+          <DataField>FechaElim</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Hora">
+          <DataField>Hora</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HoraElim">
+          <DataField>HoraElim</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Tipo">
+          <DataField>Tipo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DummyDataSource</DataSourceName>
+        <CommandText />
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>Enfermeria.Sophia.HistoriaClinica.Reportes</rd:DataSetName>
+        <rd:TableName>Liquidos</rd:TableName>
+        <rd:ObjectDataSourceType>Enfermeria.Sophia.HistoriaClinica.Reportes.Liquidos, Enfermeria, Version=1.0.3972.30234, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Width>19.82937cm</Width>
+  <Body>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <ReportItems>
+      <List Name="list2">
+        <ZIndex>1</ZIndex>
+        <Left>0.14781cm</Left>
+        <DataSetName>Enfermeria_Sophia_HistoriaClinica_Reportes_Liquidos</DataSetName>
+        <ReportItems>
+          <Textbox Name="textbox7">
+            <Top>0.09127cm</Top>
+            <Width>3.25cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <PaddingLeft>4pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>2</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2.7209cm</Left>
+            <Height>0.5cm</Height>
+            <Value>=Fields!Fecha.Value</Value>
+          </Textbox>
+          <Textbox Name="textbox9">
+            <Top>0.09127cm</Top>
+            <Width>1.25cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>1</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.5cm</Left>
+            <Height>0.5cm</Height>
+            <Value>FECHA</Value>
+          </Textbox>
+          <List Name="list1">
+            <Left>0.25cm</Left>
+            <DataSetName>Enfermeria_Sophia_HistoriaClinica_Reportes_Liquidos</DataSetName>
+            <ReportItems>
+              <List Name="list3">
+                <ZIndex>1</ZIndex>
+                <DataSetName>Enfermeria_Sophia_HistoriaClinica_Reportes_Liquidos</DataSetName>
+                <ReportItems>
+                  <Textbox Name="textbox4">
+                    <rd:DefaultName>textbox4</rd:DefaultName>
+                    <Top>0.06812cm</Top>
+                    <Width>1.25727cm</Width>
+                    <Style>
+                      <FontSize>7pt</FontSize>
+                      <PaddingLeft>5pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                    <ZIndex>2</ZIndex>
+                    <CanGrow>true</CanGrow>
+                    <Left>0.24273cm</Left>
+                    <Value>=Fields!Hora.Value &amp; " Hrs"</Value>
+                  </Textbox>
+                  <Textbox Name="textbox2">
+                    <Top>0.06812cm</Top>
+                    <Width>16.09855cm</Width>
+                    <Style>
+                      <FontSize>7pt</FontSize>
+                      <PaddingLeft>4pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                    <ZIndex>1</ZIndex>
+                    <CanGrow>true</CanGrow>
+                    <Left>3cm</Left>
+                    <Value>=Fields!DescripcionAdmin.Value</Value>
+                  </Textbox>
+                  <Textbox Name="textbox5">
+                    <Top>0.07937cm</Top>
+                    <Width>1.68982cm</Width>
+                    <Style>
+                      <FontSize>7pt</FontSize>
+                      <FontWeight>700</FontWeight>
+                      <PaddingLeft>5pt</PaddingLeft>
+                      <PaddingRight>2pt</PaddingRight>
+                      <PaddingTop>2pt</PaddingTop>
+                      <PaddingBottom>2pt</PaddingBottom>
+                    </Style>
+                    <CanGrow>true</CanGrow>
+                    <Left>1.5cm</Left>
+                    <Value>=Fields!CantidadAdmin.Value &amp; " cc"</Value>
+                  </Textbox>
+                </ReportItems>
+                <Top>0.61639cm</Top>
+                <Width>19.15146cm</Width>
+                <Grouping Name="list3_ListControl">
+                  <GroupExpressions>
+                    <GroupExpression>=Fields!Hora.Value</GroupExpression>
+                  </GroupExpressions>
+                </Grouping>
+              </List>
+              <Textbox Name="textbox3">
+                <rd:DefaultName>textbox3</rd:DefaultName>
+                <Top>0.06481cm</Top>
+                <Width>3cm</Width>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                  <FontWeight>700</FontWeight>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+                <CanGrow>true</CanGrow>
+                <Left>0.25cm</Left>
+                <Height>0.5cm</Height>
+                <Value>=IIF(Fields!Tipo.Value="LA","ADMINISTRADOS","ELIMINADOS")</Value>
+              </Textbox>
+            </ReportItems>
+            <Top>0.59127cm</Top>
+            <Width>19.25cm</Width>
+            <Grouping Name="list1_Details_Group">
+              <GroupExpressions>
+                <GroupExpression>=Fields!Tipo.Value</GroupExpression>
+              </GroupExpressions>
+            </Grouping>
+          </List>
+        </ReportItems>
+        <Top>0.75cm</Top>
+        <Width>19.57937cm</Width>
+        <Grouping Name="list2_Details_Group">
+          <GroupExpressions>
+            <GroupExpression>=Fields!Fecha.Value</GroupExpression>
+          </GroupExpressions>
+        </Grouping>
+        <Height>1.78703cm</Height>
+      </List>
+      <Textbox Name="textbox1">
+        <rd:DefaultName>textbox1</rd:DefaultName>
+        <Width>10cm</Width>
+        <Style>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Left>5.25cm</Left>
+        <Height>0.5cm</Height>
+        <Value>REPORTE DE LIQUIDOS </Value>
+      </Textbox>
+    </ReportItems>
+    <Height>2.75cm</Height>
+  </Body>
+  <Language>es-ES</Language>
+  <TopMargin>0.5cm</TopMargin>
+  <PageHeight>29.7cm</PageHeight>
+</Report>

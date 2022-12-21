@@ -1,0 +1,1088 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="DummyDataSource">
+      <rd:DataSourceID>36a1f9a7-7654-4e80-bea5-c9c1024e2e49</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <InteractiveHeight>29.7cm</InteractiveHeight>
+  <ReportParameters>
+    <ReportParameter Name="FechaImpresion">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>FechaImpresion</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Reimpresion">
+      <DataType>Boolean</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Reimpresion</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>21cm</InteractiveWidth>
+  <rd:GridSpacing>0.2cm</rd:GridSpacing>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <LeftMargin>0.5cm</LeftMargin>
+  <PageHeader>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+    <ReportItems>
+      <Textbox Name="textbox61">
+        <Width>1.5cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>1</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>15.2cm</Left>
+        <Value>PAGINA:</Value>
+      </Textbox>
+      <Textbox Name="textbox62">
+        <Width>3.19808cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Left>16.8cm</Left>
+        <Value>=Globals!PageNumber &amp; "  DE  " &amp; Globals!TotalPages</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>0.50265cm</Height>
+    <PrintOnLastPage>true</PrintOnLastPage>
+  </PageHeader>
+  <BottomMargin>0.5cm</BottomMargin>
+  <rd:ReportID>b267c795-f3f2-489b-b187-64480d5d527d</rd:ReportID>
+  <PageWidth>21.5cm</PageWidth>
+  <DataSets>
+    <DataSet Name="HistoriaClinica_Sophia_HistoriaClinica_Reportes_EncabezadoPlanManejo">
+      <Fields>
+        <Field Name="Ciudad">
+          <DataField>Ciudad</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="des_especialidadEgreso">
+          <DataField>des_especialidadEgreso</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Direccion">
+          <DataField>Direccion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DocumentoMedico">
+          <DataField>DocumentoMedico</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DocumentoMedicoEgreso">
+          <DataField>DocumentoMedicoEgreso</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DocumentoUsuario">
+          <DataField>DocumentoUsuario</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EntidadAfiliacion">
+          <DataField>EntidadAfiliacion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EntidadPrestadora">
+          <DataField>EntidadPrestadora</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EspecialidadEgreso">
+          <DataField>EspecialidadEgreso</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EspecialidadMed">
+          <DataField>EspecialidadMed</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FechaActual">
+          <DataField>FechaActual</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Nit">
+          <DataField>Nit</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NombreCompania">
+          <DataField>NombreCompania</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NombreMedico">
+          <DataField>NombreMedico</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NombreMedicoEgreso">
+          <DataField>NombreMedicoEgreso</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NombreSucursal">
+          <DataField>NombreSucursal</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NombreUsuario">
+          <DataField>NombreUsuario</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NumeroCarne">
+          <DataField>NumeroCarne</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PlanUsuario">
+          <DataField>PlanUsuario</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RegistroMedico">
+          <DataField>RegistroMedico</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RegistroMedicoEgreso">
+          <DataField>RegistroMedicoEgreso</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Telefono">
+          <DataField>Telefono</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TipoDocumento">
+          <DataField>TipoDocumento</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TipoUsuario">
+          <DataField>TipoUsuario</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DummyDataSource</DataSourceName>
+        <CommandText />
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>HistoriaClinica.Sophia.HistoriaClinica.Reportes</rd:DataSetName>
+        <rd:TableName>EncabezadoPlanManejo</rd:TableName>
+        <rd:ObjectDataSourceType>HistoriaClinica.Sophia.HistoriaClinica.Reportes.EncabezadoPlanManejo, HistoriaClinica, Version=1.0.3315.27591, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+      </rd:DataSetInfo>
+    </DataSet>
+    <DataSet Name="HistoriaClinica_Sophia_HistoriaClinica_Reportes_Incapacidad">
+      <Fields>
+        <Field Name="Diagnostico">
+          <DataField>Diagnostico</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Dias">
+          <DataField>Dias</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Especialidad">
+          <DataField>Especialidad</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FechaFinal">
+          <DataField>FechaFinal</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FechaInicial">
+          <DataField>FechaInicial</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Observaciones">
+          <DataField>Observaciones</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DummyDataSource</DataSourceName>
+        <CommandText />
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>HistoriaClinica.Sophia.HistoriaClinica.Reportes</rd:DataSetName>
+        <rd:TableName>Incapacidad</rd:TableName>
+        <rd:ObjectDataSourceType>HistoriaClinica.Sophia.HistoriaClinica.Reportes.Incapacidad, HistoriaClinica, Version=1.0.4797.25176, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Width>20.55463cm</Width>
+  <Body>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <ReportItems>
+      <Textbox Name="textbox29">
+        <Visibility>
+          <Hidden>true</Hidden>
+        </Visibility>
+        <Top>0.14709cm</Top>
+        <Width>19.6cm</Width>
+        <Style>
+          <FontSize>12pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>49</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.4cm</Left>
+        <Height>0.6cm</Height>
+        <Value>=IIF(Parameters!Reimpresion.Value=TRUE,"COPIA","")</Value>
+      </Textbox>
+      <Textbox Name="textbox39">
+        <Top>2.4cm</Top>
+        <Width>19.6cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>48</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.4cm</Left>
+        <Height>0.5cm</Height>
+        <Value>= "GENERADO:    " &amp; Parameters!FechaImpresion.Value</Value>
+      </Textbox>
+      <Textbox Name="textbox9">
+        <Top>18.8cm</Top>
+        <Width>12.4cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>47</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>3.4cm</Left>
+        <Height>0.5cm</Height>
+        <Value>=First(Fields!Especialidad.Value, "HistoriaClinica_Sophia_HistoriaClinica_Reportes_Incapacidad")</Value>
+      </Textbox>
+      <Textbox Name="textbox10">
+        <Top>18.8cm</Top>
+        <Width>3.05276cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>46</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.34724cm</Left>
+        <Height>0.5cm</Height>
+        <Value>ESPECIALIDAD</Value>
+      </Textbox>
+      <Textbox Name="textbox23">
+        <Top>14.6cm</Top>
+        <Width>1.6cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <PaddingLeft>5pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>45</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>3.4cm</Left>
+        <Height>0.5cm</Height>
+        <Value>=First(Fields!Dias.Value, "HistoriaClinica_Sophia_HistoriaClinica_Reportes_Incapacidad")</Value>
+      </Textbox>
+      <Textbox Name="textbox46">
+        <Top>18.2cm</Top>
+        <Width>12.4cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>44</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>3.4cm</Left>
+        <Height>0.5cm</Height>
+        <Value>=First(Fields!RegistroMedicoEgreso.Value, "HistoriaClinica_Sophia_HistoriaClinica_Reportes_EncabezadoPlanManejo")</Value>
+      </Textbox>
+      <Textbox Name="textbox47">
+        <Top>18.2cm</Top>
+        <Width>3.29999cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>43</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.34724cm</Left>
+        <Height>0.5cm</Height>
+        <Value>REGISTRO MÉDICO</Value>
+      </Textbox>
+      <Textbox Name="textbox42">
+        <Top>17.51864cm</Top>
+        <Width>17.2cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>42</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>2cm</Left>
+        <Height>0.5cm</Height>
+        <Value>=First(Fields!NombreMedicoEgreso.Value, "HistoriaClinica_Sophia_HistoriaClinica_Reportes_EncabezadoPlanManejo")</Value>
+      </Textbox>
+      <Textbox Name="textbox43">
+        <Top>17.51864cm</Top>
+        <Width>1.8cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>41</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.34724cm</Left>
+        <Height>0.5cm</Height>
+        <Value>NOMBRE</Value>
+      </Textbox>
+      <Textbox Name="textbox36">
+        <Top>3.62123cm</Top>
+        <Width>8.50823cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>40</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>11.49177cm</Left>
+        <Height>0.5cm</Height>
+        <Value>=First(Fields!Direccion.Value, "HistoriaClinica_Sophia_HistoriaClinica_Reportes_EncabezadoPlanManejo")</Value>
+      </Textbox>
+      <Textbox Name="textbox37">
+        <Top>3.61025cm</Top>
+        <Width>2.44391cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>39</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>9.57672cm</Left>
+        <Height>0.5cm</Height>
+        <Value>DIRECCIÓN</Value>
+      </Textbox>
+      <Textbox Name="textbox35">
+        <Top>4.18452cm</Top>
+        <Width>7.09999cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>38</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>2.15657cm</Left>
+        <Height>0.5cm</Height>
+        <Value>=First(Fields!Telefono.Value, "HistoriaClinica_Sophia_HistoriaClinica_Reportes_EncabezadoPlanManejo")</Value>
+      </Textbox>
+      <Textbox Name="textbox34">
+        <Top>4.19999cm</Top>
+        <Width>2.44391cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>37</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.34724cm</Left>
+        <Height>0.5cm</Height>
+        <Value>TELÉFONO</Value>
+      </Textbox>
+      <Textbox Name="textbox32">
+        <Top>6.6cm</Top>
+        <Width>7.51429cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>36</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>12.48571cm</Left>
+        <Height>0.5cm</Height>
+        <Value>=First(Fields!TipoUsuario.Value, "HistoriaClinica_Sophia_HistoriaClinica_Reportes_EncabezadoPlanManejo")</Value>
+      </Textbox>
+      <Textbox Name="textbox1">
+        <Top>6.6cm</Top>
+        <Width>3.5254cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>35</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>9.58889cm</Left>
+        <Height>0.5cm</Height>
+        <Value>TIPO DE USUARIO</Value>
+      </Textbox>
+      <Textbox Name="textbox26">
+        <Top>4.76137cm</Top>
+        <Width>7.89365cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>34</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>1.34969cm</Left>
+        <Height>0.5cm</Height>
+        <Value>=First(Fields!Nit.Value, "HistoriaClinica_Sophia_HistoriaClinica_Reportes_EncabezadoPlanManejo")</Value>
+      </Textbox>
+      <Textbox Name="textbox25">
+        <Top>4.77619cm</Top>
+        <Width>1.38571cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>33</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.34724cm</Left>
+        <Height>0.5cm</Height>
+        <Value>NIT</Value>
+      </Textbox>
+      <Textbox Name="DocumentoUsuario">
+        <rd:DefaultName>DocumentoUsuario</rd:DefaultName>
+        <Top>5.92909cm</Top>
+        <Width>3.20106cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>32</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>6.03773cm</Left>
+        <Height>0.50265cm</Height>
+        <Value>=First(Fields!DocumentoUsuario.Value, "HistoriaClinica_Sophia_HistoriaClinica_Reportes_EncabezadoPlanManejo")</Value>
+      </Textbox>
+      <Textbox Name="textbox19">
+        <Top>7.2cm</Top>
+        <Width>5cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>31</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>2cm</Left>
+        <Height>0.5cm</Height>
+        <Value>=First(Fields!FechaActual.Value, "HistoriaClinica_Sophia_HistoriaClinica_Reportes_EncabezadoPlanManejo")</Value>
+      </Textbox>
+      <Textbox Name="textbox20">
+        <Top>7.2cm</Top>
+        <Width>1.80001cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>30</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.34724cm</Left>
+        <Height>0.5cm</Height>
+        <Value>FECHA</Value>
+      </Textbox>
+      <Textbox Name="textbox17">
+        <Top>6.52909cm</Top>
+        <Width>7.24724cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>29</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>2cm</Left>
+        <Height>0.5cm</Height>
+        <Value>=First(Fields!NumeroCarne.Value, "HistoriaClinica_Sophia_HistoriaClinica_Reportes_EncabezadoPlanManejo")</Value>
+      </Textbox>
+      <Textbox Name="textbox18">
+        <Top>6.52909cm</Top>
+        <Width>1.7cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>28</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.34724cm</Left>
+        <Height>0.5cm</Height>
+        <Value>CARNÉ</Value>
+      </Textbox>
+      <Textbox Name="textbox15">
+        <Top>6cm</Top>
+        <Width>7.91429cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>27</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>12.08571cm</Left>
+        <Height>0.5cm</Height>
+        <Value>=First(Fields!PlanUsuario.Value, "HistoriaClinica_Sophia_HistoriaClinica_Reportes_EncabezadoPlanManejo")</Value>
+      </Textbox>
+      <Textbox Name="textbox16">
+        <Top>6cm</Top>
+        <Width>2.7cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>26</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>9.58571cm</Left>
+        <Height>0.5cm</Height>
+        <Value>PLAN USUARIO</Value>
+      </Textbox>
+      <Textbox Name="textbox13">
+        <Top>5.92909cm</Top>
+        <Width>1.1164cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>25</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>5.14725cm</Left>
+        <Height>0.5cm</Height>
+        <Value>=First(Fields!TipoDocumento.Value, "HistoriaClinica_Sophia_HistoriaClinica_Reportes_EncabezadoPlanManejo")</Value>
+      </Textbox>
+      <Textbox Name="textbox14">
+        <Top>5.92909cm</Top>
+        <Width>5.2cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>24</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.34724cm</Left>
+        <Height>0.5cm</Height>
+        <Value>DOCUMENTO DE IDENTIFICACIÓN</Value>
+      </Textbox>
+      <Textbox Name="textbox11">
+        <Top>5.4cm</Top>
+        <Width>16.8cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>23</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>3.2cm</Left>
+        <Height>0.5cm</Height>
+        <Value>=First(Fields!NombreUsuario.Value, "HistoriaClinica_Sophia_HistoriaClinica_Reportes_EncabezadoPlanManejo")</Value>
+      </Textbox>
+      <Textbox Name="textbox3">
+        <Top>5.4cm</Top>
+        <Width>3.27921cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>22</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.34724cm</Left>
+        <Height>0.5cm</Height>
+        <Value>NOMBRE USUARIO</Value>
+      </Textbox>
+      <Textbox Name="textbox7">
+        <Top>4.782cm</Top>
+        <Width>8.88784cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>21</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>11.11216cm</Left>
+        <Height>0.5cm</Height>
+        <Value>=First(Fields!Ciudad.Value, "HistoriaClinica_Sophia_HistoriaClinica_Reportes_EncabezadoPlanManejo")</Value>
+      </Textbox>
+      <Textbox Name="textbox8">
+        <Top>4.782cm</Top>
+        <Width>1.92646cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>20</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>9.58571cm</Left>
+        <Height>0.5cm</Height>
+        <Value>CIUDAD </Value>
+      </Textbox>
+      <Textbox Name="textbox5">
+        <Top>4.2cm</Top>
+        <Width>7.23492cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>19</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>12.76508cm</Left>
+        <Height>0.5cm</Height>
+        <Value>=First(Fields!EntidadAfiliacion.Value, "HistoriaClinica_Sophia_HistoriaClinica_Reportes_EncabezadoPlanManejo")</Value>
+      </Textbox>
+      <Textbox Name="textbox6">
+        <Top>4.2cm</Top>
+        <Width>3.5cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>18</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>9.56508cm</Left>
+        <Height>0.5cm</Height>
+        <Value>ENTIDAD AFILIACIÓN</Value>
+      </Textbox>
+      <Textbox Name="textbox4">
+        <Top>3.6cm</Top>
+        <Width>7.1cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>17</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>2.14724cm</Left>
+        <Height>0.5cm</Height>
+        <Value>=First(Fields!NombreSucursal.Value, "HistoriaClinica_Sophia_HistoriaClinica_Reportes_EncabezadoPlanManejo")</Value>
+      </Textbox>
+      <Textbox Name="textbox21">
+        <Top>3.6cm</Top>
+        <Width>2.1cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>16</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.34724cm</Left>
+        <Height>0.5cm</Height>
+        <Value>SUCURSAL</Value>
+      </Textbox>
+      <Line Name="line3">
+        <Top>16.8cm</Top>
+        <Width>5.4cm</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <ZIndex>15</ZIndex>
+        <Left>13.4cm</Left>
+        <Height>0cm</Height>
+      </Line>
+      <Textbox Name="textbox41">
+        <Top>16.39999cm</Top>
+        <Width>2.64709cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>14</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>10.7cm</Left>
+        <Height>0.5cm</Height>
+        <Value>FIRMA USUARIO</Value>
+      </Textbox>
+      <Line Name="line2">
+        <Top>16.8cm</Top>
+        <Width>6.4cm</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <ZIndex>13</ZIndex>
+        <Left>4.2cm</Left>
+        <Height>0cm</Height>
+      </Line>
+      <Textbox Name="textbox40">
+        <Top>16.45608cm</Top>
+        <Width>4cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>12</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.34724cm</Left>
+        <Height>0.5cm</Height>
+        <Value>FIRMA Y SELLO MÉDICO</Value>
+      </Textbox>
+      <Textbox Name="textbox31">
+        <Top>14.6cm</Top>
+        <Width>3.2cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>11</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>14.4cm</Left>
+        <Height>0.5cm</Height>
+        <Value>=First(Fields!FechaFinal.Value, "HistoriaClinica_Sophia_HistoriaClinica_Reportes_Incapacidad")</Value>
+      </Textbox>
+      <Textbox Name="textbox30">
+        <Top>14.6cm</Top>
+        <Width>3cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>10</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>8.4cm</Left>
+        <Height>0.5cm</Height>
+        <Value>=First(Fields!FechaInicial.Value, "HistoriaClinica_Sophia_HistoriaClinica_Reportes_Incapacidad")</Value>
+      </Textbox>
+      <Textbox Name="textbox28">
+        <Top>14.6cm</Top>
+        <Width>3cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>9</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>11.8cm</Left>
+        <Height>0.5cm</Height>
+        <Value>FECHA FINAL</Value>
+      </Textbox>
+      <Textbox Name="textbox27">
+        <Top>14.6cm</Top>
+        <Width>2.7cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>8</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>6cm</Left>
+        <Height>0.5cm</Height>
+        <Value>FECHA INICIAL</Value>
+      </Textbox>
+      <Textbox Name="textbox24">
+        <Top>14.6cm</Top>
+        <Width>2.85276cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>7</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.34724cm</Left>
+        <Height>0.5cm</Height>
+        <Value>DIAS DE REPOSO</Value>
+      </Textbox>
+      <Textbox Name="Observaciones">
+        <rd:DefaultName>Observaciones</rd:DefaultName>
+        <Top>11.8cm</Top>
+        <Width>18.4cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>6</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.4cm</Left>
+        <Height>2cm</Height>
+        <Value>=First(Fields!Observaciones.Value, "HistoriaClinica_Sophia_HistoriaClinica_Reportes_Incapacidad")</Value>
+      </Textbox>
+      <Textbox Name="textbox22">
+        <Top>11cm</Top>
+        <Width>3.3cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>5</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.34724cm</Left>
+        <Height>0.5cm</Height>
+        <Value>OBSERVACIONES</Value>
+      </Textbox>
+      <Textbox Name="Diagnostico_1">
+        <rd:DefaultName>Diagnostico_1</rd:DefaultName>
+        <Top>9.8cm</Top>
+        <Width>18.4cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <PaddingLeft>4pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>4</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.4cm</Left>
+        <Height>0.5cm</Height>
+        <Value>=First(Fields!Diagnostico.Value, "HistoriaClinica_Sophia_HistoriaClinica_Reportes_Incapacidad")</Value>
+      </Textbox>
+      <Textbox Name="textbox12">
+        <Top>9cm</Top>
+        <Width>2.3cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>3</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.34724cm</Left>
+        <Height>0.5cm</Height>
+        <Value>DIAGNÓSTICO</Value>
+      </Textbox>
+      <Line Name="line1">
+        <Top>8.27183cm</Top>
+        <Width>19.8144cm</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <ZIndex>2</ZIndex>
+        <Left>0.34724cm</Left>
+        <Height>0cm</Height>
+      </Line>
+      <Textbox Name="textbox2">
+        <Top>1.69298cm</Top>
+        <Width>19.6cm</Width>
+        <Style>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>1</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.4cm</Left>
+        <Height>0.5cm</Height>
+        <Value>REPOSO</Value>
+      </Textbox>
+      <Textbox Name="NombreCompania_1">
+        <rd:DefaultName>NombreCompania_1</rd:DefaultName>
+        <Top>1cm</Top>
+        <Width>19.6cm</Width>
+        <Style>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Left>0.4cm</Left>
+        <Height>0.5cm</Height>
+        <Value>=First(Fields!NombreCompania.Value, "HistoriaClinica_Sophia_HistoriaClinica_Reportes_EncabezadoPlanManejo")</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>19.8cm</Height>
+  </Body>
+  <Language>en-US</Language>
+  <PageFooter>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+    <ReportItems>
+      <Textbox Name="textbox33">
+        <Top>0.2cm</Top>
+        <Width>4.09365cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Left>0.4cm</Left>
+        <Height>0.5cm</Height>
+        <Value>firmado electrónicamente </Value>
+      </Textbox>
+    </ReportItems>
+    <Height>0.75cm</Height>
+    <PrintOnLastPage>true</PrintOnLastPage>
+  </PageFooter>
+  <TopMargin>0.5cm</TopMargin>
+  <PageHeight>28cm</PageHeight>
+</Report>

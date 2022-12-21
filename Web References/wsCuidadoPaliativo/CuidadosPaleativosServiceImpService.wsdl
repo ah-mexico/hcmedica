@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:tns="http://www.colsanitas.com/CuidadosPaleativosService/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://www.colsanitas.com/cuidadosPaleativos/xsd/schemas" xmlns:ns2="http://schemas.xmlsoap.org/soap/http" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CuidadosPaleativosServiceImpService" targetNamespace="http://www.colsanitas.com/CuidadosPaleativosService/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xs:schema xmlns:tns="http://www.colsanitas.com/cuidadosPaleativos/xsd/schemas" elementFormDefault="qualified" targetNamespace="http://www.colsanitas.com/cuidadosPaleativos/xsd/schemas" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="FaultRespuesta" type="tns:FaultMessageType" />
+      <xs:element name="HistoricoRespuestasRequest" type="tns:HistoricoRespuestasReqType" />
+      <xs:element name="HistoricoRespuestasResponse" type="tns:HistoricoRespuestasResType" />
+      <xs:element name="UltimasRespuestasRequest" type="tns:UltimaRespuestaResquestType" />
+      <xs:element name="UltimasRespuestasResponse" type="tns:UltimasRespuestasResponseType" />
+      <xs:complexType name="HistoricoRespuestasReqType">
+        <xs:sequence>
+          <xs:element name="parametrosPreguntas" type="tns:UltimaRespuestaResquestType" />
+          <xs:element name="rango" type="xs:int" />
+          <xs:element name="fecha" type="xs:string" />
+          <xs:element name="programa" type="xs:string" />
+          <xs:element name="seccion" type="xs:string" />
+          <xs:element name="subseccion" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="UltimaRespuestaResquestType">
+        <xs:sequence>
+          <xs:element name="tipoDocumento" type="xs:string" />
+          <xs:element name="numeroDocumento" type="xs:string" />
+          <xs:element name="preguntas" type="tns:PreguntasType" />
+          <xs:element name="origen" type="xs:string" />
+          <xs:element name="regional" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="PreguntasType">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="idPregunta" type="xs:long" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="HistoricoRespuestasResType">
+        <xs:sequence>
+          <xs:element name="origenInfo" type="xs:string" />
+          <xs:element name="listadoRespuestas" type="tns:listadoRespuestasHistType" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="listadoRespuestasHistType">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" name="grupoFecha" type="tns:GrupoFechaType" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="GrupoFechaType">
+        <xs:sequence>
+          <xs:element name="fecha" type="xs:string" />
+          <xs:element name="resultadosHist" type="tns:ResultadosHistType" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ResultadosHistType">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" name="respuesta" type="tns:RespuestaHistType" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="RespuestaHistType">
+        <xs:sequence>
+          <xs:element name="idPregunta" type="xs:string" />
+          <xs:element name="interpretacion" type="xs:string" />
+          <xs:element name="puntaje" type="xs:string" />
+          <xs:element name="codRespuesta" type="xs:string" />
+          <xs:element name="tipoRespuesta" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="FaultMessageType">
+        <xs:sequence>
+          <xs:element name="codigoError" type="xs:string" />
+          <xs:element name="mensajeError" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="UltimasRespuestasResponseType">
+        <xs:sequence>
+          <xs:element name="codigoError" type="xs:string" />
+          <xs:element name="resultados" type="tns:ResultadosType" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ResultadosType">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" name="pregunta" type="tns:PreguntaType" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="PreguntaType">
+        <xs:sequence>
+          <xs:element name="idPregunta" type="xs:string" />
+          <xs:element name="respuestas" type="tns:RespuestasType" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="RespuestasType">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="textoRespuesta" type="xs:string" />
+          <xs:element minOccurs="0" name="respuestaCompuesta" type="tns:RespuestaCompuestaType" />
+          <xs:element minOccurs="0" name="listadoIdRespuesta" type="tns:ListadoIdRespuestaType" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="RespuestaCompuestaType">
+        <xs:sequence>
+          <xs:element name="idRespuesta" type="xs:string" />
+          <xs:element name="textoRespuesta" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ListadoIdRespuestaType">
+        <xs:sequence>
+          <xs:element maxOccurs="unbounded" name="idRespuesta" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="FaultMessage">
+    <wsdl:part name="FaultMessage" element="ns1:FaultRespuesta" />
+  </wsdl:message>
+  <wsdl:message name="ultimasRespuestasResponse">
+    <wsdl:part name="parameters" element="ns1:UltimasRespuestasResponse" />
+  </wsdl:message>
+  <wsdl:message name="historicoRespuestas">
+    <wsdl:part name="parameters" element="ns1:HistoricoRespuestasRequest" />
+  </wsdl:message>
+  <wsdl:message name="historicoRespuestasResponse">
+    <wsdl:part name="parameters" element="ns1:HistoricoRespuestasResponse" />
+  </wsdl:message>
+  <wsdl:message name="ultimasRespuestas">
+    <wsdl:part name="parameters" element="ns1:UltimasRespuestasRequest" />
+  </wsdl:message>
+  <wsdl:portType name="CuidadosPaleativosService">
+    <wsdl:operation name="historicoRespuestas">
+      <wsdl:input name="historicoRespuestas" message="tns:historicoRespuestas" />
+      <wsdl:output name="historicoRespuestasResponse" message="tns:historicoRespuestasResponse" />
+      <wsdl:fault name="FaultMessage" message="tns:FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ultimasRespuestas">
+      <wsdl:input name="ultimasRespuestas" message="tns:ultimasRespuestas" />
+      <wsdl:output name="ultimasRespuestasResponse" message="tns:ultimasRespuestasResponse" />
+      <wsdl:fault name="FaultMessage" message="tns:FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CuidadosPaleativosServiceImpServiceSoapBinding" type="tns:CuidadosPaleativosService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="historicoRespuestas">
+      <soap:operation soapAction="http://www.colsanitas.com/CuidadosPaleativosService/historicoRespuestas" style="document" />
+      <wsdl:input name="historicoRespuestas">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="historicoRespuestasResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultMessage">
+        <soap:fault use="literal" name="FaultMessage" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ultimasRespuestas">
+      <soap:operation soapAction="http://www.colsanitas.com/CuidadosPaleativosService/ultimasRespuestas" style="document" />
+      <wsdl:input name="ultimasRespuestas">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="ultimasRespuestasResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="FaultMessage">
+        <soap:fault use="literal" name="FaultMessage" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CuidadosPaleativosServiceImpService">
+    <wsdl:port name="CuidadosPaleativosServicePort" binding="tns:CuidadosPaleativosServiceImpServiceSoapBinding">
+      <soap:address location="http://BOAD100DESAR026:8880/CuidadosPaleativosWS/CuidadosPaleativosService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

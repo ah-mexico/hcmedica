@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <BottomMargin>2.5cm</BottomMargin>
+  <RightMargin>2.5cm</RightMargin>
+  <PageWidth>21.5cm</PageWidth>
+  <ReportParameters>
+    <ReportParameter Name="FechaImpresion">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>FechaImpresion</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="HayRemision">
+      <DataType>Boolean</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>HayRemision</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="HayRecomendaciones">
+      <DataType>Boolean</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>HayRecomendaciones</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>21cm</InteractiveWidth>
+  <rd:GridSpacing>0.1cm</rd:GridSpacing>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <Body>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <ReportItems>
+      <Rectangle Name="rectangle2">
+        <Left>0.1cm</Left>
+        <PageBreakAtStart>true</PageBreakAtStart>
+        <Top>1.3cm</Top>
+        <ZIndex>4</ZIndex>
+        <Width>20cm</Width>
+        <Height>0.10582cm</Height>
+      </Rectangle>
+      <Rectangle Name="rectangle1">
+        <Left>0.1cm</Left>
+        <PageBreakAtStart>true</PageBreakAtStart>
+        <Top>0.7cm</Top>
+        <ZIndex>3</ZIndex>
+        <Width>20cm</Width>
+        <Height>0.10582cm</Height>
+      </Rectangle>
+      <Subreport Name="subreport3">
+        <Left>0.1cm</Left>
+        <Parameters>
+          <Parameter Name="FechaImpresion">
+            <Value>=Parameters!FechaImpresion.Value</Value>
+          </Parameter>
+        </Parameters>
+        <Top>0.9cm</Top>
+        <ZIndex>2</ZIndex>
+        <Width>20.1cm</Width>
+        <ReportName>RepRecomendacionEgreso</ReportName>
+        <Height>0.3cm</Height>
+      </Subreport>
+      <Subreport Name="subreport2">
+        <Left>0.1cm</Left>
+        <Parameters>
+          <Parameter Name="FechaImpresion">
+            <Value>=Parameters!FechaImpresion.Value</Value>
+          </Parameter>
+        </Parameters>
+        <Top>1.6cm</Top>
+        <ZIndex>1</ZIndex>
+        <Width>20.1cm</Width>
+        <ReportName>RepTriage</ReportName>
+        <Height>0.3cm</Height>
+      </Subreport>
+      <Subreport Name="subreport1">
+        <Left>0.1cm</Left>
+        <Parameters>
+          <Parameter Name="FechaImpresion">
+            <Value>=Parameters!FechaImpresion.Value</Value>
+          </Parameter>
+        </Parameters>
+        <Top>0.2cm</Top>
+        <Width>20.1cm</Width>
+        <ReportName>RepRemision</ReportName>
+        <Height>0.3cm</Height>
+      </Subreport>
+    </ReportItems>
+    <Height>2.6cm</Height>
+  </Body>
+  <rd:ReportID>aceb1db7-7c88-4cd7-881d-17996904af7f</rd:ReportID>
+  <LeftMargin>2.5cm</LeftMargin>
+  <Width>20.42328cm</Width>
+  <InteractiveHeight>29.7cm</InteractiveHeight>
+  <Language>en-US</Language>
+  <TopMargin>2.5cm</TopMargin>
+  <PageHeight>28cm</PageHeight>
+</Report>

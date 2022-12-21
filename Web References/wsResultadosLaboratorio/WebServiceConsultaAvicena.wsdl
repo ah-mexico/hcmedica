@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://consultaavicena" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://consultaavicena" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Metodos para consultar datos del Laboratorio Clinico Colsanitas&lt;/b&gt;</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://consultaavicena">
+      <s:element name="fncGetURLPDF">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FechaPeticion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NumeroPeticion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Modulo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fncGetURLPDFResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fncGetURLPDFResult" type="tns:RutaPDF" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="RutaPDF">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="URL_PDF" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="strError" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="fncGetSolicitudesByPacienteByFechas">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TipoIdentificacion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Identificacion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FechaInicial" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FechaFinal" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fncGetSolicitudesByPacienteByFechasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fncGetSolicitudesByPacienteByFechasResult" type="tns:ArrayOfConsulta" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfConsulta">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Consulta" nillable="true" type="tns:Consulta" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Consulta">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="EstadoFinal" type="s:short" />
+          <s:element minOccurs="0" maxOccurs="1" name="Paciente" type="tns:Paciente" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Paciente">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TipoIdentificacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NumeroIdentificacion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NombrePaciente" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Peticiones" type="tns:ArrayOfPeticion" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfPeticion">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Peticion" nillable="true" type="tns:Peticion" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Peticion">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="NumeroPeticion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FechaPeticion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EstadoPeticion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Modulo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Descripcion" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Consulta" type="tns:Consulta" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="fncGetURLPDFSoapIn">
+    <wsdl:part name="parameters" element="tns:fncGetURLPDF" />
+  </wsdl:message>
+  <wsdl:message name="fncGetURLPDFSoapOut">
+    <wsdl:part name="parameters" element="tns:fncGetURLPDFResponse" />
+  </wsdl:message>
+  <wsdl:message name="fncGetSolicitudesByPacienteByFechasSoapIn">
+    <wsdl:part name="parameters" element="tns:fncGetSolicitudesByPacienteByFechas" />
+  </wsdl:message>
+  <wsdl:message name="fncGetSolicitudesByPacienteByFechasSoapOut">
+    <wsdl:part name="parameters" element="tns:fncGetSolicitudesByPacienteByFechasResponse" />
+  </wsdl:message>
+  <wsdl:message name="fncGetSolicitudesByPacienteByFechasConsulta">
+    <wsdl:part name="Consulta" element="tns:Consulta" />
+  </wsdl:message>
+  <wsdl:portType name="WebServiceSoap">
+    <wsdl:operation name="fncGetURLPDF">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Metodo para la creacion del PDF con la Peticion de Laboratorio Clinico y/o Patologia</wsdl:documentation>
+      <wsdl:input message="tns:fncGetURLPDFSoapIn" />
+      <wsdl:output message="tns:fncGetURLPDFSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fncGetSolicitudesByPacienteByFechas">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Metodo de consulta para las Peticiones de un paciente por su identificacion en un intervalo de fechas</wsdl:documentation>
+      <wsdl:input message="tns:fncGetSolicitudesByPacienteByFechasSoapIn" />
+      <wsdl:output message="tns:fncGetSolicitudesByPacienteByFechasSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceSoap" type="tns:WebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="fncGetURLPDF">
+      <soap:operation soapAction="http://consultaavicena/fncGetURLPDF" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fncGetSolicitudesByPacienteByFechas">
+      <soap:operation soapAction="http://consultaavicena/fncGetSolicitudesByPacienteByFechas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:fncGetSolicitudesByPacienteByFechasConsulta" part="Consulta" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceSoap12" type="tns:WebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="fncGetURLPDF">
+      <soap12:operation soapAction="http://consultaavicena/fncGetURLPDF" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fncGetSolicitudesByPacienteByFechas">
+      <soap12:operation soapAction="http://consultaavicena/fncGetSolicitudesByPacienteByFechas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:fncGetSolicitudesByPacienteByFechasConsulta" part="Consulta" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebService">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">&lt;b&gt;Metodos para consultar datos del Laboratorio Clinico Colsanitas&lt;/b&gt;</wsdl:documentation>
+    <wsdl:port name="WebServiceSoap" binding="tns:WebServiceSoap">
+      <soap:address location="http://172.22.150.36:8003/WebServiceConsultaAvicena.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceSoap12" binding="tns:WebServiceSoap12">
+      <soap12:address location="http://172.22.150.36:8003/WebServiceConsultaAvicena.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="DummyDataSource">
+      <ConnectionProperties>
+        <ConnectString />
+        <DataProvider>SQL</DataProvider>
+      </ConnectionProperties>
+      <rd:DataSourceID>e8d27dc1-4129-485c-b895-78776a33e329</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <PageWidth>21.5cm</PageWidth>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>21cm</InteractiveWidth>
+  <rd:GridSpacing>0.1cm</rd:GridSpacing>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <Body>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <ReportItems>
+      <Textbox Name="textbox1">
+        <Left>0.02731cm</Left>
+        <Top>0.2cm</Top>
+        <rd:DefaultName>textbox1</rd:DefaultName>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontWeight>800</FontWeight>
+          <FontSize>8pt</FontSize>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.50265cm</Height>
+        <Value>INCAPACIDAD</Value>
+      </Textbox>
+      <List Name="list1">
+        <ReportItems>
+          <Textbox Name="textbox4">
+            <Left>16cm</Left>
+            <Top>0.3cm</Top>
+            <ZIndex>5</ZIndex>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingBottom>2pt</PaddingBottom>
+              <FontSize>8pt</FontSize>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Height>0.50874cm</Height>
+            <Value>=" " &amp; Fields!FechaFinalIncapacidad.Value</Value>
+          </Textbox>
+          <Textbox Name="textbox5">
+            <Left>13.6cm</Left>
+            <Top>0.3cm</Top>
+            <ZIndex>4</ZIndex>
+            <Width>2.5cm</Width>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingBottom>2pt</PaddingBottom>
+              <FontWeight>700</FontWeight>
+              <FontSize>8pt</FontSize>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Height>0.50874cm</Height>
+            <Value>FECHA FINAL  :</Value>
+          </Textbox>
+          <Textbox Name="textbox3">
+            <Left>9.7cm</Left>
+            <Top>0.3cm</Top>
+            <ZIndex>3</ZIndex>
+            <Width>3.9cm</Width>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingBottom>2pt</PaddingBottom>
+              <FontSize>8pt</FontSize>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Height>0.50874cm</Height>
+            <Value>=" " &amp; Fields!FechaInicialIncapacidad.Value</Value>
+          </Textbox>
+          <Textbox Name="textbox2">
+            <Left>7cm</Left>
+            <Top>0.3cm</Top>
+            <ZIndex>2</ZIndex>
+            <Width>2.8cm</Width>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingBottom>2pt</PaddingBottom>
+              <FontWeight>700</FontWeight>
+              <FontSize>8pt</FontSize>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Height>0.50874cm</Height>
+            <Value>FECHA INICIAL  :</Value>
+          </Textbox>
+          <Textbox Name="textbox10">
+            <Left>4.3cm</Left>
+            <Top>0.3cm</Top>
+            <ZIndex>1</ZIndex>
+            <Width>2.7cm</Width>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingBottom>2pt</PaddingBottom>
+              <FontSize>8pt</FontSize>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Height>0.50874cm</Height>
+            <Value>=" " &amp; Fields!DiasIncapacidad.Value</Value>
+          </Textbox>
+          <Textbox Name="textbox7">
+            <Left>0.5cm</Left>
+            <Top>0.3cm</Top>
+            <Width>3.8cm</Width>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingBottom>2pt</PaddingBottom>
+              <FontWeight>700</FontWeight>
+              <FontSize>8pt</FontSize>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Height>0.50874cm</Height>
+            <Value>DÍAS DE INCAPACIDAD  :</Value>
+          </Textbox>
+        </ReportItems>
+        <DataSetName>HistoriaClinica_Sophia_HistoriaClinica_Reportes_Admision</DataSetName>
+        <Top>1cm</Top>
+        <Width>19.9cm</Width>
+        <Height>1.3cm</Height>
+      </List>
+    </ReportItems>
+    <Height>2.4cm</Height>
+  </Body>
+  <rd:ReportID>43ffe7fe-b86e-4e00-b58a-6e6f48d4ac66</rd:ReportID>
+  <DataSets>
+    <DataSet Name="HistoriaClinica_Sophia_HistoriaClinica_Reportes_Admision">
+      <rd:DataSetInfo>
+        <rd:DataSetName>HistoriaClinica.Sophia.HistoriaClinica.Reportes</rd:DataSetName>
+        <rd:ObjectDataSourceType>HistoriaClinica.Sophia.HistoriaClinica.Reportes.Admision, HistoriaClinica, Version=1.0.2511.20752, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+        <rd:TableName>Admision</rd:TableName>
+      </rd:DataSetInfo>
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText />
+        <DataSourceName>DummyDataSource</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="Actualiza">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Actualiza</DataField>
+        </Field>
+        <Field Name="Actualizacion">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Actualizacion</DataField>
+        </Field>
+        <Field Name="Cama">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Cama</DataField>
+        </Field>
+        <Field Name="CausaExterna">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>CausaExterna</DataField>
+        </Field>
+        <Field Name="Clasificacion">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Clasificacion</DataField>
+        </Field>
+        <Field Name="Copia">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Copia</DataField>
+        </Field>
+        <Field Name="DiasIncapacidad">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>DiasIncapacidad</DataField>
+        </Field>
+        <Field Name="Entidad">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Entidad</DataField>
+        </Field>
+        <Field Name="Fecha">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Fecha</DataField>
+        </Field>
+        <Field Name="FechaFinalIncapacidad">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>FechaFinalIncapacidad</DataField>
+        </Field>
+        <Field Name="FechaIngreso">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>FechaIngreso</DataField>
+        </Field>
+        <Field Name="FechaInicialIncapacidad">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>FechaInicialIncapacidad</DataField>
+        </Field>
+        <Field Name="HoraIngreso">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>HoraIngreso</DataField>
+        </Field>
+        <Field Name="IDMedicoHospital">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>IDMedicoHospital</DataField>
+        </Field>
+        <Field Name="IDMedicoTratante">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>IDMedicoTratante</DataField>
+        </Field>
+        <Field Name="Incapacidad">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Incapacidad</DataField>
+        </Field>
+        <Field Name="LabelNumAnticipo">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>LabelNumAnticipo</DataField>
+        </Field>
+        <Field Name="LabelValAnticipo">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>LabelValAnticipo</DataField>
+        </Field>
+        <Field Name="Login">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Login</DataField>
+        </Field>
+        <Field Name="LoginCreacion">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>LoginCreacion</DataField>
+        </Field>
+        <Field Name="NombreMedicoHospital">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>NombreMedicoHospital</DataField>
+        </Field>
+        <Field Name="NombreMedicoTratante">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>NombreMedicoTratante</DataField>
+        </Field>
+        <Field Name="NumeroAdmision">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>NumeroAdmision</DataField>
+        </Field>
+        <Field Name="NumeroAnticipo">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>NumeroAnticipo</DataField>
+        </Field>
+        <Field Name="Observaciones">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Observaciones</DataField>
+        </Field>
+        <Field Name="Paciente">
+          <rd:TypeName>HistoriaClinica.Sophia.HistoriaClinica.Reportes.Paciente</rd:TypeName>
+          <DataField>Paciente</DataField>
+        </Field>
+        <Field Name="Seccion">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Seccion</DataField>
+        </Field>
+        <Field Name="Servicio">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Servicio</DataField>
+        </Field>
+        <Field Name="Sucursal">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Sucursal</DataField>
+        </Field>
+        <Field Name="TipoCama">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>TipoCama</DataField>
+        </Field>
+        <Field Name="ValorAnticipo">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>ValorAnticipo</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <Width>20cm</Width>
+  <InteractiveHeight>29.7cm</InteractiveHeight>
+  <Language>en-US</Language>
+  <PageHeight>28cm</PageHeight>
+</Report>

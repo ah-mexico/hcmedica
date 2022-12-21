@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Subreport Name="subreport1">
+        <ReportName>RepRemision</ReportName>
+        <Parameters>
+          <Parameter Name="FechaImpresion">
+            <Value>=Parameters!FechaImpresion.Value</Value>
+          </Parameter>
+        </Parameters>
+        <KeepTogether>true</KeepTogether>
+        <Top>0.2cm</Top>
+        <Left>0.1cm</Left>
+        <Height>0.3cm</Height>
+        <Width>20.1cm</Width>
+        <Style />
+      </Subreport>
+      <Subreport Name="subreport2">
+        <ReportName>RepTriage</ReportName>
+        <Parameters>
+          <Parameter Name="FechaImpresion">
+            <Value>=Parameters!FechaImpresion.Value</Value>
+          </Parameter>
+        </Parameters>
+        <KeepTogether>true</KeepTogether>
+        <Top>1.6cm</Top>
+        <Left>0.1cm</Left>
+        <Height>0.3cm</Height>
+        <Width>20.1cm</Width>
+        <ZIndex>1</ZIndex>
+        <Style />
+      </Subreport>
+      <Subreport Name="subreport3">
+        <ReportName>RepRecomendacionEgreso</ReportName>
+        <Parameters>
+          <Parameter Name="FechaImpresion">
+            <Value>=Parameters!FechaImpresion.Value</Value>
+          </Parameter>
+        </Parameters>
+        <KeepTogether>true</KeepTogether>
+        <Top>0.9cm</Top>
+        <Left>0.1cm</Left>
+        <Height>0.3cm</Height>
+        <Width>20.1cm</Width>
+        <ZIndex>2</ZIndex>
+        <Style />
+      </Subreport>
+      <Rectangle Name="rectangle1">
+        <PageBreak>
+          <BreakLocation>Start</BreakLocation>
+        </PageBreak>
+        <DataElementOutput>ContentsOnly</DataElementOutput>
+        <Top>0.7cm</Top>
+        <Left>0.1cm</Left>
+        <Height>0.10582cm</Height>
+        <Width>20cm</Width>
+        <ZIndex>3</ZIndex>
+        <Style />
+      </Rectangle>
+      <Rectangle Name="rectangle2">
+        <PageBreak>
+          <BreakLocation>Start</BreakLocation>
+        </PageBreak>
+        <DataElementOutput>ContentsOnly</DataElementOutput>
+        <Top>1.3cm</Top>
+        <Left>0.1cm</Left>
+        <Height>0.10582cm</Height>
+        <Width>20cm</Width>
+        <ZIndex>4</ZIndex>
+        <Style />
+      </Rectangle>
+    </ReportItems>
+    <Height>1.9cm</Height>
+    <Style />
+  </Body>
+  <Width>20.42328cm</Width>
+  <Page>
+    <PageHeight>28cm</PageHeight>
+    <PageWidth>21.5cm</PageWidth>
+    <InteractiveHeight>29.7cm</InteractiveHeight>
+    <InteractiveWidth>21cm</InteractiveWidth>
+    <LeftMargin>2.5cm</LeftMargin>
+    <RightMargin>2.5cm</RightMargin>
+    <TopMargin>2.5cm</TopMargin>
+    <BottomMargin>2.5cm</BottomMargin>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <ReportParameters>
+    <ReportParameter Name="FechaImpresion">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>FechaImpresion</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="HayRemision">
+      <DataType>Boolean</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>HayRemision</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="HayRecomendaciones">
+      <DataType>Boolean</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>HayRecomendaciones</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Language>en-US</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>aceb1db7-7c88-4cd7-881d-17996904af7f</rd:ReportID>
+</Report>

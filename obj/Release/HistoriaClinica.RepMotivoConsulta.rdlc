@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="DummyDataSource">
+      <rd:DataSourceID>f3f09ead-7d5f-416b-a1a0-f7d1e5b6e4a3</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <InteractiveHeight>29.7cm</InteractiveHeight>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>21cm</InteractiveWidth>
+  <rd:GridSpacing>0.1cm</rd:GridSpacing>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <LeftMargin>0.5cm</LeftMargin>
+  <BottomMargin>0.5cm</BottomMargin>
+  <rd:ReportID>f8cf3265-16c3-49f7-8ceb-130fff49145b</rd:ReportID>
+  <PageWidth>21.5cm</PageWidth>
+  <DataSets>
+    <DataSet Name="HistoriaClinica_Sophia_HistoriaClinica_Reportes_MotivoConsulta">
+      <Fields>
+        <Field Name="EnfermedadActual">
+          <DataField>EnfermedadActual</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FuenteInformacion">
+          <DataField>FuenteInformacion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MotivoConsulta">
+          <DataField>MotivoConsulta</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Visible">
+          <DataField>Visible</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DummyDataSource</DataSourceName>
+        <CommandText />
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>HistoriaClinica.Sophia.HistoriaClinica.Reportes</rd:DataSetName>
+        <rd:TableName>MotivoConsulta</rd:TableName>
+        <rd:ObjectDataSourceType>HistoriaClinica.Sophia.HistoriaClinica.Reportes.MotivoConsulta, HistoriaClinica, Version=1.0.2300.24828, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Width>20.63968cm</Width>
+  <Body>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <ReportItems>
+      <Textbox Name="textbox2">
+        <Top>2.3cm</Top>
+        <Width>20cm</Width>
+        <Style>
+          <BackgroundColor>Gainsboro</BackgroundColor>
+          <FontSize>8pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>3</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Height>0.50265cm</Height>
+        <Value>ENFERMEDAD ACTUAL</Value>
+      </Textbox>
+      <List Name="list1">
+        <ZIndex>2</ZIndex>
+        <DataSetName>HistoriaClinica_Sophia_HistoriaClinica_Reportes_MotivoConsulta</DataSetName>
+        <ReportItems>
+          <Textbox Name="textbox17">
+            <Top>0.8cm</Top>
+            <Width>18.3cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>2</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.6cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=Iif(First(Fields!MotivoConsulta.Value, "HistoriaClinica_Sophia_HistoriaClinica_Reportes_MotivoConsulta") = "", "NO REGISTRADO", First(Fields!MotivoConsulta.Value, "HistoriaClinica_Sophia_HistoriaClinica_Reportes_MotivoConsulta"))</Value>
+          </Textbox>
+          <Textbox Name="textbox18">
+            <Top>0.21613cm</Top>
+            <Width>12.54709cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>1</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>6.35291cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>=iif(First(Fields!FuenteInformacion.Value, "HistoriaClinica_Sophia_HistoriaClinica_Reportes_MotivoConsulta") = "", "NO REGISTRADO", First(Fields!FuenteInformacion.Value, "HistoriaClinica_Sophia_HistoriaClinica_Reportes_MotivoConsulta") )</Value>
+          </Textbox>
+          <Textbox Name="textbox19">
+            <Top>0.21613cm</Top>
+            <Width>5.6cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Left>0.6cm</Left>
+            <Height>0.50265cm</Height>
+            <Value>INFORMACIÓN SUMINISTRADA POR:        </Value>
+          </Textbox>
+        </ReportItems>
+        <Top>0.6cm</Top>
+        <Height>1.5cm</Height>
+      </List>
+      <Textbox Name="textbox1">
+        <rd:DefaultName>textbox1</rd:DefaultName>
+        <Width>20cm</Width>
+        <Style>
+          <BackgroundColor>Gainsboro</BackgroundColor>
+          <FontSize>8pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>1</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Height>0.50265cm</Height>
+        <Value>MOTIVO DE CONSULTA</Value>
+      </Textbox>
+      <Textbox Name="textbox16">
+        <Top>3cm</Top>
+        <Width>18.3cm</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Left>0.6cm</Left>
+        <Height>0.50265cm</Height>
+        <Value>=iif(First(Fields!EnfermedadActual.Value, "HistoriaClinica_Sophia_HistoriaClinica_Reportes_MotivoConsulta") = "", "NO REGISTRADO", First(Fields!EnfermedadActual.Value, "HistoriaClinica_Sophia_HistoriaClinica_Reportes_MotivoConsulta"))</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>3.7cm</Height>
+  </Body>
+  <Language>en-US</Language>
+  <PageHeight>28cm</PageHeight>
+</Report>

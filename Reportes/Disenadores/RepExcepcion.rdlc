@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Subreport Name="subreport1">
+        <ReportName>RepDetExcepcionesAux</ReportName>
+        <KeepTogether>true</KeepTogether>
+        <Top>0.1cm</Top>
+        <Left>0.3cm</Left>
+        <Height>0.4cm</Height>
+        <Width>19.5cm</Width>
+        <Style />
+      </Subreport>
+    </ReportItems>
+    <Height>0.5cm</Height>
+    <Style />
+  </Body>
+  <Width>20cm</Width>
+  <Page>
+    <PageHeader>
+      <Height>1.3cm</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Image Name="image1">
+          <Source>Embedded</Source>
+          <Value>osi</Value>
+          <MIMEType>image/gif</MIMEType>
+          <Sizing>Fit</Sizing>
+          <Top>0.0619cm</Top>
+          <Left>4cm</Left>
+          <Height>1.2cm</Height>
+          <Width>12.3cm</Width>
+          <Style />
+        </Image>
+      </ReportItems>
+      <Style />
+    </PageHeader>
+    <PageFooter>
+      <Height>0.75cm</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Textbox Name="textbox50">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Firmado electrónicamente </Value>
+                  <Style>
+                    <FontSize>8pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <Top>0.125cm</Top>
+          <Left>0.4cm</Left>
+          <Height>0.5cm</Height>
+          <Width>4.09365cm</Width>
+          <Style>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+      </ReportItems>
+      <Style />
+    </PageFooter>
+    <PageHeight>28cm</PageHeight>
+    <PageWidth>21.5cm</PageWidth>
+    <InteractiveHeight>29.7cm</InteractiveHeight>
+    <InteractiveWidth>21cm</InteractiveWidth>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DummyDataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:DataSourceID>e2288a55-00cf-493a-91f2-cc264cffb7fe</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="HistoriaClinica_Sophia_HistoriaClinica_Reportes_Nota">
+      <Query>
+        <DataSourceName>DummyDataSource</DataSourceName>
+        <CommandText />
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <Fields>
+        <Field Name="Descripcion">
+          <DataField>Descripcion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Fecha">
+          <DataField>Fecha</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Hora">
+          <DataField>Hora</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NombreMedico">
+          <DataField>NombreMedico</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>HistoriaClinica.Sophia.HistoriaClinica.Reportes</rd:DataSetName>
+        <rd:TableName>Nota</rd:TableName>
+        <rd:ObjectDataSourceType>HistoriaClinica.Sophia.HistoriaClinica.Reportes.Nota, HistoriaClinica, Version=1.0.2364.15668, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <EmbeddedImages>
+    <EmbeddedImage Name="osi">
+      <MIMEType>image/gif</MIMEType>
+      <ImageData>R0lGODlhUAJwAMQAAAGBR////1CpgK/XxSCRXc/n3IHBpHi8nT+gdI/IrvD49BCJUm+4l7/f0Z/QuTOZZt/v6GCwjEakeUChdKDQupTFrXC4l73e1n/AoqHRu1quh0+ofwAAAAAAAAAAAAAAACH5BAUUAAEALAAAAABQAnAAAAX/YCCOZGmeaKqubOu+cCzPdG3feK7vfO//wKBwSCwaj8ikcslsOp/QqHRKrVqv2Kx2y+16v+CweEwum8/otHrNbrvf8Lh8Tq/b7/i8fs/v+/+AgYKDhIWGh4iJiouMjY6PkJGSk5SVlpeYmZqbnJ2en6ChoqOkpaanqKmqq6ytrq+wsbKztLW2t7i5uru8vb6/wMHCw8TFxsfIycrLzM3Oz9DR0tPU1dbX2Nna29w3EAkbDwDjCwgMEArd6usoDRPj8PEEAQUDA+ns+dwM8f3jEyMUJMCAT59BahH8+cNQAoKABAcjQrOg0B+FEwkmFJTI0RiEiv4atCNQoKNJYhRB/8bbWKIAyZMwf71TSW7FgAUlY+rMNZMmwBUYCLDcSRRWT5UWWkwQULRprIQ0AUBkUQCASKdYVzWIatVFhHlZw6I6WhGCi48XiTZYy7at27dw48qdS7eu3bt435oVuwLCApowJjwgqoCr4cOIEytebJgh3xUF/lb86YICgJwxtzLezLmz58MDHlOV7C8CjMKOY1r+zLq168WYdTbAQLu2bdooFJD9d7v3bQgPBuvE8Lq48ePxmu72p4I45wAJdy5HTr06YrBECURd0YB04nnEr75QMAADAnMO2vVOEPvEtwjnIyTYi8I2/REQaqcPaHuqiPK1hTaCA77RNlQACtingv8CDjBw3gYYxEZgbe2NMNsGCGyQwIGz0bafCPnV5t8I2vnzgAUUrIWBAFFZUJs4FRFgWz+3ecdbbSz642KBGNgIj20lqrSAfGslEIGNlI1wW0ETYiBeAB3SJl6CPPoXZX8kNKnffUrWdp+WXHZJ
+W5glDODgeRGSACBtAppQgJEZYkBmiBh8iCCW7tl2ApW1HVgCV0/uOZ1PAVgWKFA+vlTCav5odEIByyVZZjxtBkTaRjACkFoACcCzQEEK+PgPCox2tWeP/jClJDxCmdBAkPFsKkJV42AnQjxpkeDPAocGQJNwIjhXFonxiOeAQgiQkCmrKnykELAB8KOSrCIgQKP/CT2pKkKn45g2wgArjVBqad8qlGsAKfnDgAk5AnBuuraSoNk455aAaj9JggtPmJAqtG4JhcGzUZDUipAuACjEI+kJ86pULwpQIcbQVgULCsACGGQUD04lNLyst1l6SgEEBbCYFApHFdzTpkHGJqy2hYJEZgCwVjqCS/BEsFZCmwp7MgncRlBePyOKkGmlyXXcD8ezikeTncIq5N+x8Ii3AbI3K7TffVdJ6w/UKn0IQQP4WIsrtvBUSuvFBekLQJIlBrkAjJg1PCoJws4dT9Hcvo33jyjHumemAqgIAMyMLky1ABSM+/MIK5PQ8p7eVegrPA+b4LZKIK8QsWEQUezC/0z+tXv4pOMMdlQJVAPQapft9PM45J4WlPQI6W4qmJPuwDO7uNcCTNq5GZPQU71UU9Y6238yK8K80P5HtIXkJGB3P/FeT6nkAhO70IC7JmDtBrouwICo8W6OLwmSMRBqP4fGw3U8PwubWgMCmBUxQBBYgJmwQhlAe4RFviBJKmpt6kmv7NY5ESggU52jQM8Ap6ZaZU1+JejJp0ZwO3vBzwQBG0evPBiVDbbgc1ERiehY0DcSvA8eJARAsvJGAmeJUHMHmokA/rKwy1EQehlMm7yoRw4/aWcBJfpdtjSnrKrVUDKVMl2lbEgvETAKZsH64KxIswEUxmM/84GSSiRUE/8OSm1VILkfTa4SRu2NY1OZWtY4WBJChAGtH3uJWOYiZ4L9oaBdDDGb30hgOuxMDm2H46EJ4GUC3WHOhZIZUdRkFTwggvAvBHNVB1Ngumm9QI4qSYdlKlaCEiXr
+b04cQcQYAkESRCx6KtDMBGYSrwBQ8WJmcRsWD2mCTBUNeACAz92IeEMVhEuVMCTB2jQlL+xl8Y3s0iKIBgWPn+THjBXppQyJKc2rgaRN6lsfPaZSx+A58GAb0+QwDdYPbynwBMM7AR+1OY7QkKZoZEnLJp/3D28uoCFnU0GmniSsJ9URZrfc4BVPAJW+UatvtTwBKEFiOYYZ5p8BIE7mlDaOf13/sJgi6IkD3LYA+tSRlPQ0UzKb2c6MUhCbdjQBoyKKoBIVwGzxihhNP4pRmJogk2jcWwDa9TA5PnSNIohAakQFAFhuxaPLO2YAJgqP/6nkKkqFaT9gGZlGmaBvWNyNWaQakGLBk1XnsZMPLyMsWPpjHpYMIgAItNJtkfUEm8yUCQSZpOuZxn4msOELF5auHprgOn5CJKGgY6rmvBSmT4rHV1IXm4ZdhU8GWpQFhcWlvpHGIY8kZkRf2FgSDkaQpaymTVQr2r0+Fp1sG+hhl1ahvnkVQRgbgSD7QT5spSZqntKVSkjgTYX8JFSp2W0/1EoPHS3ysTTzVLds2FOWzhGE/ybayDL5yhLqwiMBC0XdP4UVm54YlqfNG0cj4QGzvO2rXTZjbDADYDZY9uR3bkrMAxJLgnFV5GTamRkqAdBb4aoXPxtjL0dBasCfps48qcSd7yQTAdkCc5AxNOwLEQDhccRGcI4dx+Ma5tp6Gg8eGfjRPm9JjvjCyqy2dBIyFfLbvaxlBMWNxymbCxJbUdVUBZCxCHL8vRKgkFo9sRmuVLzOEXjWotVkGjeD9Mt5TQAqC8idg5va4dJm6rzSW+cyuSSsEaXLABS2MIK7FZS6iuCeLHCjSh4g4LJGhSGFqW4K8qZdBXPzydZt7PE0WxF8Vg24Bw4qtag4M0RHeK1Y7P/jdwNtsxKZ8M37wrLzAt1SEii3yQNe7ggYALKCTBRk4dSxgclVn1/dB7iHIk1l4TGYFwMAv8Lq4ZNJFsMH+DGGFvCuifubxhOD
+GtguBLFu92Vsqzg6msNa9QhDfRhesYCpZrVMpE9Qqk31jaCsoqLa6AfZ1FZEVp+NrjxKQFTF/uw+pC2yCIJUSweI551rTl0NH1tHW96W2k3NmacVIuBUN9ZaFTp3UGn8UX8IOKo5y5GtgBumTS7Uv78MwH1PUFiIsbdhXEoXRLwYKFv7jpB3dUDpJs2+2rV8vi8HADpslL2rBpq/Sd0MSjUeFbOwaKPC+6L3ZtfxiDVQbiWhYgz/vdWuJPU7ZgorgZr5WUQoRSACmNEyz7sVav8oAOur5pLpQOac6Fk558qeMa11A00QKQRkVEvNMjv4lx3PqiLi8aLQqc7qAMSdm/KzwF+gJUd1ui6Gjnlxr6gsz5NDyQEFiRxQaXdDFhMa5h2/MMyDdS58L3y/dmWenQ88LknhW6iat6UD8BtSzjgqcIAJWJ2JLdkGeFOJgPMLs8vlKVJ3kLQ5oSExKQOr2d3V5DJvOD56Aq0HKgwD57OV0hviHQQMraksCe8tf0mW3ipgI0TGJY7bjmlnYvNJbqTPp2Hs0l2ZmvwBENXN7hj1y0sKvlbEI14f7b1O3+qR83Jp8bd7/59jK8D3TInWerQGfdqxERjkQstCAA7gAIPXHmc3b2nnNtixRAsnRChwADzSG3pnbdwWghhwEcQBZjKVKPF1Uvk3Dlh0EwpBAD/jfGWELtuDgMDSbRXUPR3IWggSR5TnYS60HBG0T/RgaxgzFEYnYR64avDnQOEHAEgDf17UOfBgdxB3eMtWEdXlaFXITGqXhRjRdyPQdJD0hLByAptzKCwmemLkgavETfhARZRhg4l2MOfydcZ1cyC0HBYwFJkHdeTXVVxnNFIFSjuVUdN2ef6QcS2gANoBdLmREbMkZK5iG7kyEJnlQhRgAZfIHmWCAVeHG1ZkG23CiaYYLAHSX/8K4mQFghnlIQAusom2cSgNAIqX2B6qSBCkEgGzFAEUcCCY5XW3CDBvxTsN0CCi8gB1MiE5Yxte
+xAC2QRrUSBt6ByEvAhIcVhte5IwTSBvR6I27wgADsBblYXKyUozKdIzP84quWBuHsiaoqCbumFG18S22gRkSlI//QYpKlRr9SBsPE2SzNAEYYDMDmSZsCIxXNowo0It404rbsiIu0ia3kRNB1huNKADbdgKO5ngxQByLaBByZh0omZL+EF8wgYkrQE1zFQPvQ4kGYVsqeZM4SYRF0QA02X9eOHvsxoUxAVs5WZTVgRWwlDAt8gL60ogHAZNGGZWfkZQxkVXcwRX/JXkzf8F6HIF8UvmVnqGCHREZs2dwzMECzgd6O5EXbNmWbvmWcIkXQNkRswQUhoGW4iBlorGXjVAVKNVJILECNsiSfFmYh0ARzDUCPxYPVOlAMNKThhmZgCAOiblWDpMCOOMukrmZieB8zPWG//ZVLcaZpHkIEKAd7sNpz3Ig/dJUFVWasNkHzkcA4hGS7DUUEGB0OBebvIkHCpASEyASevcPh1IAOuWUvZmcePAqtaIBEjABf7EASxFGypQAmZJbypmdgkAB9AYh59gWA4EA3kEAG6Kd5ikIA7BDhkGDyHme7rmcpDgBsDJLKDKX73mf+Jmf+rmf/Nmf/vmfABqgWQI6oARaoAZ6oAiaoAq6oAzaoA76oBAaoRI6oRRaoRZ6oRiaoRq6oRzaoR76oSAaoiI6oiRaoiZ6oiiaoiq6oizaoi76ojAaozI6ozRaozZ6oziaozrKBSEAADs=</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <Language>en-US</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>28df34b1-bc88-4585-891b-cb19b21b2829</rd:ReportID>
+</Report>

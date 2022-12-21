@@ -1,0 +1,1856 @@
+Imports HistoriaClinica.Sophia.HistoriaClinica.DAO
+Imports objcon = HistoriaClinica.Sophia.HistoriaClinica.DatosConexion.Conexion
+Imports objGeneral = HistoriaClinica.Sophia.HistoriaClinica.DatosGenerales.Generales
+Imports objPaciente = HistoriaClinica.Sophia.HistoriaClinica.DatosPaciente.Paciente
+Imports HistoriaClinica.Sophia.HistoriaClinica.DatosGenerales
+Imports HistoriaClinica.Sophia.HistoriaClinica.Reportes
+Imports System.Globalization
+Imports System.Threading
+Imports System.Math
+
+Public Class frm_ConsultaLiquidos
+    Dim _datosGenerales As Generales
+
+    Private General As objGeneral
+    Private Paciente As objPaciente
+    Private m_CodHistoria As Integer
+    Private m_peso As Double = 0
+    Private m_edad As Double = 0
+    Private m_DtliquAdmin As DataTable = New DataTable()
+    Private m_DtliquElim As DataTable
+    Private fechaRep As String
+    Private objDao As New DAOGeneral
+    Private datosconexion As objcon
+    Private m_fechaConsulta As String = String.Empty
+    Private formulaGastoPeso As Boolean = False
+    Private formulaGastoCorporal As Boolean = False
+    Private valor As String = String.Empty
+    Private valorUnidadMedida As String = String.Empty
+    Private valorGastoUrinario As Double = 0
+    Private m_prestador As String = String.Empty
+    Private m_numAdmision As Integer = 0
+    Private m_sucursal As String = String.Empty
+    Private m_anoAdmision As Integer = 0
+    Private m_tipoAdmision As String = String.Empty
+    Private DAOGPM As New Sophia.HistoriaClinica.DAO.GPMData
+
+    Private objLiquidos As New Liquidos
+    Private codhistoria As String
+
+    Private Sub Label6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label6.Click
+
+    End Sub
+    Private Sub btnImprimirPlan_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnImprimirPlan.Click
+
+        Dim fechaInicial As Date
+        Dim fechaFinal As Date
+        Dim strFechaInicial As String = String.Empty
+        Dim strFechaFinal As String = String.Empty
+        Dim NombreReporte As String = "RepEnfLiquidos"
+        Dim diferenciaDias As Integer = 0
+        _datosGenerales = Generales.Instancia
+        General = Generales.Instancia
+        Paciente = objPaciente.Instancia
+
+        If mskFechaInicial.Text <> "  /  /" Then
+
+            fechaInicial = CDate(mskFechaInicial.Text)
+            strFechaInicial = objLiquidos.obtenerFecha(fechaInicial)
+
+            If mskFechaFinal.Text <> "  /  /" Then
+
+                fechaFinal = CDate(mskFechaFinal.Text)
+
+                If fechaInicial > fechaFinal Then
+
+                    MessageBox.Show("La fecha inicial no debe ser mayor a la fecha final", "Validacion Fecha", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    Exit Sub
+
+                End If
+
+                strFechaFinal = objLiquidos.obtenerFecha(fechaFinal)
+                diferenciaDias = objLiquidos.obtenerDiferenciaDia(strFechaInicial, strFechaFinal)
+
+                frmRepLiquidos.Show()
+                frmRepLiquidos.imprimirRepLiquidosAdmin(datosconexion, m_CodHistoria, strFechaInicial, diferenciaDias, m_peso, m_edad)
+
+                Exit Sub
+
+            End If
+
+            frmRepLiquidos.Show()
+            frmRepLiquidos.imprimirRepLiquidosAdmin(datosconexion, m_CodHistoria, strFechaInicial, diferenciaDias, m_peso, m_edad)
+
+        Else
+            MessageBox.Show("Debe diligenciar la fecha inicial", "Validacion Fecha", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        End If
+
+
+    End Sub
+    Private Sub btnCancelar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCancelar.Click
+
+        Me.Close()
+
+    End Sub
+    Private Sub GroupBox1_Enter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GroupBox1.Enter
+
+    End Sub
+
+    Private Sub Label5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label5.Click
+
+    End Sub
+
+    Public Sub New(ByVal dCod_Historia As String, ByVal strFechaIni_RecNac As Nullable(Of DateTime), ByVal strFechaFin_RecNac As Nullable(Of DateTime), ByVal iHoraIni_RecNac As Nullable(Of Integer), ByVal iHoraFin_RecNac As Nullable(Of Integer))
+
+        codhistoria = dCod_Historia
+        m_CodHistoria = dCod_Historia
+
+
+        General = Generales.Instancia
+        Paciente = objPaciente.Instancia
+        datosconexion = objcon.Instancia()
+
+        If Paciente.CodigoUnidadMedidaEdad = "A" Then
+            m_edad = Paciente.Edad
+        End If
+
+        DAOGPM.ClearParameters()
+        DAOGPM.setSQLSentence("SELECT DBO.FN_HCENF_ObtenerPesoPacienteLiquidos('" & General.Prestador & "', '" & General.Sucursal & "', '" & Paciente.TipoAdmision & "', " & Paciente.NumeroAdmision.ToString() & ", " & Paciente.AnoAdmision.ToString() & ", " & codhistoria.ToString() & ") AS peso", CommandType.Text)
+        m_peso = DAOGPM.executeScalar()
+
+        m_prestador = General.Prestador
+        m_sucursal = General.Sucursal
+        m_tipoAdmision = Paciente.TipoAdmision
+        m_anoAdmision = Paciente.AnoAdmision
+        m_numAdmision = Paciente.NumeroAdmision
+
+        ' Llamada necesaria para el Diseñador de Windows Forms.
+        ' Agregue cualquier inicialización después de la llamada a InitializeComponent().
+        InitializeComponent()
+
+    End Sub
+
+    Private Sub frm_ConsultaLiquidos_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
+        mskFechaFinal.Text = String.Empty
+        mskFechaHasta.Text = String.Empty
+        mskFechaInicial.Text = String.Empty
+
+        CargarLiquidosAdministrados(obtenerFechaAnterior())
+
+        CargarLiquidosEliminados(obtenerFechaAnterior())
+
+        If m_peso = 0 Then
+
+            MessageBox.Show("No se puede realizar el cálculo de Gasto Urinario porque no se ha registrado el peso del paciente en la sección Signos Vitales", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+        End If
+
+        cargarBalance()
+
+        AsignarFechaAnterior()
+
+    End Sub
+
+    'Dsanchez IG - 24/10/2017, Metodo que se usa para asignar fecha anterior en campo
+    Private Sub AsignarFechaAnterior()
+
+        Dim fechaAnterior As Date = Date.Now.AddDays(-1)
+        Dim dia As String = String.Empty
+        Dim mes As String = String.Empty
+        Dim ano As String = String.Empty
+
+        If fechaAnterior.Day().ToString().Length() = 1 Then
+
+            dia = "0" + fechaAnterior.Day().ToString()
+
+        Else
+
+            dia = fechaAnterior.Day().ToString()
+
+        End If
+
+        If fechaAnterior.Month().ToString().Length() = 1 Then
+
+            mes = "0" + fechaAnterior.Month().ToString()
+
+        Else
+
+            mes = fechaAnterior.Month().ToString()
+
+        End If
+
+        ano = fechaAnterior.Year().ToString()
+
+        mskFechaHasta.Text = dia + mes + ano
+
+
+    End Sub
+
+    Private Sub CargarLiquidosAdministrados(ByVal fecha As String)
+
+        Dim dtInfo As DataTable
+        Dim dtliquidosAdminInfo As DataTable = New DataTable()
+        Dim dtAuxiliar As DataTable
+        Dim indexCol As Integer
+        Dim sNombreColumna As String
+        Dim valor As Double = 0
+        Dim suma As Double = 0
+
+        m_fechaConsulta = fecha
+        m_DtliquAdmin = dtliquidosAdminInfo
+        dtgLiqAdmin.DataSource = Nothing
+
+        dtInfo = objLiquidos.ConsulLiqAdmin(m_CodHistoria, fecha)
+
+        dtInfo.Columns.Add("TOTAL", Type.GetType("System.String"))
+
+        For Each columna As DataColumn In dtInfo.Columns
+
+            Dim dc As New DataColumn(columna.ColumnName, columna.DataType)
+
+            m_DtliquAdmin.Columns.Add(dc)
+
+        Next
+
+        For Each fila As DataRow In dtInfo.Rows
+
+            suma = 0
+
+            For i As Integer = 0 To dtInfo.Columns.Count - 1
+
+                If Not dtInfo.Columns(i).Caption.Contains("HORA") And Not dtInfo.Columns(i).Caption.Contains("ID") _
+                                                                           And Not dtInfo.Columns(i).Caption.Contains("TOTAL") Then
+
+                    If fila(i).ToString().Equals(String.Empty) Then
+
+                        valor = 0
+
+                    Else
+
+                        valor = Convert.ToDouble(fila(i).ToString())
+
+                    End If
+
+                    suma = suma + valor
+
+                End If
+
+            Next
+
+            Dim filaNueva As DataRow = m_DtliquAdmin.NewRow
+
+            For j As Integer = 0 To m_DtliquAdmin.Columns.Count - 1
+
+                filaNueva(j) = fila(j)
+
+            Next
+
+            If suma.Equals(0) Then
+
+                filaNueva("TOTAL") = String.Empty
+
+            Else
+
+                filaNueva("TOTAL") = suma.ToString()
+
+            End If
+
+            m_DtliquAdmin.Rows.Add(filaNueva)
+
+        Next
+
+        m_DtliquAdmin.Columns(0).SetOrdinal(m_DtliquAdmin.Columns.Count - 1)
+
+        dtgLiqAdmin.DataSource = m_DtliquAdmin
+
+        dtgLiqAdmin.Columns(0).AutoSizeMode = DataGridViewAutoSizeColumnMode.ColumnHeader
+        dtgLiqAdmin.Columns("ID").Visible = False
+
+        For i As Integer = 0 To dtgLiqAdmin.Columns.Count - 1
+
+            If dtgLiqAdmin.Columns(i).Name.Contains("|") Then
+
+                dtAuxiliar = objLiquidos.ConsultaHeaderColumna(fecha, m_CodHistoria, objLiquidos.obtenerNombreLiquido(dtgLiqAdmin.Columns(i).Name, "LA"), objLiquidos.ObtenerNroOrden(dtgLiqAdmin.Columns(i).Name, "LA"))
+                sNombreColumna = objLiquidos.obtenerNombreLiquido(dtgLiqAdmin.Columns(i).Name, "LA")
+
+                If sNombreColumna.Length > 25 Then
+
+                    dtgLiqAdmin.Columns(i).HeaderText = sNombreColumna.Substring(0, 25)
+
+                Else
+
+                    dtgLiqAdmin.Columns(i).HeaderText = sNombreColumna
+
+                End If
+
+                For Each fila As DataRow In dtAuxiliar.Rows
+
+                    dtgLiqAdmin.Columns(i).ToolTipText = fila(0).ToString()
+
+                Next
+
+            End If
+
+            dtgLiqAdmin.Columns(i).AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
+
+            dtgLiqAdmin.AutoResizeColumns()
+            dtgLiqAdmin.Columns("HORA").Frozen = True
+            dtgLiqAdmin.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader
+
+            For j As Integer = 0 To dtgLiqAdmin.Columns.Count() - 1
+
+                dtgLiqAdmin.Columns(j).SortMode = DataGridViewColumnSortMode.NotSortable
+
+            Next
+
+        Next
+
+    End Sub
+
+    Private Function obtenerFechaAnterior() As String
+
+        Dim fecha As String = String.Empty
+        Dim fActual As Date = Date.Now().AddDays(-1)
+
+        fecha = fActual.Year.ToString()
+
+        If fActual.Month().ToString().Length() = 1 Then
+
+            fecha = fecha + "0" + fActual.Month().ToString()
+
+        Else
+
+            fecha = fecha + fActual.Month().ToString()
+
+        End If
+
+        If fActual.Day().ToString().Length() = 1 Then
+
+            fecha = fecha + "0" + fActual.Day.ToString()
+
+        Else
+
+            fecha = fecha + fActual.Day.ToString()
+
+        End If
+
+        Return fecha
+
+    End Function
+
+    Public Sub Mostrar(ByVal codHistoria As Integer, ByVal peso As Double, ByVal edad As Double, ByVal prestador As String, ByVal sucursal As String, ByVal numAdmision As Integer, ByVal anoAdmision As Integer, ByVal tipoAdmision As String)
+
+        m_CodHistoria = codHistoria
+        m_peso = peso
+        m_edad = edad
+        m_prestador = prestador
+        m_sucursal = sucursal
+        m_tipoAdmision = tipoAdmision
+        m_anoAdmision = anoAdmision
+        m_numAdmision = numAdmision
+
+        Me.ShowDialog()
+
+    End Sub
+
+    Private Sub CargarLiquidosEliminados(ByVal fecha As String)
+        Dim dtliquidosElim As DataTable
+        Dim dtliquidosElimInfo As DataTable = New DataTable()
+        Dim valor As Double = 0
+        Dim suma As Double = 0
+
+        Try
+
+            m_fechaConsulta = fecha
+            dtgLiqElim.DataSource = Nothing
+            m_DtliquElim = dtliquidosElimInfo
+
+            dtliquidosElim = objLiquidos.ConsultaLiquidoEliminado(m_CodHistoria, fecha)
+
+            dtliquidosElim.Columns.Add("TOTAL", Type.GetType("System.String"))
+
+            For Each columna As DataColumn In dtliquidosElim.Columns
+
+                Dim dc As New DataColumn(columna.ColumnName, columna.DataType)
+
+                m_DtliquElim.Columns.Add(dc)
+
+            Next
+
+            For Each fila As DataRow In dtliquidosElim.Rows
+
+                suma = 0
+
+                For i As Integer = 0 To dtliquidosElim.Columns.Count - 1
+
+                    If Not dtliquidosElim.Columns(i).Caption.Contains("HORA") And Not dtliquidosElim.Columns(i).Caption.Contains("ID") _
+                                                                               And Not dtliquidosElim.Columns(i).Caption.Contains("TOTAL") Then
+
+                        If fila(i).ToString().Equals(String.Empty) Then
+
+                            valor = 0
+
+                        Else
+
+                            If fila(i).ToString() = "+" Or fila(i).ToString() = "-" Then
+
+                                valor = 0
+
+                            Else
+
+                                valor = Convert.ToDouble(fila(i).ToString())
+
+                            End If
+
+                        End If
+
+                        suma = suma + valor
+
+                    End If
+
+                Next
+
+                Dim filaNueva As DataRow = m_DtliquElim.NewRow
+
+                For j As Integer = 0 To m_DtliquElim.Columns.Count - 1
+
+                    filaNueva(j) = fila(j)
+
+                Next
+
+                If suma.Equals(0) Then
+
+                    filaNueva("TOTAL") = String.Empty
+
+                Else
+
+                    filaNueva("TOTAL") = suma.ToString()
+
+                End If
+
+                m_DtliquElim.Rows.Add(filaNueva)
+
+            Next
+
+            m_DtliquElim.Columns(0).SetOrdinal(m_DtliquElim.Columns.Count - 1)
+
+            dtgLiqElim.DataSource = m_DtliquElim
+
+            dtgLiqElim.Columns(0).AutoSizeMode = DataGridViewAutoSizeColumnMode.ColumnHeader
+            dtgLiqElim.Columns("ID").Visible = False
+
+            For i As Integer = 0 To dtgLiqElim.Columns.Count - 1
+
+                dtgLiqElim.Columns(i).HeaderText = fixNameColumnLiqElim(dtgLiqElim.Columns(i).Name)
+                dtgLiqElim.Columns(i).AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
+
+            Next
+
+            dtgLiqElim.AutoResizeColumns()
+            dtgLiqElim.Columns("HORA").Frozen = True
+            dtgLiqElim.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader
+
+            For j As Integer = 0 To dtgLiqElim.Columns.Count() - 1
+
+                dtgLiqElim.Columns(j).SortMode = DataGridViewColumnSortMode.NotSortable
+
+            Next
+
+        Catch ex As Exception
+            MsgBox("Error al cargar grilla de Liquidos Eliminados. " & ex.Message, MsgBoxStyle.Information)
+        End Try
+
+    End Sub
+
+    Private Function fixNameColumnLiqElim(ByVal nombreLiquido As String) As String
+
+        Dim nroOrden As String
+        Dim lateral As Char
+        Dim resultado As String
+
+        If nombreLiquido.Contains("|") Then
+
+            lateral = objLiquidos.obtenerLateralidad(nombreLiquido, "LE")
+            nroOrden = objLiquidos.ObtenerNroOrden(nombreLiquido, "LE")
+            resultado = objLiquidos.obtenerNombreLiquido(nombreLiquido, "LE")
+
+            If Convert.ToInt32(nroOrden) > 0 Then
+
+                resultado = "(" + nroOrden + ")" + resultado
+
+            End If
+
+            If lateral = "I" Then
+
+                resultado = resultado + "(" + "IZQ" + ")"
+
+            End If
+
+            If lateral = "D" Then
+
+                resultado = resultado + "(" + "DER" + ")"
+
+            End If
+
+        Else
+
+            resultado = nombreLiquido
+
+        End If
+
+        Return resultado
+
+    End Function
+
+    Private Sub dtgLiqAdmin_Sorted(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles dtgLiqAdmin.Sorted
+
+        For Each columna As DataGridViewColumn In dtgLiqAdmin.Columns
+
+            columna.SortMode = DataGridViewColumnSortMode.NotSortable
+
+        Next
+
+    End Sub
+
+    Private Sub dtgLiqAdmin_ColumnSortModeChanged(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewColumnEventArgs) Handles dtgLiqAdmin.ColumnSortModeChanged
+
+        For Each columna As DataGridViewColumn In dtgLiqAdmin.Columns
+
+            columna.SortMode = DataGridViewColumnSortMode.NotSortable
+
+        Next
+
+    End Sub
+
+    Private Sub dtgLiqAdmin_Scroll(ByVal sender As System.Object, ByVal e As System.Windows.Forms.ScrollEventArgs) Handles dtgLiqAdmin.Scroll
+
+        If e.ScrollOrientation = ScrollOrientation.VerticalScroll Then
+
+            If Me.dtgLiqElim.Rows.Count > 0 And Me.dtgLiqAdmin.Rows.Count > 0 Then
+
+                dtgLiqElim.FirstDisplayedScrollingRowIndex = dtgLiqAdmin.FirstDisplayedScrollingRowIndex
+
+            End If
+
+        End If
+
+        If e.ScrollOrientation = ScrollOrientation.VerticalScroll Then
+
+            If Me.dtgConsultaBalance.Rows.Count > 0 And Me.dtgLiqAdmin.Rows.Count > 0 Then
+
+                dtgConsultaBalance.FirstDisplayedScrollingRowIndex = dtgLiqAdmin.FirstDisplayedScrollingRowIndex
+
+            End If
+
+        End If
+
+    End Sub
+
+    Private Sub dtgLiqElim_Scroll(ByVal sender As System.Object, ByVal e As System.Windows.Forms.ScrollEventArgs) Handles dtgLiqElim.Scroll
+
+        If e.ScrollOrientation = ScrollOrientation.VerticalScroll Then
+
+            If Me.dtgLiqAdmin.Rows.Count > 0 And Me.dtgLiqElim.Rows.Count > 0 Then
+
+                dtgLiqAdmin.FirstDisplayedScrollingRowIndex = dtgLiqElim.FirstDisplayedScrollingRowIndex
+
+            End If
+
+        End If
+
+        If e.ScrollOrientation = ScrollOrientation.VerticalScroll Then
+
+            If Me.dtgConsultaBalance.Rows.Count > 0 And Me.dtgLiqElim.Rows.Count > 0 Then
+
+                dtgConsultaBalance.FirstDisplayedScrollingRowIndex = dtgLiqElim.FirstDisplayedScrollingRowIndex
+
+            End If
+
+        End If
+
+    End Sub
+
+    Private Sub dtgLiqElim_Sorted(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles dtgLiqElim.Sorted
+
+        For Each columna As DataGridViewColumn In dtgLiqElim.Columns
+
+            columna.SortMode = DataGridViewColumnSortMode.NotSortable
+
+        Next
+
+    End Sub
+
+    Private Sub dtgLiqElim_ColumnSortModeChanged(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewColumnEventArgs) Handles dtgLiqElim.ColumnSortModeChanged
+
+        For Each columna As DataGridViewColumn In dtgLiqElim.Columns
+
+            columna.SortMode = DataGridViewColumnSortMode.NotSortable
+
+        Next
+
+    End Sub
+
+    Private Sub btnVisor_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnVisor.Click
+
+        Dim fecha As Date
+
+        If mskFechaHasta.Text = "  /  /" Then
+            Exit Sub
+        End If
+
+        fecha = CDate(mskFechaHasta.Text)
+
+        If fecha > Date.Now Then
+
+            MessageBox.Show("La fecha consultada es mayor a la actual", "Fecha", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Exit Sub
+
+        End If
+
+        CargarLiquidosAdministrados(objLiquidos.obtenerFecha(fecha))
+        CargarLiquidosEliminados(objLiquidos.obtenerFecha(fecha))
+        cargarBalance()
+
+    End Sub
+
+    Private Sub cargarBalance()
+
+        Dim dtAdministrados As DataTable = New DataTable()
+        Dim dtEliminados As DataTable = New DataTable()
+        Dim dtBalance As DataTable = New DataTable()
+        Dim iFilas As Integer = 29
+        Dim valorAdministrado As Double = 0
+        Dim valorEliminado As Double = 0
+        Dim valorBal As Double = 0
+        Dim iCantidadHoras As Integer = 0
+
+        dtAdministrados = dtgLiqAdmin.DataSource
+        dtEliminados = dtgLiqElim.DataSource
+
+        If dtAdministrados.Columns.Count > 3 Or dtEliminados.Columns.Count > 3 Then
+
+            dtBalance.Columns.Add("HORA")
+            dtBalance.Columns.Add("BALANCE_HORARIO")
+            dtBalance.Columns.Add("GASTO_URINARIO")
+
+            For i As Integer = 1 To iFilas
+
+                Dim dtFila As DataRow = dtBalance.NewRow
+                Dim hora As String = String.Empty
+
+                If i <= 6 Then
+
+                    hora = Convert.ToString(i + 6)
+
+                End If
+
+                If i > 7 And i <= 13 Then
+
+                    hora = Convert.ToString(i + 5)
+
+                End If
+
+                If i > 14 And i <= 20 Then
+
+                    hora = Convert.ToString(i + 4)
+
+                End If
+
+                If i > 21 And i <= 27 Then
+
+                    hora = Convert.ToString(i - 21)
+
+                End If
+
+                If i = 7 Or i = 14 Or i = 21 Or i = 28 Then
+
+                    hora = "SUBTOTAL"
+
+                End If
+
+                If i = 29 Then
+
+                    hora = "TOTAL"
+
+                End If
+
+                dtFila("HORA") = hora
+                dtBalance.Rows.Add(dtFila)
+
+            Next
+
+            For i As Integer = 0 To dtBalance.Rows.Count - 1
+
+                If dtgLiqAdmin.Rows(i).Cells("TOTAL").Value.ToString() = String.Empty And dtgLiqElim.Rows(i).Cells("TOTAL").Value.ToString() = String.Empty Then
+
+                    dtBalance.Rows(i)("BALANCE_HORARIO") = String.Empty
+
+                Else
+
+                    If dtgLiqAdmin.Rows(i).Cells("TOTAL").Value.ToString() = String.Empty Then
+
+                        valorAdministrado = 0
+
+                    Else
+
+                        valorAdministrado = Convert.ToDouble(dtgLiqAdmin.Rows(i).Cells("TOTAL").Value)
+
+                    End If
+
+                    If dtgLiqElim.Rows(i).Cells("TOTAL").Value.ToString() = String.Empty Then
+
+                        valorEliminado = 0
+
+                    Else
+
+                        valorEliminado = Convert.ToDouble(dtgLiqElim.Rows(i).Cells("TOTAL").Value)
+
+                    End If
+
+                    valorBal = valorAdministrado - valorEliminado
+
+                    dtBalance.Rows(i)("BALANCE_HORARIO") = Convert.ToString(Round(valorBal, 1))
+
+                End If
+
+            Next
+
+            dtgConsultaBalance.DataSource = dtBalance
+
+            For i As Integer = 0 To dtgConsultaBalance.Columns.Count - 1
+
+                dtgConsultaBalance.Columns(i).AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
+
+            Next
+
+            dtgConsultaBalance.Columns("HORA").HeaderText = "HORA"
+            dtgConsultaBalance.Columns("BALANCE_HORARIO").HeaderText = "BALANCE HORARIO"
+            dtgConsultaBalance.Columns("GASTO_URINARIO").HeaderText = "GASTO URINARIO ACUMULADO"
+
+            dtgConsultaBalance.AutoResizeColumns()
+            dtgConsultaBalance.Columns("HORA").Frozen = True
+            dtgConsultaBalance.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader
+
+            iCantidadHoras = validaHora()
+            calculoGastoUrinario(iCantidadHoras, dtgConsultaBalance.DataSource)
+
+        Else
+
+            dtBalance.Columns.Add("HORA")
+            dtBalance.Columns.Add("BALANCE_HORARIO")
+            dtBalance.Columns.Add("GASTO_URINARIO")
+
+            For i As Integer = 1 To iFilas
+
+                Dim dtFila As DataRow = dtBalance.NewRow
+                Dim hora As String = String.Empty
+
+                If i <= 6 Then
+
+                    hora = Convert.ToString(i + 6)
+
+                End If
+
+                If i > 7 And i <= 13 Then
+
+                    hora = Convert.ToString(i + 5)
+
+                End If
+
+                If i > 14 And i <= 20 Then
+
+                    hora = Convert.ToString(i + 4)
+
+                End If
+
+                If i > 21 And i <= 27 Then
+
+                    hora = Convert.ToString(i - 21)
+
+                End If
+
+                If i = 7 Or i = 14 Or i = 21 Or i = 28 Then
+
+                    hora = "SUBTOTAL"
+
+                End If
+
+                If i = 29 Then
+
+                    hora = "TOTAL"
+
+                End If
+
+                dtFila("HORA") = hora
+                dtBalance.Rows.Add(dtFila)
+
+            Next
+
+            dtgConsultaBalance.DataSource = dtBalance
+
+            For i As Integer = 0 To dtgConsultaBalance.Columns.Count - 1
+
+                dtgConsultaBalance.Columns(i).AutoSizeMode = DataGridViewAutoSizeColumnMode.DisplayedCells
+
+            Next
+
+            dtgConsultaBalance.Columns("HORA").HeaderText = "HORA"
+            dtgConsultaBalance.Columns("BALANCE_HORARIO").HeaderText = "BALANCE HORARIO"
+            dtgConsultaBalance.Columns("GASTO_URINARIO").HeaderText = "GASTO URINARIO ACUMULADO"
+
+            dtgConsultaBalance.AutoResizeColumns()
+            dtgConsultaBalance.Columns("HORA").Frozen = True
+            dtgConsultaBalance.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.ColumnHeader
+
+            For j As Integer = 0 To dtgConsultaBalance.Columns.Count() - 1
+
+                dtgConsultaBalance.Columns(j).SortMode = DataGridViewColumnSortMode.NotSortable
+
+            Next
+
+        End If
+
+
+    End Sub
+
+    Private Function validaHora() As Integer
+
+        Dim fechActual As String = String.Empty
+
+        fechActual = objLiquidos.obtenerFecha(Date.Now.Date)
+
+        If fechActual = m_fechaConsulta Then
+
+            Return obtenerHora()
+
+        Else
+
+            Return 24
+
+        End If
+
+    End Function
+
+    Private Function obtenerHora() As Integer
+
+        Dim fechaActual As Date = Date.Now()
+        Dim strFechaActual As String = String.Empty
+        Dim HoraIngresoAdmision As Integer = 0
+        Dim fechaAdmision As String = String.Empty
+        Dim resultado As Integer = 0
+        Dim horaMinima As Integer = 0
+        Dim horaMaxima As Integer = 0
+
+        objLiquidos.ObtenerFechaHoraAdmision(m_prestador, m_sucursal, m_numAdmision, m_anoAdmision, m_tipoAdmision, fechaAdmision, HoraIngresoAdmision)
+
+        If Date.Now().Day().ToString().Length() = 1 Then
+
+            strFechaActual = "0" + Date.Now().Day().ToString() + "/"
+
+        Else
+
+            strFechaActual = Date.Now().Day().ToString() + "/"
+
+        End If
+
+        If Date.Now().Month().ToString().Length() = 1 Then
+
+            strFechaActual = strFechaActual + "0" + Date.Now().Month().ToString() + "/"
+
+        Else
+
+            strFechaActual = strFechaActual + Date.Now().Month().ToString() + "/"
+
+        End If
+
+        strFechaActual = strFechaActual + Date.Now.Year().ToString()
+
+
+        If fechaAdmision = strFechaActual Then
+
+            If HoraIngresoAdmision < 7 And Date.Now().Hour() < 7 Then
+
+                horaMinima = Paciente.HoraIngresoAdmision
+                horaMaxima = Date.Now().Hour()
+
+            End If
+
+            If HoraIngresoAdmision < 7 And Date.Now().Hour() >= 7 Then
+
+                horaMinima = 7
+                horaMaxima = Date.Now().Hour()
+
+            End If
+
+            If HoraIngresoAdmision >= 7 Then
+
+                horaMinima = Paciente.HoraIngresoAdmision
+                horaMaxima = Date.Now().Hour()
+
+            End If
+
+        Else
+
+            horaMinima = 7
+            horaMaxima = Date.Now().Hour()
+
+        End If
+
+        resultado = (horaMaxima - horaMinima) + 1
+
+        If resultado >= 0 Then
+
+            Return resultado
+
+        Else
+
+            resultado = resultado + 24
+            Return resultado
+
+        End If
+
+    End Function
+
+    Private Sub calculoGastoUrinario(ByVal horas As Integer, ByVal dtBalance As DataTable)
+
+        Dim dtColumnas As New DataTable
+        Dim horaInicial As Integer = 7
+        dtColumnas.Columns.Add("NOMBRE_COLUMNA")
+        Dim sumaPrimeraSeccion As Double = 0
+        Dim sumaSegundaSeccion As Double = 0
+        Dim sumaTerceraSeccion As Double = 0
+        Dim sumaCuartaSeccion As Double = 0
+        Dim resultadoPrimeraSeccion As Double = 0
+        Dim resultadoSegundaSeccion As Double = 0
+        Dim resultadoTerceraSeccion As Double = 0
+        Dim resultadoCuartaSeccion As Double = 0
+        Dim unidadMedida As String = String.Empty
+
+        If horas > 0 Then
+
+            For i As Integer = 0 To dtgLiqElim.Columns.Count - 1
+
+                If dtgLiqElim.Columns(i).Name.ToString() <> "HORA" And _
+                   dtgLiqElim.Columns(i).Name.ToString() <> "TOTAL" And _
+                   dtgLiqElim.Columns(i).Name.ToString() <> "ID" Then
+
+
+                    If objLiquidos.ValidaLiquidoDiuresis(objLiquidos.obtenerNombreLiquido(dtgLiqElim.Columns(i).Name, "LE")) Then
+
+                        Dim dtFila As DataRow = dtColumnas.NewRow
+                        dtFila("NOMBRE_COLUMNA") = dtgLiqElim.Columns(i).Name
+
+                        dtColumnas.Rows.Add(dtFila)
+
+                    End If
+
+                End If
+
+            Next
+
+            'PRIMERA SECCION
+            If horas > 6 Then
+
+                If Not objLiquidos.ValidaExisteBalanceCorte(m_CodHistoria, m_fechaConsulta, 1) Then
+
+                    sumaPrimeraSeccion = ObtenerSumatoriaDiuresis(dtColumnas, 6)
+                    resultadoPrimeraSeccion = gastoUrinario(sumaPrimeraSeccion, 6, unidadMedida)
+
+                Else
+
+                    If objLiquidos.ValidaExisteBalanceCorte(m_CodHistoria, m_fechaConsulta, 2) Then
+
+                        objLiquidos.ConsultarBalanceXCorte(m_CodHistoria, m_fechaConsulta, 1, m_peso, unidadMedida)
+                        formulaGastoCorporal = True
+                        formulaGastoPeso = True
+
+                    Else
+
+                        sumaPrimeraSeccion = ObtenerSumatoriaDiuresis(dtColumnas, 6)
+                        resultadoPrimeraSeccion = gastoUrinario(sumaPrimeraSeccion, 6, unidadMedida)
+
+                    End If
+                End If
+
+                End If
+
+            If horas <= 6 Then
+
+                If Not objLiquidos.ValidaExisteBalanceCorte(m_CodHistoria, m_fechaConsulta, 1) Then
+
+                    sumaPrimeraSeccion = ObtenerSumatoriaDiuresis(dtColumnas, horas)
+                    resultadoPrimeraSeccion = gastoUrinario(sumaPrimeraSeccion, horas, unidadMedida)
+
+                Else
+
+                    objLiquidos.ConsultarBalanceXCorte(m_CodHistoria, m_fechaConsulta, 1, m_peso, unidadMedida)
+                    formulaGastoCorporal = True
+                    formulaGastoPeso = True
+
+                End If
+
+            End If
+
+            If formulaGastoCorporal Or formulaGastoPeso Then
+
+                For i As Integer = 0 To 6
+
+                    'GASTO_URINARIO
+                    'UNIDAD_MEDIDA
+                    If m_peso = 0 Then
+
+                        dtBalance.Rows(i)("GASTO_URINARIO") = "NO SE PUEDE CALCULAR"
+
+                    Else
+
+                        If Not objLiquidos.ValidaExisteBalanceCorte(m_CodHistoria, m_fechaConsulta, 1) Then
+
+                            dtBalance.Rows(i)("GASTO_URINARIO") = Convert.ToString(Round(resultadoPrimeraSeccion, 2)) + "-" + unidadMedida
+                            dtBalance.Rows(28)("GASTO_URINARIO") = Convert.ToString(Round(resultadoPrimeraSeccion, 2)) + "-" + unidadMedida
+
+                        Else
+
+                            If objLiquidos.ValidaExisteBalanceCorte(m_CodHistoria, m_fechaConsulta, 2) Then
+
+                                dtBalance.Rows(i)("GASTO_URINARIO") = unidadMedida
+                                dtBalance.Rows(28)("GASTO_URINARIO") = unidadMedida
+
+                            Else
+
+                                dtBalance.Rows(i)("GASTO_URINARIO") = Convert.ToString(Round(resultadoPrimeraSeccion, 2)) + "-" + unidadMedida
+                                dtBalance.Rows(28)("GASTO_URINARIO") = Convert.ToString(Round(resultadoPrimeraSeccion, 2)) + "-" + unidadMedida
+
+                            End If
+
+                        End If
+
+                        End If
+
+                Next
+
+                formulaGastoCorporal = False
+                formulaGastoPeso = False
+
+            End If
+
+            'SEGUNDA SECCION
+            If horas > 12 Then
+
+                If Not objLiquidos.ValidaExisteBalanceCorte(m_CodHistoria, m_fechaConsulta, 2) Then
+
+                    sumaSegundaSeccion = ObtenerSumatoriaDiuresis(dtColumnas, 12)
+                    resultadoSegundaSeccion = gastoUrinario(sumaSegundaSeccion, 12, unidadMedida)
+
+                Else
+
+                    If objLiquidos.ValidaExisteBalanceCorte(m_CodHistoria, m_fechaConsulta, 3) Then
+
+                        objLiquidos.ConsultarBalanceXCorte(m_CodHistoria, m_fechaConsulta, 2, m_peso, unidadMedida)
+                        formulaGastoCorporal = True
+                        formulaGastoPeso = True
+
+                    Else
+
+                        sumaSegundaSeccion = ObtenerSumatoriaDiuresis(dtColumnas, 12)
+                        resultadoSegundaSeccion = gastoUrinario(sumaSegundaSeccion, 12, unidadMedida)
+
+                    End If
+
+                End If
+
+            End If
+
+            If horas > 6 And horas <= 12 Then
+
+                If Not objLiquidos.ValidaExisteBalanceCorte(m_CodHistoria, m_fechaConsulta, 2) Then
+
+                    sumaSegundaSeccion = ObtenerSumatoriaDiuresis(dtColumnas, horas)
+                    resultadoSegundaSeccion = gastoUrinario(sumaSegundaSeccion, horas, unidadMedida)
+
+                Else
+
+                    objLiquidos.ConsultarBalanceXCorte(m_CodHistoria, m_fechaConsulta, 2, m_peso, unidadMedida)
+                    formulaGastoCorporal = True
+                    formulaGastoPeso = True
+
+                End If
+
+            End If
+
+            If formulaGastoCorporal Or formulaGastoPeso Then
+
+                For i As Integer = 7 To 13
+
+                    'GASTO_URINARIO
+                    'UNIDAD_MEDIDA
+
+                    If m_peso = 0 Then
+
+                        dtBalance.Rows(i)("GASTO_URINARIO") = "NO SE PUEDE CALCULAR"
+
+                    Else
+
+                        If Not objLiquidos.ValidaExisteBalanceCorte(m_CodHistoria, m_fechaConsulta, 2) Then
+
+                            dtBalance.Rows(i)("GASTO_URINARIO") = " " + Convert.ToString(Round(resultadoSegundaSeccion, 2)) + "-" + unidadMedida
+                            dtBalance.Rows(28)("GASTO_URINARIO") = Convert.ToString(Round(resultadoSegundaSeccion, 2)) + "-" + unidadMedida
+
+                        Else
+
+                            If objLiquidos.ValidaExisteBalanceCorte(m_CodHistoria, m_fechaConsulta, 3) Then
+
+                                dtBalance.Rows(i)("GASTO_URINARIO") = " " + unidadMedida
+                                dtBalance.Rows(28)("GASTO_URINARIO") = unidadMedida
+
+                            Else
+
+                                dtBalance.Rows(i)("GASTO_URINARIO") = " " + Convert.ToString(Round(resultadoSegundaSeccion, 2)) + "-" + unidadMedida
+                                dtBalance.Rows(28)("GASTO_URINARIO") = Convert.ToString(Round(resultadoSegundaSeccion, 2)) + "-" + unidadMedida
+
+                            End If
+
+                        End If
+
+                    End If
+
+                Next
+
+                formulaGastoCorporal = False
+                formulaGastoPeso = False
+
+            End If
+
+            'TERCERA SECCION
+            If horas > 18 Then
+
+                If Not objLiquidos.ValidaExisteBalanceCorte(m_CodHistoria, m_fechaConsulta, 3) Then
+
+                    sumaTerceraSeccion = ObtenerSumatoriaDiuresis(dtColumnas, 18)
+                    resultadoTerceraSeccion = gastoUrinario(sumaTerceraSeccion, 18, unidadMedida)
+
+                Else
+
+                    If objLiquidos.ValidaExisteBalanceCorte(m_CodHistoria, m_fechaConsulta, 4) Then
+
+                        objLiquidos.ConsultarBalanceXCorte(m_CodHistoria, m_fechaConsulta, 3, m_peso, unidadMedida)
+                        formulaGastoCorporal = True
+                        formulaGastoPeso = True
+
+                    Else
+
+                        sumaTerceraSeccion = ObtenerSumatoriaDiuresis(dtColumnas, 18)
+                        resultadoTerceraSeccion = gastoUrinario(sumaTerceraSeccion, 18, unidadMedida)
+
+                    End If
+
+                End If
+
+            End If
+
+            If horas > 12 And horas <= 18 Then
+
+                If Not objLiquidos.ValidaExisteBalanceCorte(m_CodHistoria, m_fechaConsulta, 3) Then
+
+                    sumaTerceraSeccion = ObtenerSumatoriaDiuresis(dtColumnas, horas)
+                    resultadoTerceraSeccion = gastoUrinario(sumaTerceraSeccion, horas, unidadMedida)
+
+                Else
+
+                    objLiquidos.ConsultarBalanceXCorte(m_CodHistoria, m_fechaConsulta, 3, m_peso, unidadMedida)
+                    formulaGastoCorporal = True
+                    formulaGastoPeso = True
+
+                End If
+
+            End If
+
+            If formulaGastoCorporal Or formulaGastoPeso Then
+
+                For i As Integer = 14 To 20
+
+                    'GASTO_URINARIO
+                    'UNIDAD_MEDIDA
+
+                    If m_peso = 0 Then
+
+                        dtBalance.Rows(i)("GASTO_URINARIO") = "NO SE PUEDE CALCULAR"
+                        dtBalance.Rows(28)("GASTO_URINARIO") = "NO SE PUEDE CALCULAR"
+
+                    Else
+
+                        If Not objLiquidos.ValidaExisteBalanceCorte(m_CodHistoria, m_fechaConsulta, 3) Then
+
+                            dtBalance.Rows(i)("GASTO_URINARIO") = "  " + Convert.ToString(Round(resultadoTerceraSeccion, 2)) + "-" + unidadMedida
+                            dtBalance.Rows(28)("GASTO_URINARIO") = Convert.ToString(Round(resultadoTerceraSeccion, 2)) + "-" + unidadMedida
+
+                        Else
+
+                            If objLiquidos.ValidaExisteBalanceCorte(m_CodHistoria, m_fechaConsulta, 4) Then
+
+                                dtBalance.Rows(i)("GASTO_URINARIO") = "  " + unidadMedida
+                                dtBalance.Rows(28)("GASTO_URINARIO") = unidadMedida
+
+                            Else
+
+                                dtBalance.Rows(i)("GASTO_URINARIO") = "  " + Convert.ToString(Round(resultadoTerceraSeccion, 2)) + "-" + unidadMedida
+                                dtBalance.Rows(28)("GASTO_URINARIO") = Convert.ToString(Round(resultadoTerceraSeccion, 2)) + "-" + unidadMedida
+
+                            End If
+
+                        End If
+
+                    End If
+
+                Next
+
+                formulaGastoCorporal = False
+                formulaGastoPeso = False
+
+            End If
+
+            'CUARTA SECCION
+            If horas > 18 Then
+
+                If Not objLiquidos.ValidaExisteBalanceCorte(m_CodHistoria, m_fechaConsulta, 4) Then
+
+                    sumaCuartaSeccion = ObtenerSumatoriaDiuresis(dtColumnas, horas)
+                    resultadoCuartaSeccion = gastoUrinario(sumaCuartaSeccion, horas, unidadMedida)
+
+                Else
+
+                    objLiquidos.ConsultarBalanceXCorte(m_CodHistoria, m_fechaConsulta, 4, m_peso, unidadMedida)
+                    formulaGastoCorporal = True
+                    formulaGastoPeso = True
+
+                End If
+
+            End If
+
+            If formulaGastoCorporal Or formulaGastoPeso Then
+
+                For i As Integer = 21 To 27
+
+                    'GASTO_URINARIO
+                    'UNIDAD_MEDIDA
+
+                    If m_peso = 0 Then
+
+                        dtBalance.Rows(i)("GASTO_URINARIO") = "NO SE PUEDE CALCULAR"
+
+                    Else
+
+                        If Not objLiquidos.ValidaExisteBalanceCorte(m_CodHistoria, m_fechaConsulta, 4) Then
+
+                            dtBalance.Rows(i)("GASTO_URINARIO") = "   " + Convert.ToString(Round(resultadoCuartaSeccion, 2)) + "-" + unidadMedida
+                            dtBalance.Rows(28)("GASTO_URINARIO") = Convert.ToString(Round(resultadoCuartaSeccion, 2)) + "-" + unidadMedida
+
+                        Else
+
+                            dtBalance.Rows(i)("GASTO_URINARIO") = "   " + unidadMedida
+                            dtBalance.Rows(28)("GASTO_URINARIO") = unidadMedida
+
+                        End If
+
+                    End If
+
+                Next
+
+                formulaGastoCorporal = False
+                formulaGastoPeso = False
+
+            End If
+
+            dtgConsultaBalance.DataSource = dtBalance
+
+            ValidarGastoUrinario()
+
+        End If
+
+    End Sub
+
+    ''Se crea metodo para la sumatoria de liquidos de diuresis - dsanchez 30/08/2017
+    Private Function ObtenerSumatoriaDiuresis(ByVal dtColumnas As DataTable, ByVal horas As Integer) As Double
+
+        Dim horaInicial As Integer = 7
+        Dim nombreColumna As String = String.Empty
+        Dim suma As Double = 0
+        Dim valor As Double = 0
+
+        For i As Integer = 1 To horas
+
+            If horaInicial > 24 Then
+
+                horaInicial = horaInicial - 24
+
+            End If
+
+            For j As Integer = 0 To dtgLiqElim.Rows.Count - 1
+
+                If dtgLiqElim.Rows(j).Cells("HORA").Value.ToString() = horaInicial.ToString() Then
+
+                    For k As Integer = 0 To dtColumnas.Rows.Count - 1
+
+                        nombreColumna = dtColumnas.Rows(k)("NOMBRE_COLUMNA").ToString()
+
+                        If dtgLiqElim.Rows(j).Cells(nombreColumna).Value.ToString() = String.Empty Or _
+                           dtgLiqElim.Rows(j).Cells(nombreColumna).Value.ToString() = "+" Or _
+                           dtgLiqElim.Rows(j).Cells(nombreColumna).Value.ToString() = "-" Then
+
+                            valor = 0
+
+                        Else
+
+                            valor = Convert.ToDouble(dtgLiqElim.Rows(j).Cells(nombreColumna).Value.ToString())
+
+                        End If
+
+                        suma = suma + valor
+
+                    Next
+
+                End If
+
+            Next
+
+            horaInicial = horaInicial + 1
+
+        Next
+
+        Return suma
+
+    End Function
+
+    ''Se crea metodo para obtener el gasto urinario - dsanchez 30/08/2017
+    Private Function gastoUrinario(ByVal suma As Double, ByVal horas As Double, ByRef unidadMedida As String) As Double
+
+        Dim peso As Double = 0
+        Dim edad As Integer = 0
+        Dim resultado As Double = 0
+
+        formulaGastoPeso = False
+        formulaGastoCorporal = False
+
+        peso = m_peso
+        edad = m_edad
+
+        If (edad <= 16 And peso < 10) Or edad > 16 Then
+
+            Dim dividendoPeso As Double = 0
+
+            formulaGastoPeso = True
+
+            dividendoPeso = suma / horas
+            resultado = dividendoPeso / peso
+
+            unidadMedida = "CC/Kg-h"
+
+        End If
+
+        If edad <= 16 And peso >= 10 Then
+
+            Dim dividendoCorporal As Double = 0
+            Dim divisorCorporal As Double = 0
+
+            formulaGastoCorporal = True
+
+            dividendoCorporal = suma / horas
+            divisorCorporal = ((peso * 4) + 7) / (peso + 90)
+            resultado = dividendoCorporal / divisorCorporal
+
+            unidadMedida = "CC/M^2-h"
+
+        End If
+
+        Return resultado
+
+    End Function
+
+    Private Sub ValidarGastoUrinario()
+
+        Dim iIndex As Integer = 0
+        Dim cadena As Integer = 0
+        'Validacion de primera seccion
+        valor = dtgConsultaBalance.Rows(0).Cells("GASTO_URINARIO").Value.ToString()
+        'CC/M^2-h
+        'CC/Kg-h
+        If valor <> String.Empty Then
+
+            If valor <> "NO SE PUEDE CALCULAR" Then
+
+                iIndex = valor.IndexOf("-")
+                cadena = valor.Length - iIndex
+                valorUnidadMedida = valor.Substring(iIndex + 1, cadena - 1)
+                valor = valor.Substring(0, iIndex)
+
+                valorGastoUrinario = CDbl(valor.Trim())
+
+                If valorUnidadMedida.Trim() = "CC/M^2-h" Then
+
+                    If (valorGastoUrinario > 4.2 And valorGastoUrinario < 12) Or valorGastoUrinario > 90 Then
+
+                        PintarCeldas(0, 6, Color.Yellow)
+
+                    End If
+
+                    If valorGastoUrinario <= 4.2 Then
+
+                        PintarCeldas(0, 6, Color.Orange)
+
+                    End If
+
+                End If
+
+                If valorUnidadMedida.Trim() = "CC/Kg-h" Then
+
+                    If valorGastoUrinario > 0.5 And valorGastoUrinario < 1 Then
+
+                        PintarCeldas(0, 6, Color.Yellow)
+
+                    End If
+
+                    If valorGastoUrinario > 5 Then
+
+                        PintarCeldas(0, 6, Color.Yellow)
+
+                    End If
+
+                    If valorGastoUrinario <= 0.5 Then
+
+                        PintarCeldas(0, 6, Color.Orange)
+
+                    End If
+
+                End If
+
+                valor = String.Empty
+
+            End If
+
+        End If
+
+        'Validacion de segunda seccion seccion
+        valor = dtgConsultaBalance.Rows(7).Cells("GASTO_URINARIO").Value.ToString()
+        'CC/M^2-h
+        'CC/Kg-h
+        If valor <> String.Empty Then
+
+
+            If valor <> "NO SE PUEDE CALCULAR" Then
+
+                iIndex = valor.IndexOf("-")
+                cadena = valor.Length - iIndex
+                valorUnidadMedida = valor.Substring(iIndex + 1, cadena - 1)
+                valor = valor.Substring(0, iIndex)
+
+                valorGastoUrinario = CDbl(valor.Trim())
+
+                If valorUnidadMedida.Trim() = "CC/M^2-h" Then
+
+                    If (valorGastoUrinario > 4.2 And valorGastoUrinario < 12) Or valorGastoUrinario > 90 Then
+
+                        PintarCeldas(7, 13, Color.Yellow)
+
+                    End If
+
+                    If valorGastoUrinario <= 4.2 Then
+
+                        PintarCeldas(7, 13, Color.Orange)
+
+                    End If
+
+                End If
+
+                If valorUnidadMedida.Trim() = "CC/Kg-h" Then
+
+                    If valorGastoUrinario > 0.5 And valorGastoUrinario < 1 Then
+
+                        PintarCeldas(7, 13, Color.Yellow)
+
+                    End If
+
+                    If valorGastoUrinario > 5 Then
+
+                        PintarCeldas(7, 13, Color.Yellow)
+
+                    End If
+
+                    If valorGastoUrinario <= 0.5 Then
+
+                        PintarCeldas(7, 13, Color.Orange)
+
+                    End If
+
+                End If
+
+                valor = String.Empty
+
+            End If
+
+        End If
+
+        'Validacion de tercera seccion
+        valor = dtgConsultaBalance.Rows(14).Cells("GASTO_URINARIO").Value.ToString()
+        'CC/M^2-h
+        'CC/Kg-h
+        If valor <> String.Empty Then
+
+            If valor <> "NO SE PUEDE CALCULAR" Then
+
+                iIndex = valor.IndexOf("-")
+                cadena = valor.Length - iIndex
+                valorUnidadMedida = valor.Substring(iIndex + 1, cadena - 1)
+                valor = valor.Substring(0, iIndex)
+
+                valorGastoUrinario = CDbl(valor.Trim())
+
+                If valorUnidadMedida.Trim() = "CC/M^2-h" Then
+
+                    If (valorGastoUrinario > 4.2 And valorGastoUrinario < 12) Or valorGastoUrinario > 90 Then
+
+                        PintarCeldas(14, 20, Color.Yellow)
+
+                    End If
+
+                    If valorGastoUrinario <= 4.2 Then
+
+                        PintarCeldas(14, 20, Color.Orange)
+
+                    End If
+
+                End If
+
+                If valorUnidadMedida.Trim() = "CC/Kg-h" Then
+
+                    If valorGastoUrinario > 0.5 And valorGastoUrinario < 1 Then
+
+                        PintarCeldas(14, 20, Color.Yellow)
+
+                    End If
+
+                    If valorGastoUrinario > 5 Then
+
+                        PintarCeldas(14, 20, Color.Yellow)
+
+                    End If
+
+                    If valorGastoUrinario <= 0.5 Then
+
+                        PintarCeldas(14, 20, Color.Orange)
+
+                    End If
+
+                End If
+
+                valor = String.Empty
+
+            End If
+
+        End If
+
+        'Validacion de cuarta seccion
+        valor = dtgConsultaBalance.Rows(21).Cells("GASTO_URINARIO").Value.ToString()
+        'CC/M^2-h
+        'CC/Kg-h
+        If valor <> String.Empty Then
+
+            If valor <> "NO SE PUEDE CALCULAR" Then
+
+                iIndex = valor.IndexOf("-")
+                cadena = valor.Length - iIndex
+                valorUnidadMedida = valor.Substring(iIndex + 1, cadena - 1)
+                valor = valor.Substring(0, iIndex)
+
+                valorGastoUrinario = CDbl(valor.Trim())
+
+                If valorUnidadMedida.Trim() = "CC/M^2-h" Then
+
+                    If (valorGastoUrinario > 4.2 And valorGastoUrinario < 12) Or valorGastoUrinario > 90 Then
+
+                        PintarCeldas(21, 27, Color.Yellow)
+
+                    End If
+
+                    If valorGastoUrinario <= 4.2 Then
+
+                        PintarCeldas(21, 27, Color.Orange)
+
+                    End If
+
+                End If
+
+                If valorUnidadMedida.Trim() = "CC/Kg-h" Then
+
+                    If valorGastoUrinario > 0.5 And valorGastoUrinario < 1 Then
+
+                        PintarCeldas(21, 27, Color.Yellow)
+
+                    End If
+
+                    If valorGastoUrinario > 5 Then
+
+                        PintarCeldas(21, 27, Color.Yellow)
+
+                    End If
+
+                    If valorGastoUrinario <= 0.5 Then
+
+                        PintarCeldas(21, 27, Color.Orange)
+
+                    End If
+
+                End If
+
+                valor = String.Empty
+
+            End If
+
+        End If
+
+    End Sub
+
+    Private Sub PintarCeldas(ByVal limiteInferior As Integer, ByVal limiteSuperior As Integer, ByVal color As Color)
+
+        For i As Integer = limiteInferior To limiteSuperior
+
+            dtgConsultaBalance.Rows(i).Cells("GASTO_URINARIO").Style.BackColor = color
+
+        Next
+
+    End Sub
+
+    Private Sub dtgConsultaBalance_CellFormatting(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellFormattingEventArgs) Handles dtgConsultaBalance.CellFormatting
+
+        If e.RowIndex = 0 Then
+
+            Return
+
+        End If
+
+        If ValorMismaCelda(e.ColumnIndex, e.RowIndex) Then
+
+            e.Value = String.Empty
+            e.FormattingApplied = True
+
+        End If
+
+    End Sub
+
+    ''Se crea metodo para validar si las celdas contiene el mismo valor - dsanchez 30/08/2017
+    Private Function ValorMismaCelda(ByVal columna As Integer, ByVal fila As Integer) As Boolean
+
+        Dim cell1 As DataGridViewCell = dtgConsultaBalance.Rows(fila).Cells(columna)
+        Dim cell2 As DataGridViewCell = dtgConsultaBalance.Rows(fila - 1).Cells(columna)
+        Dim valorCell1 As Object = cell1.Value
+        Dim valorCell2 As Object = cell2.Value
+        Dim valor1 As String = String.Empty
+        Dim valor2 As String = String.Empty
+
+        If IsDBNull(valorCell1) Or IsDBNull(valorCell2) Then
+
+            Return False
+
+        End If
+
+        If Not IsDBNull(valorCell1) Then
+
+            If valorCell1 <> Nothing Then
+
+                valor1 = valorCell1.ToString()
+
+            End If
+
+        End If
+
+        If Not IsDBNull(valorCell2) Then
+
+            If valorCell2 <> Nothing Then
+
+                valor2 = valorCell2.ToString()
+
+            End If
+
+        End If
+
+        Return valor1 = valor2
+
+    End Function
+
+    Private Sub dtgConsultaBalance_CellPainting(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellPaintingEventArgs) Handles dtgConsultaBalance.CellPainting
+
+        If e.ColumnIndex >= 0 Then
+
+            If dtgConsultaBalance.Columns(e.ColumnIndex).Name.ToString() <> "HORA" And dtgConsultaBalance.Columns(e.ColumnIndex).Name.ToString() <> "BALANCE_HORARIO" Then
+
+                e.AdvancedBorderStyle.Bottom = DataGridViewAdvancedCellBorderStyle.None
+
+                If e.RowIndex < 1 Or e.ColumnIndex < 0 Then
+                    Return
+                End If
+
+                If ValorMismaCelda(e.ColumnIndex, e.RowIndex) Then
+
+                    e.AdvancedBorderStyle.Top = DataGridViewAdvancedCellBorderStyle.None
+
+                Else
+
+                    e.AdvancedBorderStyle.Top = dtgConsultaBalance.AdvancedCellBorderStyle.Top
+
+                End If
+
+            End If
+
+        End If
+
+    End Sub
+
+    Private Sub dtgConsultaBalance_Scroll(ByVal sender As System.Object, ByVal e As System.Windows.Forms.ScrollEventArgs) Handles dtgConsultaBalance.Scroll
+
+        If e.ScrollOrientation = ScrollOrientation.VerticalScroll Then
+
+            If Me.dtgLiqAdmin.Rows.Count > 0 And Me.dtgConsultaBalance.Rows.Count > 0 Then
+
+                dtgLiqAdmin.FirstDisplayedScrollingRowIndex = dtgConsultaBalance.FirstDisplayedScrollingRowIndex
+
+            End If
+
+        End If
+
+        If e.ScrollOrientation = ScrollOrientation.VerticalScroll Then
+
+            If Me.dtgLiqElim.Rows.Count > 0 And Me.dtgConsultaBalance.Rows.Count > 0 Then
+
+                dtgLiqElim.FirstDisplayedScrollingRowIndex = dtgConsultaBalance.FirstDisplayedScrollingRowIndex
+
+            End If
+
+        End If
+
+
+    End Sub
+
+    'Private Sub dtgLiqAdmin_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dtgLiqAdmin.CellDoubleClick
+
+    '    Dim strValorColumna As String = String.Empty
+    '    Dim formDetalle As frm_DetCantidadLiquido = New frm_DetCantidadLiquido()
+    '    Dim formCantidades As frmc_LiquidosCantidades = New frmc_LiquidosCantidades()
+    '    Dim diferenciaDias As Integer = 0
+    '    Dim strFechaActual As String = BLPlaneacion.obtenerFecha(Date.Now.Date)
+    '    Dim horaFila As Integer = 0
+    '    Dim horaActual As Integer = 0
+    '    Dim diferenciaHoras As Integer = 0
+    '    Dim minimoHoras As Integer = 6 + CInt(My.Resources.MinimoHorasLiquidos.ToString())
+
+    '    If e.RowIndex >= 0 And e.ColumnIndex >= 0 Then
+
+    '        If Not dtgLiqAdmin.Rows(e.RowIndex).Cells("HORA").Value.Equals("SUBTOTAL") And Not dtgLiqAdmin.Rows(e.RowIndex).Cells("HORA").Value.Equals("TOTAL") _
+    '           And Not dtgLiqAdmin.Columns(e.ColumnIndex).Name = "TOTAL" Then
+
+    '            strValorColumna = dtgLiqAdmin.Rows(e.RowIndex).Cells(e.ColumnIndex).Value.ToString()
+
+    '            If Not strValorColumna = String.Empty Then
+
+    '                formDetalle.Mostrar(dtgLiqAdmin.Columns(e.ColumnIndex).Name, m_CodHistoria, "LA",
+    '                                    Convert.ToDouble(dtgLiqAdmin.Rows(e.RowIndex).Cells(e.ColumnIndex).Value),
+    '                                    dtgLiqAdmin.Rows(e.RowIndex).Cells("hora").Value.ToString(), m_fechaConsulta)
+
+
+    '            Else
+
+    '                diferenciaDias = BLPlaneacion.obtenerDiferenciaDia(m_fechaConsulta, strFechaActual)
+    '                horaFila = CInt(dtgLiqAdmin.Rows(e.RowIndex).Cells("HORA").Value.ToString())
+    '                horaActual = Date.Now.Hour
+
+    '                If diferenciaDias = 1 Then
+
+    '                    If horaFila >= 3 And horaFila <= 6 And horaActual >= 7 And horaActual <= minimoHoras Then
+
+    '                        horaActual = Date.Now.Hour
+    '                        horaFila = CInt(dtgLiqAdmin.Rows(e.RowIndex).Cells("HORA").Value.ToString())
+
+    '                        diferenciaHoras = horaActual - horaFila
+
+    '                        If diferenciaHoras <= CInt(My.Resources.MinimoHorasLiquidos.ToString()) Then
+
+    '                            formCantidades.Mostrar(dtgLiqAdmin.Columns(e.ColumnIndex).Name, horaFila.ToString(), 0, 0, "LA", m_fechaConsulta)
+
+    '                            CargarLiquidosAdministrados(m_fechaConsulta)
+    '                            CargarLiquidosEliminados(m_fechaConsulta)
+    '                            cargarBalance()
+
+    '                        End If
+
+    '                    End If
+
+    '                End If
+
+    '            End If
+
+    '        End If
+
+    '    End If
+
+    'End Sub
+
+    'Private Sub dtgLiqElim_CellMouseDoubleClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles dtgLiqElim.CellMouseDoubleClick
+
+    '    Dim strValorColumna As String = String.Empty
+    '    Dim formDetalle As frm_DetCantidadLiquido = New frm_DetCantidadLiquido()
+    '    Dim formCantidades As frmc_LiquidosCantidades = New frmc_LiquidosCantidades()
+    '    Dim diferenciaDias As Integer = 0
+    '    Dim strFechaActual As String = BLPlaneacion.obtenerFecha(Date.Now.Date)
+    '    Dim horaFila As Integer = 0
+    '    Dim horaActual As Integer = 0
+    '    Dim diferenciaHoras As Integer = 0
+    '    Dim minimoHoras As Integer = 6 + CInt(My.Resources.MinimoHorasLiquidos.ToString())
+
+    '    If e.RowIndex >= 0 And e.ColumnIndex >= 0 Then
+
+    '        If Not dtgLiqElim.Rows(e.RowIndex).Cells("HORA").Value.Equals("SUBTOTAL") And Not dtgLiqElim.Rows(e.RowIndex).Cells("HORA").Value.Equals("TOTAL") _
+    '           And Not dtgLiqElim.Columns(e.ColumnIndex).Name = "TOTAL" Then
+
+    '            strValorColumna = dtgLiqElim.Rows(e.RowIndex).Cells(e.ColumnIndex).Value.ToString()
+
+    '            If Not strValorColumna = String.Empty Then
+
+    '                formDetalle.Mostrar(dtgLiqElim.Columns(e.ColumnIndex).Name, m_CodHistoria, "LE",
+    '                                    Convert.ToDouble(dtgLiqElim.Rows(e.RowIndex).Cells(e.ColumnIndex).Value),
+    '                                    dtgLiqElim.Rows(e.RowIndex).Cells("hora").Value.ToString(), m_fechaConsulta)
+
+    '            Else
+
+    '                diferenciaDias = BLPlaneacion.obtenerDiferenciaDia(m_fechaConsulta, strFechaActual)
+    '                horaActual = Date.Now.Hour
+    '                horaFila = CInt(dtgLiqElim.Rows(e.RowIndex).Cells("HORA").Value.ToString())
+
+    '                If diferenciaDias = 1 Then
+
+    '                    If horaFila >= 3 And horaFila <= 6 And horaActual >= 7 And horaActual <= minimoHoras Then
+
+    '                        horaActual = Date.Now.Hour
+    '                        horaFila = CInt(dtgLiqElim.Rows(e.RowIndex).Cells("HORA").Value.ToString())
+
+    '                        diferenciaHoras = horaActual - horaFila
+
+    '                        If diferenciaHoras <= CInt(My.Resources.MinimoHorasLiquidos.ToString()) Then
+
+    '                            formCantidades.Mostrar(dtgLiqElim.Columns(e.ColumnIndex).Name, horaFila.ToString(), 0, 0, "LE", m_fechaConsulta)
+
+    '                            CargarLiquidosAdministrados(m_fechaConsulta)
+    '                            CargarLiquidosEliminados(m_fechaConsulta)
+    '                            cargarBalance()
+
+    '                        End If
+
+    '                    End If
+
+    '                End If
+
+    '            End If
+
+    '        End If
+
+    '    End If
+
+    'End Sub
+End Class

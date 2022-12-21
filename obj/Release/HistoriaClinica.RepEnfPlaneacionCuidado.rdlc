@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="DummyDataSource">
+      <rd:DataSourceID>3d10b3a4-65a8-48cc-9b6c-dee519fe4bfe</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <InteractiveHeight>29.7cm</InteractiveHeight>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>21cm</InteractiveWidth>
+  <rd:GridSpacing>0.25cm</rd:GridSpacing>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <RightMargin>2.5cm</RightMargin>
+  <LeftMargin>2.5cm</LeftMargin>
+  <BottomMargin>2.5cm</BottomMargin>
+  <rd:ReportID>9ef42026-8dc8-4eb2-91f4-aa223bc72269</rd:ReportID>
+  <PageWidth>21cm</PageWidth>
+  <DataSets>
+    <DataSet Name="Enfermeria_Sophia_HistoriaClinica_Reportes_PlaneacionCuidado">
+      <Fields>
+        <Field Name="Descripcion">
+          <DataField>Descripcion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DescripcionPlaneado">
+          <DataField>DescripcionPlaneado</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="fecha">
+          <DataField>fecha</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DummyDataSource</DataSourceName>
+        <CommandText />
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>Enfermeria.Sophia.HistoriaClinica.Reportes</rd:DataSetName>
+        <rd:TableName>PlaneacionCuidado</rd:TableName>
+        <rd:ObjectDataSourceType>Enfermeria.Sophia.HistoriaClinica.Reportes.PlaneacionCuidado, Enfermeria, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Width>20cm</Width>
+  <Body>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <ReportItems>
+      <List Name="list1">
+        <ZIndex>1</ZIndex>
+        <Left>0.25cm</Left>
+        <DataSetName>Enfermeria_Sophia_HistoriaClinica_Reportes_PlaneacionCuidado</DataSetName>
+        <ReportItems>
+          <List Name="list2">
+            <ZIndex>2</ZIndex>
+            <DataSetName>Enfermeria_Sophia_HistoriaClinica_Reportes_PlaneacionCuidado</DataSetName>
+            <ReportItems>
+              <Textbox Name="DescripcionPlaneado">
+                <rd:DefaultName>DescripcionPlaneado</rd:DefaultName>
+                <Top>0.5cm</Top>
+                <Width>19cm</Width>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+                <ZIndex>1</ZIndex>
+                <CanGrow>true</CanGrow>
+                <Left>0.17063cm</Left>
+                <Height>0.5cm</Height>
+                <Value>=First(Fields!DescripcionPlaneado.Value)</Value>
+              </Textbox>
+              <Textbox Name="Descripcion_1">
+                <rd:DefaultName>Descripcion_1</rd:DefaultName>
+                <Width>19cm</Width>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                  <FontWeight>700</FontWeight>
+                  <PaddingLeft>2pt</PaddingLeft>
+                  <PaddingRight>2pt</PaddingRight>
+                  <PaddingTop>2pt</PaddingTop>
+                  <PaddingBottom>2pt</PaddingBottom>
+                </Style>
+                <CanGrow>true</CanGrow>
+                <Left>0.17063cm</Left>
+                <Height>0.5cm</Height>
+                <Value>=First(Fields!Descripcion.Value)</Value>
+              </Textbox>
+            </ReportItems>
+            <Top>0.56481cm</Top>
+            <Grouping Name="list2_Details_Group">
+              <GroupExpressions>
+                <GroupExpression>=Fields!Descripcion.Value</GroupExpression>
+              </GroupExpressions>
+            </Grouping>
+          </List>
+          <Textbox Name="textbox12">
+            <Top>0.03836cm</Top>
+            <Width>1.25cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>1</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.15608cm</Left>
+            <Height>0.5cm</Height>
+            <Value>FECHA</Value>
+          </Textbox>
+          <Textbox Name="textbox13">
+            <Top>0.03836cm</Top>
+            <Width>4.00529cm</Width>
+            <Style>
+              <FontSize>8pt</FontSize>
+              <PaddingLeft>4pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Left>3cm</Left>
+            <Height>0.5cm</Height>
+            <Value>=First(Fields!fecha.Value)</Value>
+          </Textbox>
+        </ReportItems>
+        <Top>0.59127cm</Top>
+        <Width>19.55423cm</Width>
+        <Grouping Name="list1_Details_Group">
+          <GroupExpressions>
+            <GroupExpression>=Fields!fecha.Value</GroupExpression>
+          </GroupExpressions>
+        </Grouping>
+        <Height>1.75cm</Height>
+      </List>
+      <Textbox Name="textbox1">
+        <rd:DefaultName>textbox1</rd:DefaultName>
+        <Top>0.03836cm</Top>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.5cm</Height>
+        <Value>PLANEACION Y ADMINISTRACION DE CUIDADOS DE ENFERMERIA</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>2.5cm</Height>
+  </Body>
+  <Language>es-ES</Language>
+  <TopMargin>2.5cm</TopMargin>
+  <PageHeight>29.7cm</PageHeight>
+</Report>

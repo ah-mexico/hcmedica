@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="HistoriaClinica.ComboBusqueda">
+    <Position X="1.25" Y="23.25" Width="5.5" />
+    <TypeIdentifier>
+      <FileName>Controles\ComboBusqueda.vb</FileName>
+      <HashCode>QGlABUSwA6ikYECCQCDkZACnAAggqmARRAkwEIAdIMg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.TextBoxConFormato">
+    <Position X="0.5" Y="0.5" Width="5" />
+    <TypeIdentifier>
+      <FileName>Controles\TextBoxConFormato.vb</FileName>
+      <HashCode>gEh1CAEgFiKCUEC9UTKkIGMDAAiBIEAUVBQNy0BGoMk=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.ctlDatosPaciente">
+    <Position X="46" Y="52.5" Width="4.5" />
+    <TypeIdentifier>
+      <FileName>ctlDatosPaciente.vb</FileName>
+      <HashCode>AAABAAAAUCwRACQAAQKIAgADAAAAAQAkAAIAAAABIAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.CtlEgresos">
+    <Position X="36" Y="89.5" Width="8" />
+    <TypeIdentifier>
+      <FileName>CtlEgresos.vb</FileName>
+      <HashCode>1MBAsOoQgCDApA6BAVGIghTCRiPwiAqB9rdOiXUWAoY=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.ctlEvolucion">
+    <Position X="36.25" Y="52.25" Width="5.75" />
+    <TypeIdentifier>
+      <FileName>ctlEvolucion.vb</FileName>
+      <HashCode>AoAIAAIAACAAAAgQEACIgoCCAACAHAwBBgQECAAQCAg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.HCBasica">
+    <Position X="55" Y="0.75" Width="11.5" />
+    <TypeIdentifier>
+      <FileName>ctlHCBasica.vb</FileName>
+      <HashCode>/f+/z//9////7//7//v///u/////+/77//3+//1f/e4=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.ctlOrdenesMedicas">
+    <Position X="2.25" Y="52.75" Width="13" />
+    <TypeIdentifier>
+      <FileName>ctlOrdenesMedicas.vb</FileName>
+      <HashCode>UBdgwmhGX/OY/goiNLGNUi/ODjDyiiqVUtMZLFEZI5g=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.CtlPlanFormuExterna">
+    <Position X="21.25" Y="52.75" Width="11" />
+    <TypeIdentifier>
+      <FileName>ctlPlanFormuExterna.vb</FileName>
+      <HashCode>xVAVQEMQFqCUID0GRNCKKrCPAGDUIAArphu4KEMQUmE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.ctlPlanIncapacidad">
+    <Position X="21.25" Y="89.5" Width="5.5" />
+    <TypeIdentifier>
+      <FileName>ctlPlanIncapacidad.vb</FileName>
+      <HashCode>QEAAEACAACACBAiABACIAgCCAAAgCEAZBEBQLAEQAAg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.ctlPlanProcExternos">
+    <Position X="36.25" Y="74.75" Width="6.25" />
+    <TypeIdentifier>
+      <FileName>ctlPlanProcExternos.vb</FileName>
+      <HashCode>0EAAQsEBCiABkkgAIDCJojAjVCDQAAhFNsEIDIGQBgQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.ctlPlanRemision">
+    <Position X="2.25" Y="85.25" Width="14" />
+    <TypeIdentifier>
+      <FileName>ctlPlanRemision.vb</FileName>
+      <HashCode>kEBIBMECMiiWAYwAAgqKIgDSAIOoAEgZBhY0DEFTAYI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.ctlRecomEgreso">
+    <Position X="36" Y="62.25" Width="5.75" />
+    <TypeIdentifier>
+      <FileName>ctlRecomEgreso.vb</FileName>
+      <HashCode>CAgEEAAAACpCBAgaBACISkTCSIIIAIIDBoRWiAhQAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.frmConsultaHC">
+    <Position X="43.25" Y="32.75" Width="5" />
+    <TypeIdentifier>
+      <FileName>frmConsultaHC.vb</FileName>
+      <HashCode>IAkhBUAAEGAiBIeMQMCAAAQmJPBQIISDOlUMA1ABAyA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="HistoriaClinica.frmConsultaHC.TLimpiar" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>frmConsultaHC.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+  </Class>
+  <Class Name="HistoriaClinica.frmConsultaPorNombre">
+    <Position X="22" Y="14.25" Width="4.5" />
+    <TypeIdentifier>
+      <FileName>frmConsultaPorNombre.vb</FileName>
+      <HashCode>AAAAAAAIACAAAIAEZACAIBACAAAQAAAEAABgAACAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.frmConsultaResultadosHC">
+    <Position X="31.25" Y="14" Width="5.75" />
+    <TypeIdentifier>
+      <FileName>frmConsultaResultadosHC.vb</FileName>
+      <HashCode>QAGhBEBAEGAiBIaCQECgAAQiINBwIIQDOBQAAVAJAgA=</HashCode>
+    </TypeIdentifier>
+    <NestedTypes>
+      <Enum Name="HistoriaClinica.frmConsultaResultadosHC.TLimpiar" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>frmConsultaResultadosHC.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+  </Class>
+  <Class Name="HistoriaClinica.frmEvolucion">
+    <Position X="43.5" Y="1.25" Width="4" />
+    <TypeIdentifier>
+      <FileName>frmEvolucion.vb</FileName>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAQAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.frmHistoriaPrincipal">
+    <Position X="31.25" Y="1" Width="9" />
+    <TypeIdentifier>
+      <FileName>frmHistoriaPrincipal.vb</FileName>
+      <HashCode>5zAo+rTpVDEBBuwCWUmBw017sAD2Rg7GFNukKEFiRCg=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="HistoriaClinica.frmHistoriaPrincipal.OpcionesMenu" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>frmHistoriaPrincipal.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+  </Class>
+  <Class Name="HistoriaClinica.frmNotasHC">
+    <Position X="43.25" Y="13.75" Width="5" />
+    <TypeIdentifier>
+      <FileName>frmNotasHC.vb</FileName>
+      <HashCode>AAEBYFCAMGQAIICEIECAhMQiROBQqMQBMvUoAQIjFwI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.frmOpcionesSalidaHC">
+    <Position X="22.5" Y="27.25" Width="5.5" />
+    <TypeIdentifier>
+      <FileName>frmOpcionesSalidaHC.vb</FileName>
+      <HashCode>AABAAEAAECAAAMAFAACQAAACACBAAAAAAgAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.frmOrdenes">
+    <Position X="30" Y="32.5" Width="3.5" />
+    <TypeIdentifier>
+      <FileName>frmOrdenes.vb</FileName>
+      <HashCode>AAAAAAAAACAAAAAAEACAAAQCAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.frmPlanIncapacidad">
+    <Position X="22.5" Y="32.75" Width="3.25" />
+    <TypeIdentifier>
+      <FileName>frmPlanIncapacidad.vb</FileName>
+      <HashCode>AAAAAAAAACAAAABAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.frmPlanProc">
+    <Position X="36" Y="32.75" Width="3" />
+    <TypeIdentifier>
+      <FileName>frmPlanProc.vb</FileName>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAIAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.frmPlanRemision">
+    <Position X="22.25" Y="36.25" Width="3" />
+    <TypeIdentifier>
+      <FileName>frmPlanRemision.vb</FileName>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAQAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.frmRecEgreso">
+    <Position X="31.5" Y="27.25" Width="3" />
+    <TypeIdentifier>
+      <FileName>frmRecEgreso.vb</FileName>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAIAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.frmReferencias">
+    <Position X="22.25" Y="0.75" Width="6" />
+    <TypeIdentifier>
+      <FileName>frmReferencias.vb</FileName>
+      <HashCode>AAEAEAAQACACBAAAQCCABBACCgIALJADAFAAAABIAAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="HistoriaClinica.frmReferencias.TipoReferencia" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>frmReferencias.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+  </Class>
+  <Class Name="HistoriaClinica.ListaEspera">
+    <Position X="21.25" Y="72" Width="6.5" />
+    <TypeIdentifier>
+      <FileName>ListaEspera.vb</FileName>
+      <HashCode>oAjAEUM90iAhABAkADCgQhCHAMGKAAAEQKMgEQqAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.Buscador.frmBuscador">
+    <Position X="29.5" Y="36.75" Width="8.5" />
+    <TypeIdentifier>
+      <FileName>frmBuscador.vb</FileName>
+      <HashCode>AAAhQAAAASQAABAQIACIBAgDBCAg4gAMAEEAABgAACA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.My.MyApplication">
+    <Position X="17.5" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.Comunes.NumericEditingControl">
+    <Position X="7.75" Y="0.5" Width="6" />
+    <TypeIdentifier>
+      <FileName>Util\Comunes.vb</FileName>
+      <HashCode>gAAACAIAAIAAAAAAAAQAAoAAAAAAQAIAAUAAAAgIBAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.1" />
+  </Class>
+  <Enum Name="HistoriaClinica.CategoriaDatos">
+    <Position X="4.25" Y="17.5" Width="2" />
+    <TypeIdentifier>
+      <FileName>Controles\ComboBusqueda.vb</FileName>
+      <HashCode>AgAAAAAAAAAAAAAAQCAAAAAAAAAIAACAAAAAgAAgAIA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="HistoriaClinica.tbFormats">
+    <Position X="0.5" Y="19.25" Width="2" />
+    <TypeIdentifier>
+      <FileName>Controles\TextBoxConFormato.vb</FileName>
+      <HashCode>AEEAAAAAAwAABAABCAAIAAIgAAAAAgAAAAAgCAAAAAE=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="HistoriaClinica.tbPosicionLista">
+    <Position X="2.25" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Controles\TextBoxConFormato.vb</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="HistoriaClinica.tbTipoControl">
+    <Position X="0.5" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Controles\TextBoxConFormato.vb</FileName>
+      <HashCode>AAAgAAAAAAAAAAAAABAAAAAAAAAIAAACAAAAAAAAQAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+  <Module Name="HistoriaClinica.My.Resources.Resources">
+    <Position X="9.75" Y="6" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>gQiBlAAwCI1iwDFYgGZhMJ14ARRQwb88QIAWEA8ABag=</HashCode>
+    </TypeIdentifier>
+  </Module>
+</ClassDiagram>

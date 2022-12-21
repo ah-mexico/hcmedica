@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.Reportes.Alergico">
+    <Position X="10.75" Y="5.25" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Reportes\Clases\Alergico.vb</FileName>
+      <HashCode>IAAAAAAAAAAAEAABAAAAAAAAAAAAAgAAAIAAAACAABA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.Reportes.Antecedente">
+    <Position X="32.75" Y="0.5" Width="3.75" />
+    <TypeIdentifier>
+      <FileName>Reportes\Clases\Antecedente.vb</FileName>
+      <HashCode>AAAAAAAAAQBQAAAAAAAAIAgEAAAAABAAAAACAAAACAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.Reportes.DesarrolloPsicoMotor">
+    <Position X="24.5" Y="5.25" Width="2.75" />
+    <TypeIdentifier>
+      <FileName>Reportes\Clases\DesarrolloPsicoMotor.vb</FileName>
+      <HashCode>EAABAEIBQEIAAAEgAAgAAEgACIACJAACAAAACABEBsE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.Reportes.Familiares">
+    <Position X="35" Y="5.5" Width="2.75" />
+    <TypeIdentifier>
+      <FileName>Reportes\Clases\Familiares.vb</FileName>
+      <HashCode>AggAAAAAgAAAAAABACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.Reportes.Farmacologico">
+    <Position X="38.5" Y="5.25" Width="2.75" />
+    <TypeIdentifier>
+      <FileName>Reportes\Clases\Farmacologico.vb</FileName>
+      <HashCode>AAAABAAAAAAABAAAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.Reportes.Ginecologico">
+    <Position X="4.25" Y="5.25" Width="4.75" />
+    <TypeIdentifier>
+      <FileName>Reportes\Clases\Ginecologico.vb</FileName>
+      <HashCode>AAAJAAAAAAAAMCHEgQAAAAIEQAAAGAAJAAAAARAIgCA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.Reportes.Inmunologico">
+    <Position X="29.75" Y="5.5" Width="3.25" />
+    <TypeIdentifier>
+      <FileName>Reportes\Clases\Inmunologico.vb</FileName>
+      <HashCode>IIAAAAAAAAAABQABAAAAAAAAAAAAAgAIAIAACAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.Reportes.Patologico">
+    <Position X="42.5" Y="5.25" Width="4" />
+    <TypeIdentifier>
+      <FileName>Reportes\Clases\Patologico.vb</FileName>
+      <HashCode>IAgAAAAAAAAAAAABACAAAAAAAAAAAgAAAIAAAAAQAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.Reportes.Perinatales">
+    <Position X="48.5" Y="5.25" Width="9.25" />
+    <TypeIdentifier>
+      <FileName>Reportes\Clases\Perinatales.vb</FileName>
+      <HashCode>AUBBAABRAADAgAEkIAQgAAEAAIAICAAABAAgCEAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.Reportes.Quirurgico">
+    <Position X="14" Y="5.25" Width="5" />
+    <TypeIdentifier>
+      <FileName>Reportes\Clases\Quirurgico.vb</FileName>
+      <HashCode>IAAAAAgAAAAAAAAFAAAAAAABAAAAAgAAAIAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HistoriaClinica.Sophia.HistoriaClinica.Reportes.Toxico">
+    <Position X="20.5" Y="5.25" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>Reportes\Clases\Toxico.vb</FileName>
+      <HashCode>IAAAAAAAIAAAQACAAAAAAQAAAAAkAAAAAAgQAGSJgBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

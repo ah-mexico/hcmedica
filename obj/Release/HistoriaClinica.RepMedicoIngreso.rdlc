@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="DummyDataSource">
+      <ConnectionProperties>
+        <ConnectString />
+        <DataProvider>SQL</DataProvider>
+      </ConnectionProperties>
+      <rd:DataSourceID>9a89829e-dd27-4f09-905e-6f3266e0a33e</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <PageWidth>21.5cm</PageWidth>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>21cm</InteractiveWidth>
+  <rd:GridSpacing>0.1cm</rd:GridSpacing>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <Body>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <ReportItems>
+      <Textbox Name="textbox29">
+        <Left>3.24709cm</Left>
+        <Top>1.62646cm</Top>
+        <ZIndex>8</ZIndex>
+        <Width>0.6cm</Width>
+        <Style>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontWeight>700</FontWeight>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.5cm</Height>
+        <Value>:</Value>
+      </Textbox>
+      <Textbox Name="textbox28">
+        <Left>3.24709cm</Left>
+        <Top>1.05873cm</Top>
+        <ZIndex>7</ZIndex>
+        <Width>0.6cm</Width>
+        <Style>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontWeight>700</FontWeight>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.5cm</Height>
+        <Value>:</Value>
+      </Textbox>
+      <Textbox Name="textbox27">
+        <Left>3.24709cm</Left>
+        <Top>0.47936cm</Top>
+        <rd:DefaultName>textbox27</rd:DefaultName>
+        <ZIndex>6</ZIndex>
+        <Width>0.6cm</Width>
+        <Style>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontWeight>700</FontWeight>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.5cm</Height>
+        <Value>:</Value>
+      </Textbox>
+      <Textbox Name="textbox25">
+        <Left>3.87937cm</Left>
+        <Top>1.04708cm</Top>
+        <ZIndex>5</ZIndex>
+        <Width>16.02063cm</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontSize>8pt</FontSize>
+          <Format>dd/MM/yyyy</Format>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.5cm</Height>
+        <Value>=First(Fields!RegistroMedicoingreso.Value)</Value>
+      </Textbox>
+      <Textbox Name="textbox24">
+        <Left>3.88518cm</Left>
+        <Top>1.62646cm</Top>
+        <ZIndex>4</ZIndex>
+        <Width>16.01482cm</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontSize>8pt</FontSize>
+          <Format>dd/MM/yyyy</Format>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.5cm</Height>
+        <Value>=First(Fields!EspecialidadMedicoIngreso.Value)</Value>
+      </Textbox>
+      <Textbox Name="textbox6">
+        <Left>3.9cm</Left>
+        <Top>0.47354cm</Top>
+        <ZIndex>3</ZIndex>
+        <Width>16cm</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontSize>8pt</FontSize>
+          <Format>dd/MM/yyyy</Format>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.5cm</Height>
+        <Value>=First(Fields!MedicoIngreso.Value)</Value>
+      </Textbox>
+      <Textbox Name="textbox5">
+        <Left>0.5cm</Left>
+        <Top>1.61481cm</Top>
+        <ZIndex>2</ZIndex>
+        <Width>3.3cm</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontWeight>700</FontWeight>
+          <FontSize>8pt</FontSize>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.5cm</Height>
+        <Value>ESPECIALIDAD</Value>
+      </Textbox>
+      <Textbox Name="textbox4">
+        <Left>0.5cm</Left>
+        <Top>1.04708cm</Top>
+        <ZIndex>1</ZIndex>
+        <Width>3.3cm</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontWeight>700</FontWeight>
+          <FontSize>8pt</FontSize>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.5cm</Height>
+        <Value>REGISTRO MÉDICO</Value>
+      </Textbox>
+      <Textbox Name="textbox3">
+        <Left>0.5cm</Left>
+        <Top>0.47354cm</Top>
+        <Width>3.3cm</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingBottom>2pt</PaddingBottom>
+          <FontWeight>700</FontWeight>
+          <FontSize>8pt</FontSize>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Height>0.5cm</Height>
+        <Value>MÉDICO INGRESO             </Value>
+      </Textbox>
+    </ReportItems>
+    <Height>2.5cm</Height>
+  </Body>
+  <rd:ReportID>f4dd4a63-b4b4-493d-9e18-7d25e86d045d</rd:ReportID>
+  <DataSets>
+    <DataSet Name="HistoriaClinica_Sophia_HistoriaClinica_Reportes_HCEncabezado">
+      <rd:DataSetInfo>
+        <rd:DataSetName>HistoriaClinica.Sophia.HistoriaClinica.Reportes</rd:DataSetName>
+        <rd:ObjectDataSourceType>HistoriaClinica.Sophia.HistoriaClinica.Reportes.HCEncabezado, HistoriaClinica, Version=1.0.2306.20298, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+        <rd:TableName>HCEncabezado</rd:TableName>
+      </rd:DataSetInfo>
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText />
+        <DataSourceName>DummyDataSource</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="AnoAdmision">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>AnoAdmision</DataField>
+        </Field>
+        <Field Name="Entidad">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Entidad</DataField>
+        </Field>
+        <Field Name="EspecialidadEgreso">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>EspecialidadEgreso</DataField>
+        </Field>
+        <Field Name="EspecialidadMedicoIngreso">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>EspecialidadMedicoIngreso</DataField>
+        </Field>
+        <Field Name="Fecha">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Fecha</DataField>
+        </Field>
+        <Field Name="Hora">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Hora</DataField>
+        </Field>
+        <Field Name="MedicoEgreso">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>MedicoEgreso</DataField>
+        </Field>
+        <Field Name="MedicoIngreso">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>MedicoIngreso</DataField>
+        </Field>
+        <Field Name="Minuto">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Minuto</DataField>
+        </Field>
+        <Field Name="NumeroAdmision">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>NumeroAdmision</DataField>
+        </Field>
+        <Field Name="Paciente">
+          <rd:TypeName>HistoriaClinica.Sophia.HistoriaClinica.Reportes.Paciente</rd:TypeName>
+          <DataField>Paciente</DataField>
+        </Field>
+        <Field Name="Recomedaciones">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Recomedaciones</DataField>
+        </Field>
+        <Field Name="RegistroMedicoEgreso">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>RegistroMedicoEgreso</DataField>
+        </Field>
+        <Field Name="RegistroMedicoingreso">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>RegistroMedicoingreso</DataField>
+        </Field>
+        <Field Name="Sucursal">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>Sucursal</DataField>
+        </Field>
+        <Field Name="TipoAdmision">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>TipoAdmision</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <Width>20cm</Width>
+  <InteractiveHeight>29.7cm</InteractiveHeight>
+  <Language>en-US</Language>
+  <PageHeight>28cm</PageHeight>
+</Report>
