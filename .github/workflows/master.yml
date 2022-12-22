@@ -25,4 +25,4 @@ jobs:
     - name: Build
       #run: find -name HistoriaClinica.sln
       #run: msbuild hcmedica\HistoriaClinica.sln #/p:Configuration=release
-      run: msbuild HistoriaClinica.sln -target:HistoriaClinica;Compile -p:Configuration=Release
+      run: msbuild HistoriaClinica.sln -target:HistoriaClinica -p:Configuration=Release
