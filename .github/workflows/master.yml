@@ -23,6 +23,6 @@ jobs:
     #    dotnet-version: 4.5.x
         
     - name: Build
-      run: find -name HistoriaClinica.sln
+      #run: find -name HistoriaClinica.sln
       #run: msbuild hcmedica\HistoriaClinica.sln #/p:Configuration=release
-      #run: msbuild HistoriaClinica.sln /p:Configuration=release
+      run: msbuild HistoriaClinica.sln #/p:Configuration=release
