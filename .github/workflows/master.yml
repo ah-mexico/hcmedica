@@ -14,19 +14,19 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
 
+    - name: setup-msbuild
+      uses: microsoft/setup-msbuild@v1.0.2
+     
     - name: Setup dotnet
-      uses: actions/setup-dotnet@v4.5
+      uses: actions/setup-dotnet@v3.0.3
       with:
-        dotnet-version: 4.5
+        dotnet-version: 3.0.3
           
     #- name: Setup .NET Core SDK
      # uses: actions/setup-dotnet@v3.0.3
       #with:
        # dotnet-version: 4.5
       
-    - name: setup-msbuild
-      uses: microsoft/setup-msbuild@v1.0.2
-     
     - name: Build
       #run: find -name HistoriaClinica.sln
       #run: msbuild hcmedica\HistoriaClinica.sln #/p:Configuration=release
