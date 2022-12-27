@@ -13,8 +13,8 @@ jobs:
       fail-fast: false
       matrix:
         operating-system: [windows-latest]
-        #dotnet-version: ['2.1', '2.2', '3.0.x', '3.1', '5.0', '4.5', '6.0.x']
-        dotnet-version: ['4.5.x']
+        dotnet-version: ['4.5.0', '4.5.1', '4.5.2', '4.5.3', '4.5.4', '4.5.5', '4.5.6']
+        #dotnet-version: ['4.5.x']
     steps:
       - name: Checkout
         uses: actions/checkout@v3
