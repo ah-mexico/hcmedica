@@ -14,12 +14,12 @@ jobs:
       - uses: GuillaumeFalourd/setup-windows10-sdk-action@main
         with:
           sdk-version: 17763
-  #setup-version:
-    #runs-on: ${{ matrix.operating-system }}
+  setup-version:
+    runs-on: ${{ matrix.operating-system }}
     strategy:
       fail-fast: false
       matrix:
-        #operating-system: [windows-2018]
+        #operating-system: [windows-latest]
         dotnet-version: ['4.5.0', '4.5.1', '4.5.2', '4.5.3', '4.5.4', '4.5.5', '4.5.6']
         #dotnet-version: ['4.5.x']
     steps:
