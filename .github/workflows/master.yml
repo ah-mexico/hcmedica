@@ -7,34 +7,26 @@ on:
     branches: [ "master" ]
 
 jobs:
-
-  build:
-    runs-on: windows-latest
+  setup-version:
+    runs-on: ${{ matrix.operating-system }}
+    strategy:
+      fail-fast: false
+      matrix:
+        operating-system: [ubuntu-latest, windows-latest, macOS-latest]
+        dotnet-version: ['2.1', '2.2', '3.0', '3.1', '5.0', '4.5', '6.0']
     steps:
-    - name: Checkout
-      uses: actions/checkout@v3
-      
-      # Install the .NET Core workload
-    - name: Install .NET Core
-      uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: 4.5
-        #dotnet-version: 6.0.x
-
-    - name: setup-msbuild
-      uses: microsoft/setup-msbuild@v1.0.2
-     
-    #- name: Setup dotnet
-     # uses: actions/setup-dotnet@v3.0.3
-      #with:
-       # dotnet-version: 3.0.3
-          
-    #- name: Setup .NET Core SDK
-     # uses: actions/setup-dotnet@v3.0.3
-      #with:
-       # dotnet-version: 4.5
-      
-    - name: Build
-      #run: find -name HistoriaClinica.sln
-      #run: msbuild hcmedica\HistoriaClinica.sln #/p:Configuration=release
-      run: msbuild HistoriaClinica.sln -p:Configuration=Release
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Clear toolcache
+        shell: pwsh
+        run: __tests__/clear-toolcache.ps1 ${{ runner.os }}
+      - name: Setup dotnet ${{ matrix.dotnet-version }}
+        uses: ./
+        with:
+          dotnet-version: ${{ matrix.dotnet-version }}
+      - name: Check installed version
+        shell: pwsh
+        run: |
+          $version = & dotnet --version
+          Write-Host "Installed version: $version"
+          if (-not $version.StartsWith("${{ matrix.dotnet-version }}")) { throw "Unexpected version" }
